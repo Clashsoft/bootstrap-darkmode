@@ -1,0 +1,50 @@
+/* --------------- Original Styling --------------- */
+/* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
+
+[data-theme="dark"] {
+	background-color: #111 !important;
+	color:            #eee;
+}
+
+[data-theme="dark"] .bg-light {
+	background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+	background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+	background-color: #eee !important;
+}
+
+/* --------------- Additional Styling --------------- */
+
+[data-theme="dark"] img.icon,
+[data-theme="dark"] svg.icon {
+	filter: invert(1);
+}
+
+[data-theme="dark"] .nav-link.active,
+[data-theme="dark"] .form-control {
+	color:            #fff;
+	background-color: #222;
+}
+
+[data-theme="dark"] pre {
+	color: #eee;
+}
+
+[data-theme="dark"] .close {
+	color:   #eee;
+	opacity: 1;
+}
+
+[data-theme="dark"] .card-body {
+	background-color: #222;
+}
+
+[data-theme="dark"] .card-header,
+[data-theme="dark"] .card-footer {
+	background-color: #333;
+}
