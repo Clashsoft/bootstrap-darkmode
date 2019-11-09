@@ -49,6 +49,12 @@
 	background-color: #333;
 }
 
+/* --------------- Jumbotron --------------- */
+
+[data-theme="dark"] .jumbotron {
+	background-color: #222;
+}
+
 /* --------------- Cards --------------- */
 
 [data-theme="dark"] .card {
@@ -89,4 +95,8 @@
 [data-theme="dark"] .close {
 	color:   #eee;
 	opacity: 1;
+}
+
+[data-theme="dark"] .modal-content {
+	background-color: #222;
 }
