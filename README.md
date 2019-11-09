@@ -3,6 +3,12 @@
 This project provides a stylesheet and two scripts that allow you to implement Dark Mode on your website.
 It is initially loaded based on user preference, can be toggled via a switch, and is saved via `localStorage`.
 
+You can view the [test page](testpage.html) with all default bootstrap components in light and dark
+(thanks to [juzraai](https://juzraai.github.io/)!).
+
+Note that not all components are fully supported yet.
+Mostly the contextual color classes can cause problems.
+
 ## Usage
 
 1. Put the stylesheet link in `<head>`. Do not forget to add bootstrap.
