@@ -48,3 +48,18 @@
 [data-theme="dark"] .card-footer {
 	background-color: #333;
 }
+
+/* --------------- Dropdowns --------------- */
+
+[data-theme="dark"] .dropdown-menu {
+	background-color: #222;
+}
+
+[data-theme="dark"] .dropdown-item {
+	color: #fff;
+}
+
+[data-theme="dark"] .dropdown-item:focus,
+[data-theme="dark"] .dropdown-item:hover {
+	background-color: #333;
+}
