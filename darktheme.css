@@ -67,6 +67,12 @@
 	background-color: #222;
 }
 
+[data-theme="dark"] .custom-select {
+	color:            #fff;
+	background-color: #222;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+}
+
 [data-theme="dark"] .input-group-text {
 	color:            #eee;
 	background-color: #1a1a1a;
