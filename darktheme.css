@@ -67,6 +67,11 @@
 	background-color: #222;
 }
 
+[data-theme="dark"] .input-group-text {
+	color:            #eee;
+	background-color: #1a1a1a;
+}
+
 /* --------------- Modals --------------- */
 
 [data-theme="dark"] .close {
