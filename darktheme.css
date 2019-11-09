@@ -18,15 +18,14 @@
 	background-color: #eee !important;
 }
 
-/* --------------- Additional Styling --------------- */
+/* --------------- Images --------------- */
 
 [data-theme="dark"] img.icon,
 [data-theme="dark"] svg.icon {
 	filter: invert(1);
 }
 
-[data-theme="dark"] .nav-link.active,
-[data-theme="dark"] .form-control {
+[data-theme="dark"] .nav-link.active {
 	color:            #fff;
 	background-color: #222;
 }
@@ -35,21 +34,7 @@
 	color: #eee;
 }
 
-[data-theme="dark"] .close {
-	color:   #eee;
-	opacity: 1;
-}
-
-[data-theme="dark"] .card-body {
-	background-color: #222;
-}
-
-[data-theme="dark"] .card-header,
-[data-theme="dark"] .card-footer {
-	background-color: #333;
-}
-
-/* --------------- Dropdowns --------------- */
+/* --------------- Buttons --------------- */
 
 [data-theme="dark"] .dropdown-menu {
 	background-color: #222;
@@ -62,4 +47,29 @@
 [data-theme="dark"] .dropdown-item:focus,
 [data-theme="dark"] .dropdown-item:hover {
 	background-color: #333;
+}
+
+/* --------------- Cards --------------- */
+
+[data-theme="dark"] .card-body {
+	background-color: #222;
+}
+
+[data-theme="dark"] .card-header,
+[data-theme="dark"] .card-footer {
+	background-color: #333;
+}
+
+/* --------------- Forms --------------- */
+
+[data-theme="dark"] .form-control {
+	color:            #fff;
+	background-color: #222;
+}
+
+/* --------------- Modals --------------- */
+
+[data-theme="dark"] .close {
+	color:   #eee;
+	opacity: 1;
 }
