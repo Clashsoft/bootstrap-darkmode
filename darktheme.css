@@ -78,6 +78,12 @@
 	background-color: #1a1a1a;
 }
 
+/* --------------- Navs --------------- */
+
+.breadcrumb {
+	background-color: #222;
+}
+
 /* --------------- Modals --------------- */
 
 [data-theme="dark"] .close {
