@@ -2,6 +2,7 @@
 
 $color: #eee;
 $bg-color: #111;
+$hover-bg-color: #222;
 
 $form-color: #ddd;
 $form-bg-color: #222;
@@ -47,6 +48,16 @@ $window-header-color: #333;
 	img.icon,
 	svg.icon {
 		filter: invert(1);
+	}
+
+	// --------------- Tables ---------------
+
+	.table {
+		color: $color;
+	}
+
+	.table-hover tbody tr:hover {
+		color: $color;
 	}
 
 	// --------------- Buttons ---------------

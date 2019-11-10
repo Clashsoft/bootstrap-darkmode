@@ -22,6 +22,12 @@
 [data-theme=dark] svg.icon {
   filter: invert(1);
 }
+[data-theme=dark] .table {
+  color: #eee;
+}
+[data-theme=dark] .table-hover tbody tr:hover {
+  color: #eee;
+}
 [data-theme=dark] .dropdown-menu {
   background-color: #222;
 }
