@@ -1,108 +1,98 @@
 /* --------------- Original Styling --------------- */
 /* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
-
-[data-theme="dark"] {
-	background-color: #111 !important;
-	color:            #eee;
+[data-theme=dark] {
+  background-color: #111 !important;
+  color: #eee;
 }
-
-[data-theme="dark"] .bg-light {
-	background-color: #333 !important;
+[data-theme=dark] .bg-light {
+  background-color: #333 !important;
 }
-
-[data-theme="dark"] .bg-white {
-	background-color: #000 !important;
+[data-theme=dark] .bg-white {
+  background-color: #000 !important;
 }
-
-[data-theme="dark"] .bg-black {
-	background-color: #eee !important;
+[data-theme=dark] .bg-black {
+  background-color: #eee !important;
 }
 
 /* --------------- Images --------------- */
-
-[data-theme="dark"] img.icon,
-[data-theme="dark"] svg.icon {
-	filter: invert(1);
+[data-theme=dark] img.icon,
+[data-theme=dark] svg.icon {
+  filter: invert(1);
 }
 
-[data-theme="dark"] .nav-link.active {
-	color:            #fff;
-	background-color: #222;
+[data-theme=dark] .nav-link.active {
+  color: #fff;
+  background-color: #222;
 }
 
-[data-theme="dark"] pre {
-	color: #eee;
+[data-theme=dark] pre {
+  color: #eee;
 }
 
 /* --------------- Buttons --------------- */
-
-[data-theme="dark"] .dropdown-menu {
-	background-color: #222;
+[data-theme=dark] .dropdown-menu {
+  background-color: #222;
 }
 
-[data-theme="dark"] .dropdown-item {
-	color: #fff;
+[data-theme=dark] .dropdown-item {
+  color: #fff;
 }
 
-[data-theme="dark"] .dropdown-item:focus,
-[data-theme="dark"] .dropdown-item:hover {
-	background-color: #333;
+[data-theme=dark] .dropdown-item:focus,
+[data-theme=dark] .dropdown-item:hover {
+  background-color: #333;
 }
 
 /* --------------- Jumbotron --------------- */
-
-[data-theme="dark"] .jumbotron {
-	background-color: #222;
+[data-theme=dark] .jumbotron {
+  background-color: #222;
 }
 
 /* --------------- Cards --------------- */
-
-[data-theme="dark"] .card {
-	background-color: #222;
+[data-theme=dark] .card {
+  background-color: #222;
 }
 
-[data-theme="dark"] .card-header,
-[data-theme="dark"] .card-footer {
-	background-color: #333;
+[data-theme=dark] .card-header,
+[data-theme=dark] .card-footer {
+  background-color: #333;
 }
 
 /* --------------- Forms --------------- */
-
-[data-theme="dark"] .form-control {
-	color:            #fff;
-	background-color: #222;
+[data-theme=dark] .form-control {
+  color: #fff;
+  background-color: #222;
 }
 
-[data-theme="dark"] .custom-select {
-	color:            #fff;
-	background-color: #222;
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+[data-theme=dark] .custom-select {
+  color: #fff;
+  background-color: #222;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 }
 
-[data-theme="dark"] .input-group-text {
-	color:            #eee;
-	background-color: #1a1a1a;
+[data-theme=dark] .input-group-text {
+  color: #eee;
+  background-color: #1a1a1a;
 }
 
 /* --------------- Navs --------------- */
-
-[data-theme="dark"] .breadcrumb {
-	background-color: #222;
+[data-theme=dark] .breadcrumb {
+  background-color: #222;
 }
 
 /* --------------- Progress Bars --------------- */
-
-[data-theme="dark"] .progress {
-	background-color: #333;
+[data-theme=dark] .progress {
+  background-color: #333;
 }
 
 /* --------------- Modals --------------- */
-
-[data-theme="dark"] .close {
-	color:   #eee;
-	opacity: 1;
+[data-theme=dark] .close {
+  color: #eee;
+  opacity: 1;
 }
 
-[data-theme="dark"] .modal-content {
-	background-color: #222;
+[data-theme=dark] .modal-content {
+  background-color: #222;
 }
+
+/*# sourceMappingURL=darktheme.css.map */
