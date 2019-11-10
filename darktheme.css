@@ -86,7 +86,7 @@
 
 /* --------------- Navs --------------- */
 
-.breadcrumb {
+[data-theme="dark"] .breadcrumb {
 	background-color: #222;
 }
 
