@@ -1,9 +1,24 @@
+// =============== Variables ===============
+
+$color: #eee;
+$bg-color: #111;
+
+$form-color: #fff;
+$form-bg-color: #222;
+$form-hover-color: #333;
+
+$form-addon-color: #eee;
+$form-addon-bg-color: #1a1a1a;
+
+$window-bg-color: #222;
+$window-header-color: #333;
+
 /* =============== Original Styling =============== */
 /* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
 
 [data-theme="dark"] {
-	background-color: #111 !important;
-	color: #eee;
+	background-color: $bg-color !important;
+	color: $color;
 
 	.bg-light {
 		background-color: #333 !important;
@@ -30,84 +45,84 @@
 	}
 
 	.nav-link.active {
-		color: #fff;
-		background-color: #222;
+		color: $form-color;
+		background-color: $form-bg-color;
 	}
 
 	pre {
-		color: #eee;
+		color: $color;
 	}
 
 	// --------------- Buttons ---------------
 
 	.dropdown-menu {
-		background-color: #222;
+		background-color: $form-bg-color;
 	}
 
 	.dropdown-item {
-		color: #fff;
+		color: $form-color;
 	}
 
 	.dropdown-item:focus,
 	.dropdown-item:hover {
-		background-color: #333;
+		background-color: $form-hover-color;
 	}
 
 	// --------------- Jumbotron ---------------
 
 	.jumbotron {
-		background-color: #222;
+		background-color: $window-bg-color;
 	}
 
 	// --------------- Cards ---------------
 
 	.card {
-		background-color: #222;
+		background-color: $window-bg-color;
 	}
 
 	.card-header,
 	.card-footer {
-		background-color: #333;
+		background-color: $window-header-color;
 	}
 
 	// --------------- Forms ---------------
 
 	.form-control {
-		color: #fff;
-		background-color: #222;
+		color: $form-color;
+		background-color: $form-bg-color;
 	}
 
 	.custom-select {
-		color: #fff;
-		background-color: #222;
+		color: $form-color;
+		background-color: $form-bg-color;
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 	}
 
 	.input-group-text {
-		color: #eee;
-		background-color: #1a1a1a;
+		color: $form-addon-color;
+		background-color: $form-addon-bg-color;
 	}
 
 	// --------------- Navs ---------------
 
 	.breadcrumb {
-		background-color: #222;
+		background-color: $form-bg-color;
 	}
 
 	// --------------- Progress Bars --------------- */
 
 	.progress {
-		background-color: #333;
+		background-color: $form-hover-color;
 	}
 
 	// --------------- Modals ---------------
 
 	.close {
-		color: #eee;
+		color: $color;
 		opacity: 1;
 	}
 
 	.modal-content {
-		background-color: #222;
+		background-color: $window-bg-color;
 	}
 }
