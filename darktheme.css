@@ -31,7 +31,7 @@
 [data-theme=dark] .dropdown-menu {
   background-color: #222;
 }
-[data-theme=dark] .dropdown-item {
+[data-theme=dark] .dropdown-item:not(:disabled):not(.disabled) {
   color: #ddd;
 }
 [data-theme=dark] .dropdown-item:focus,

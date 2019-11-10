@@ -66,7 +66,7 @@ $window-header-color: #333;
 		background-color: $form-bg-color;
 	}
 
-	.dropdown-item {
+	.dropdown-item:not(:disabled):not(.disabled) {
 		color: $form-color;
 	}
 
