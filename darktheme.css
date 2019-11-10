@@ -15,16 +15,12 @@
 }
 
 /* =============== Additional Styling =============== */
+[data-theme=dark] pre {
+  color: #eee;
+}
 [data-theme=dark] img.icon,
 [data-theme=dark] svg.icon {
   filter: invert(1);
-}
-[data-theme=dark] .nav-link.active {
-  color: #ddd;
-  background-color: #222;
-}
-[data-theme=dark] pre {
-  color: #eee;
 }
 [data-theme=dark] .dropdown-menu {
   background-color: #222;
@@ -60,6 +56,10 @@
   background-color: #333;
 }
 [data-theme=dark] .breadcrumb {
+  background-color: #222;
+}
+[data-theme=dark] .nav-link.active {
+  color: #ddd;
   background-color: #222;
 }
 [data-theme=dark] .progress {

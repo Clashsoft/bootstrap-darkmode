@@ -36,21 +36,17 @@ $window-header-color: #333;
 /* =============== Additional Styling =============== */
 
 [data-theme="dark"] {
+	// --------------- Typography ---------------
+
+	pre {
+		color: $color;
+	}
 
 	// --------------- Images ---------------
 
 	img.icon,
 	svg.icon {
 		filter: invert(1);
-	}
-
-	.nav-link.active {
-		color: $form-color;
-		background-color: $form-bg-color;
-	}
-
-	pre {
-		color: $color;
 	}
 
 	// --------------- Buttons ---------------
@@ -106,6 +102,11 @@ $window-header-color: #333;
 	// --------------- Navs ---------------
 
 	.breadcrumb {
+		background-color: $form-bg-color;
+	}
+
+	.nav-link.active {
+		color: $form-color;
 		background-color: $form-bg-color;
 	}
 
