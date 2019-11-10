@@ -90,6 +90,12 @@
 	background-color: #222;
 }
 
+/* --------------- Progress Bars --------------- */
+
+[data-theme="dark"] .progress {
+	background-color: #333;
+}
+
 /* --------------- Modals --------------- */
 
 [data-theme="dark"] .close {
