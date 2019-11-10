@@ -110,6 +110,19 @@ $window-header-color: #333;
 		background-color: $form-addon-bg-color;
 	}
 
+	.page-item.disabled .page-link {
+		background-color: $form-bg-color;
+		color: $form-color;
+	}
+
+	.page-item:not(.active) .page-link {
+		background-color: $form-bg-color;
+	}
+
+	.page-item:not(.active) .page-link:hover {
+		background-color: $form-hover-color;
+	}
+
 	// --------------- Navs ---------------
 
 	.breadcrumb {
