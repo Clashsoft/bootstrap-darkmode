@@ -20,16 +20,20 @@ Mostly the contextual color classes can cause problems.
     
         <!-- Dark mode CSS -->
         <link rel="stylesheet" href="darkmode/darktheme.css"/>
+        <!-- or the full URL: -->
+        <link rel="stylesheet" href="https://app.clashsoft.de/darkmode/darktheme.css"/>
         <!-- ... -->
     </head>
     ```
 
-2. Load the first script as the first thing in `<body>`.
+2. Load the theme script as the first thing in `<body>`.
    It needs to be loaded first so the page doesn't load in light theme and then switch.
 
     ```html
     <body>
     <script src="darkmode/theme.js"></script>
+    <!-- or the full URL: -->
+    <script src="https://app.clashsoft.de/darkmode/theme.js"></script>
     <!-- ... --->
     ```
 
@@ -37,6 +41,8 @@ Mostly the contextual color classes can cause problems.
 
     ```html
     <script src="darkmode/darkswitch.js"></script>
+    <!-- or the full URL: -->
+    <script src="https://app.clashsoft.de/darkmode/darkswitch.js"></script>
     ```
 
 ## Customization
