@@ -78,6 +78,27 @@
   color: #ddd;
   background-color: #222;
 }
+[data-theme=dark] .popover {
+  background-color: #222;
+}
+[data-theme=dark] .popover-body {
+  color: #eee;
+}
+[data-theme=dark] .popover-header, [data-theme=dark] .popover-footer {
+  background-color: #333;
+}
+[data-theme=dark] .bs-popover-top > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=top] > .arrow::after {
+  border-top-color: #222;
+}
+[data-theme=dark] .bs-popover-right > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=right] > .arrow::after {
+  border-right-color: #222;
+}
+[data-theme=dark] .bs-popover-bottom > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=bottom] > .arrow::after {
+  border-bottom-color: #222;
+}
+[data-theme=dark] .bs-popover-left > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=left] > .arrow::after {
+  border-left-color: #222;
+}
 [data-theme=dark] .progress {
   background-color: #333;
 }

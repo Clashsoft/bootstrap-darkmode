@@ -134,6 +134,26 @@ $window-header-color: #333;
 		background-color: $form-bg-color;
 	}
 
+	// --------------- Popovers ---------------
+
+	.popover {
+		background-color: $window-bg-color;
+	}
+
+	.popover-body {
+		color: $color;
+	}
+
+	.popover-header, .popover-footer {
+		background-color: $window-header-color;
+	}
+
+	@each $pos in (top, right, bottom, left) {
+		.bs-popover-#{$pos} > .arrow::after, .bs-popover-auto[x-placement^="#{$pos}"] > .arrow::after {
+			border-#{$pos}-color: $window-bg-color;
+		}
+	}
+
 	// --------------- Progress Bars --------------- */
 
 	.progress {
