@@ -1,8 +1,8 @@
 /* =============== Original Styling =============== */
 /* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
 [data-theme=dark] {
-  background-color: #111 !important;
-  color: #eee;
+  background-color: #222 !important;
+  color: #bebebe;
 }
 [data-theme=dark] .bg-light {
   background-color: #333 !important;
@@ -16,98 +16,107 @@
 
 /* =============== Additional Styling =============== */
 [data-theme=dark] pre {
-  color: #eee;
+  color: #bebebe;
 }
 [data-theme=dark] img.icon,
 [data-theme=dark] svg.icon {
   filter: invert(1);
 }
 [data-theme=dark] .table {
-  color: #eee;
+  color: #bebebe;
 }
 [data-theme=dark] .table-hover tbody tr:hover {
-  color: #eee;
+  color: #bebebe;
 }
 [data-theme=dark] .dropdown-menu {
-  background-color: #222;
+  background-color: #171717;
 }
 [data-theme=dark] .dropdown-item:not(:disabled):not(.disabled) {
-  color: #ddd;
+  color: #bebebe;
 }
 [data-theme=dark] .dropdown-item:focus,
 [data-theme=dark] .dropdown-item:hover {
-  background-color: #333;
+  background-color: #171717;
 }
 [data-theme=dark] .jumbotron {
-  background-color: #222;
+  color: #bebebe;
+  background-color: #181818;
 }
 [data-theme=dark] .card {
-  background-color: #222;
+  color: #bebebe;
+  background-color: #181818;
 }
 [data-theme=dark] .card-header,
 [data-theme=dark] .card-footer {
-  background-color: #333;
+  color: #bebebe;
+  background-color: #202020;
 }
 [data-theme=dark] .form-control {
-  color: #ddd;
-  background-color: #222;
+  color: #bebebe;
+  background-color: #171717;
 }
 [data-theme=dark] .custom-select {
-  color: #ddd;
-  background-color: #222;
+  color: #bebebe;
+  background-color: #171717;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 }
 [data-theme=dark] .input-group-text {
-  color: #ccc;
-  background-color: #333;
+  color: #bebebe;
+  background-color: #202020;
 }
 [data-theme=dark] .page-item.disabled .page-link {
-  background-color: #222;
-  color: #ddd;
+  background-color: #171717;
+  color: #bebebe;
 }
 [data-theme=dark] .page-item:not(.active) .page-link {
-  background-color: #222;
+  background-color: #171717;
 }
 [data-theme=dark] .page-item:not(.active) .page-link:hover {
-  background-color: #333;
+  background-color: #171717;
 }
 [data-theme=dark] .breadcrumb {
-  background-color: #222;
+  background-color: #171717;
 }
 [data-theme=dark] .nav-link.active {
-  color: #ddd;
-  background-color: #222;
+  color: #bebebe;
+  background-color: #171717;
 }
 [data-theme=dark] .popover {
-  background-color: #222;
+  background-color: #181818;
 }
 [data-theme=dark] .popover-body {
-  color: #eee;
+  color: #bebebe;
 }
 [data-theme=dark] .popover-header, [data-theme=dark] .popover-footer {
-  background-color: #333;
+  background-color: #202020;
 }
 [data-theme=dark] .bs-popover-top > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=top] > .arrow::after {
-  border-top-color: #222;
+  border-top-color: #181818;
 }
 [data-theme=dark] .bs-popover-right > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=right] > .arrow::after {
-  border-right-color: #222;
+  border-right-color: #181818;
 }
 [data-theme=dark] .bs-popover-bottom > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=bottom] > .arrow::after {
-  border-bottom-color: #222;
+  border-bottom-color: #181818;
 }
 [data-theme=dark] .bs-popover-left > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=left] > .arrow::after {
-  border-left-color: #222;
+  border-left-color: #181818;
 }
 [data-theme=dark] .progress {
-  background-color: #333;
+  background-color: #171717;
 }
 [data-theme=dark] .close {
-  color: #eee;
+  color: #bebebe;
   opacity: 1;
 }
+[data-theme=dark] .modal-header,
+[data-theme=dark] .modal-footer {
+  color: #bebebe;
+  background-color: #181818;
+}
 [data-theme=dark] .modal-content {
-  background-color: #222;
+  color: #bebebe;
+  background-color: #181818;
 }
 
 /*# sourceMappingURL=darktheme.css.map */
