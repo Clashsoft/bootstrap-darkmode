@@ -45,10 +45,12 @@
 [data-theme=dark] .jumbotron {
   color: #bebebe;
   background-color: #181818;
+  border-color: #404040;
 }
 [data-theme=dark] .card {
   color: #bebebe;
   background-color: #181818;
+  border-color: #404040;
 }
 [data-theme=dark] .card-header,
 [data-theme=dark] .card-footer {
@@ -94,12 +96,14 @@
 }
 [data-theme=dark] .popover {
   background-color: #181818;
+  border-color: #404040;
 }
 [data-theme=dark] .popover-body {
   color: #bebebe;
 }
-[data-theme=dark] .popover-header, [data-theme=dark] .popover-footer {
+[data-theme=dark] .popover-header {
   background-color: #202020;
+  border-bottom-color: #404040;
 }
 [data-theme=dark] .bs-popover-top > .arrow::after, [data-theme=dark] .bs-popover-auto[x-placement^=top] > .arrow::after {
   border-top-color: #181818;
@@ -124,11 +128,14 @@
 [data-theme=dark] .modal-header,
 [data-theme=dark] .modal-footer {
   color: #bebebe;
-  background-color: #181818;
+  background-color: #202020;
+  border-bottom-color: #404040;
+  border-top-color: #404040;
 }
 [data-theme=dark] .modal-content {
   color: #bebebe;
   background-color: #181818;
+  border-color: #404040;
 }
 
 /*# sourceMappingURL=darktheme.css.map */

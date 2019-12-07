@@ -7,11 +7,13 @@ $window-color: #bebebe;
 $window-bg: #181818;
 $window-header-color: #bebebe;
 $window-header-bg: #202020;
+$window-border: #404040;
 
 $card-color: #bebebe;
 $card-bg: #181818;
 $card-header-color: #bebebe;
 $card-header-bg: #202020;
+$card-border: #404040;
 
 $form-color: #bebebe;
 $form-placeholder-color: #666;
@@ -93,6 +95,7 @@ $form-addon-bg: #202020;
 	.jumbotron {
 		color: $card-color;
 		background-color: $card-bg;
+		border-color: $card-border;
 	}
 
 	// --------------- Cards ---------------
@@ -100,6 +103,7 @@ $form-addon-bg: #202020;
 	.card {
 		color: $card-color;
 		background-color: $card-bg;
+		border-color: $card-border;
 	}
 
 	.card-header,
@@ -162,14 +166,16 @@ $form-addon-bg: #202020;
 
 	.popover {
 		background-color: $window-bg;
+		border-color: $window-border;
 	}
 
 	.popover-body {
 		color: $color;
 	}
 
-	.popover-header, .popover-footer {
+	.popover-header {
 		background-color: $window-header-bg;
+		border-bottom-color: $window-border;
 	}
 
 	@each $pos in (top, right, bottom, left) {
@@ -195,11 +201,14 @@ $form-addon-bg: #202020;
 	.modal-header,
 	.modal-footer {
 		color: $window-header-color;
-		background-color: $window-bg;
+		background-color: $window-header-bg;
+		border-bottom-color: $window-border;
+		border-top-color: $window-border;
 	}
 
 	.modal-content {
 		color: $window-color;
 		background-color: $window-bg;
+		border-color: $card-border;
 	}
 }
