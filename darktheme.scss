@@ -1,28 +1,37 @@
 // =============== Variables ===============
 
-$color: #bebebe;
+// --------------- Defaults ---------------
+
+$default-color: #bebebe;
+$default-bg: #181818;
+$default-header-bg: #202020;
+$default-border: #404040;
+
+// --------------- Customized ---------------
+
+$color: $default-color;
 $bg: #222;
 
-$window-color: #bebebe;
-$window-bg: #181818;
-$window-header-color: #bebebe;
-$window-header-bg: #202020;
-$window-border: #404040;
+$window-color: $default-color;
+$window-bg: $default-bg;
+$window-header-color: $default-color;
+$window-header-bg: $default-header-bg;
+$window-border: $default-border;
 
-$card-color: #bebebe;
-$card-bg: #181818;
-$card-header-color: #bebebe;
-$card-header-bg: #202020;
-$card-border: #404040;
+$card-color: $default-color;
+$card-bg: $default-bg;
+$card-header-color: $default-color;
+$card-header-bg: $default-header-bg;
+$card-border: $default-border;
 
-$form-color: #bebebe;
+$form-color: $default-color;
 $form-placeholder-color: #666;
 $form-bg: #171717;
 $form-hover-bg: #171717;
-$form-border: #404040;
+$form-border: $default-border;
 
-$form-addon-color: #bebebe;
-$form-addon-bg: #202020;
+$form-addon-color: $default-color;
+$form-addon-bg: $default-header-bg;
 
 /* =============== Original Styling =============== */
 /* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
