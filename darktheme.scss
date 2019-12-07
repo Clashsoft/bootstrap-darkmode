@@ -110,6 +110,8 @@ $form-addon-bg: #202020;
 	.card-footer {
 		color: $card-header-color;
 		background-color: $card-header-bg;
+		border-top-color: $card-border;
+		border-bottom-color: $card-border;
 	}
 
 	// --------------- Forms ---------------

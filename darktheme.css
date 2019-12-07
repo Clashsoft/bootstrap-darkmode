@@ -56,6 +56,8 @@
 [data-theme=dark] .card-footer {
   color: #bebebe;
   background-color: #202020;
+  border-top-color: #404040;
+  border-bottom-color: #404040;
 }
 [data-theme=dark] .form-control {
   color: #bebebe;
