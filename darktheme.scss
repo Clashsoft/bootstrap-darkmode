@@ -17,6 +17,7 @@ $form-color: #bebebe;
 $form-placeholder-color: #666;
 $form-bg: #171717;
 $form-hover-bg: #171717;
+$form-border: #404040;
 
 $form-addon-color: #bebebe;
 $form-addon-bg: #202020;
@@ -71,6 +72,7 @@ $form-addon-bg: #202020;
 
 	.dropdown-menu {
 		background-color: $form-bg;
+		border-color: $form-border;
 	}
 
 	.dropdown-item:not(:disabled):not(.disabled) {
@@ -80,6 +82,10 @@ $form-addon-bg: #202020;
 	.dropdown-item:focus,
 	.dropdown-item:hover {
 		background-color: $form-hover-bg;
+	}
+
+	.dropdown-divider {
+		border-top-color: $form-border;
 	}
 
 	// --------------- Jumbotron ---------------
@@ -107,17 +113,24 @@ $form-addon-bg: #202020;
 	.form-control {
 		color: $form-color;
 		background-color: $form-bg;
+		border-color: $form-border;
 	}
 
 	.custom-select {
 		color: $form-color;
 		background-color: $form-bg;
+		border-color: $form-border;
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 	}
 
 	.input-group-text {
 		color: $form-addon-color;
 		background-color: $form-addon-bg;
+		border-color: $form-border;
+	}
+
+	.page-item .page-link {
+		border-color: $form-border;
 	}
 
 	.page-item.disabled .page-link {
@@ -137,6 +150,7 @@ $form-addon-bg: #202020;
 
 	.breadcrumb {
 		background-color: $form-bg;
+		border-color: $form-border;
 	}
 
 	.nav-link.active {
@@ -168,6 +182,7 @@ $form-addon-bg: #202020;
 
 	.progress {
 		background-color: $form-hover-bg;
+		border-color: $form-border;
 	}
 
 	// --------------- Modals ---------------

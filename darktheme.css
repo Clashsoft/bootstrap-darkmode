@@ -30,6 +30,7 @@
 }
 [data-theme=dark] .dropdown-menu {
   background-color: #171717;
+  border-color: #404040;
 }
 [data-theme=dark] .dropdown-item:not(:disabled):not(.disabled) {
   color: #bebebe;
@@ -37,6 +38,9 @@
 [data-theme=dark] .dropdown-item:focus,
 [data-theme=dark] .dropdown-item:hover {
   background-color: #171717;
+}
+[data-theme=dark] .dropdown-divider {
+  border-top-color: #404040;
 }
 [data-theme=dark] .jumbotron {
   color: #bebebe;
@@ -54,15 +58,21 @@
 [data-theme=dark] .form-control {
   color: #bebebe;
   background-color: #171717;
+  border-color: #404040;
 }
 [data-theme=dark] .custom-select {
   color: #bebebe;
   background-color: #171717;
+  border-color: #404040;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 }
 [data-theme=dark] .input-group-text {
   color: #bebebe;
   background-color: #202020;
+  border-color: #404040;
+}
+[data-theme=dark] .page-item .page-link {
+  border-color: #404040;
 }
 [data-theme=dark] .page-item.disabled .page-link {
   background-color: #171717;
@@ -76,6 +86,7 @@
 }
 [data-theme=dark] .breadcrumb {
   background-color: #171717;
+  border-color: #404040;
 }
 [data-theme=dark] .nav-link.active {
   color: #bebebe;
@@ -104,6 +115,7 @@
 }
 [data-theme=dark] .progress {
   background-color: #171717;
+  border-color: #404040;
 }
 [data-theme=dark] .close {
   color: #bebebe;
