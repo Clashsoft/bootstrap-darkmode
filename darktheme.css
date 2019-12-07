@@ -37,7 +37,7 @@
 }
 [data-theme=dark] .dropdown-item:focus,
 [data-theme=dark] .dropdown-item:hover {
-  background-color: #171717;
+  background-color: #242424;
 }
 [data-theme=dark] .dropdown-divider {
   border-top-color: #404040;
@@ -86,7 +86,7 @@
   background-color: #171717;
 }
 [data-theme=dark] .page-item:not(.active) .page-link:hover {
-  background-color: #171717;
+  background-color: #242424;
 }
 [data-theme=dark] .breadcrumb {
   background-color: #171717;

@@ -27,7 +27,7 @@ $card-border: $default-border;
 $form-color: $default-color;
 $form-placeholder-color: #666;
 $form-bg: #171717;
-$form-hover-bg: #171717;
+$form-hover-bg: #242424;
 $form-border: $default-border;
 
 $form-addon-color: $default-color;
@@ -210,7 +210,7 @@ $form-addon-bg: $default-header-bg;
 	// --------------- Progress Bars --------------- */
 
 	.progress {
-		background-color: $form-hover-bg;
+		background-color: $form-bg;
 		border-color: $form-border;
 	}
 
