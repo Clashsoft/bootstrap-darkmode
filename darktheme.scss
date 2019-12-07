@@ -211,8 +211,14 @@ $form-addon-bg: $default-header-bg;
 	}
 
 	@each $pos in (top, right, bottom, left) {
-		.bs-popover-#{$pos} > .arrow::after, .bs-popover-auto[x-placement^="#{$pos}"] > .arrow::after {
-			border-#{$pos}-color: $window-bg;
+		.bs-popover-#{$pos},
+		.bs-popover-auto[x-placement^="#{$pos}"] {
+			& > .arrow::before {
+				border-#{$pos}-color: $window-border;
+			}
+			& > .arrow::after {
+				border-#{$pos}-color: $window-bg;
+			}
 		}
 	}
 
