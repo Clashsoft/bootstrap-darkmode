@@ -168,21 +168,30 @@ $form-addon-bg: $default-header-bg;
 		border-color: $form-border;
 	}
 
-	.nav-link.active {
-		color: $form-color;
-		background-color: $form-bg;
-	}
-
 	.nav-tabs {
 		border-bottom-color: $form-border;
+
+		.nav-link:focus,
+		.nav-link:hover {
+			background-color: $form-hover-bg;
+			border-color: $form-border;
+		}
+
+		.nav-item.show .nav-link,
+		.nav-link.active {
+			color: $color;
+			background-color: $bg;
+			border-color: $form-border;
+			border-bottom-color: $bg;
+		}
 	}
 
-	.nav-tabs .nav-link:focus,
-	.nav-tabs .nav-link:hover,
-	.nav-tabs .nav-item.show .nav-link,
-	.nav-tabs .nav-link.active {
-		border-color: $form-border;
-		border-bottom-color: transparent;
+	.nav-tabs.card-header-tabs {
+		.nav-item.show .nav-link,
+		.nav-link.active {
+			background-color: $card-bg;
+			border-bottom-color: $card-bg;
+		}
 	}
 
 	// --------------- Popovers ---------------

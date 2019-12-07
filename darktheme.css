@@ -92,19 +92,25 @@
   background-color: #171717;
   border-color: #404040;
 }
-[data-theme=dark] .nav-link.active {
-  color: #bebebe;
-  background-color: #171717;
-}
 [data-theme=dark] .nav-tabs {
   border-bottom-color: #404040;
 }
 [data-theme=dark] .nav-tabs .nav-link:focus,
-[data-theme=dark] .nav-tabs .nav-link:hover,
+[data-theme=dark] .nav-tabs .nav-link:hover {
+  background-color: #242424;
+  border-color: #404040;
+}
 [data-theme=dark] .nav-tabs .nav-item.show .nav-link,
 [data-theme=dark] .nav-tabs .nav-link.active {
+  color: #bebebe;
+  background-color: #222;
   border-color: #404040;
-  border-bottom-color: transparent;
+  border-bottom-color: #222;
+}
+[data-theme=dark] .nav-tabs.card-header-tabs .nav-item.show .nav-link,
+[data-theme=dark] .nav-tabs.card-header-tabs .nav-link.active {
+  background-color: #181818;
+  border-bottom-color: #181818;
 }
 [data-theme=dark] .popover {
   background-color: #181818;
