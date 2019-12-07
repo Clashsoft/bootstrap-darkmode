@@ -1,31 +1,31 @@
 // =============== Variables ===============
 
 $color: #bebebe;
-$bg-color: #222;
+$bg: #222;
 
 $window-color: #bebebe;
-$window-bg-color: #181818;
+$window-bg: #181818;
 $window-header-color: #bebebe;
-$window-header-bg-color: #202020;
+$window-header-bg: #202020;
 
 $card-color: #bebebe;
-$card-bg-color: #181818;
+$card-bg: #181818;
 $card-header-color: #bebebe;
-$card-header-bg-color: #202020;
+$card-header-bg: #202020;
 
 $form-color: #bebebe;
 $form-placeholder-color: #666;
-$form-bg-color: #171717;
-$form-hover-bg-color: #171717;
+$form-bg: #171717;
+$form-hover-bg: #171717;
 
 $form-addon-color: #bebebe;
-$form-addon-bg-color: #202020;
+$form-addon-bg: #202020;
 
 /* =============== Original Styling =============== */
 /* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
 
 [data-theme="dark"] {
-	background-color: $bg-color !important;
+	background-color: $bg !important;
 	color: $color;
 
 	.bg-light {
@@ -70,7 +70,7 @@ $form-addon-bg-color: #202020;
 	// --------------- Buttons ---------------
 
 	.dropdown-menu {
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 	}
 
 	.dropdown-item:not(:disabled):not(.disabled) {
@@ -79,75 +79,75 @@ $form-addon-bg-color: #202020;
 
 	.dropdown-item:focus,
 	.dropdown-item:hover {
-		background-color: $form-hover-bg-color;
+		background-color: $form-hover-bg;
 	}
 
 	// --------------- Jumbotron ---------------
 
 	.jumbotron {
 		color: $card-color;
-		background-color: $card-bg-color;
+		background-color: $card-bg;
 	}
 
 	// --------------- Cards ---------------
 
 	.card {
 		color: $card-color;
-		background-color: $card-bg-color;
+		background-color: $card-bg;
 	}
 
 	.card-header,
 	.card-footer {
 		color: $card-header-color;
-		background-color: $card-header-bg-color;
+		background-color: $card-header-bg;
 	}
 
 	// --------------- Forms ---------------
 
 	.form-control {
 		color: $form-color;
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 	}
 
 	.custom-select {
 		color: $form-color;
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 	}
 
 	.input-group-text {
 		color: $form-addon-color;
-		background-color: $form-addon-bg-color;
+		background-color: $form-addon-bg;
 	}
 
 	.page-item.disabled .page-link {
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 		color: $form-color;
 	}
 
 	.page-item:not(.active) .page-link {
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 	}
 
 	.page-item:not(.active) .page-link:hover {
-		background-color: $form-hover-bg-color;
+		background-color: $form-hover-bg;
 	}
 
 	// --------------- Navs ---------------
 
 	.breadcrumb {
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 	}
 
 	.nav-link.active {
 		color: $form-color;
-		background-color: $form-bg-color;
+		background-color: $form-bg;
 	}
 
 	// --------------- Popovers ---------------
 
 	.popover {
-		background-color: $window-bg-color;
+		background-color: $window-bg;
 	}
 
 	.popover-body {
@@ -155,19 +155,19 @@ $form-addon-bg-color: #202020;
 	}
 
 	.popover-header, .popover-footer {
-		background-color: $window-header-bg-color;
+		background-color: $window-header-bg;
 	}
 
 	@each $pos in (top, right, bottom, left) {
 		.bs-popover-#{$pos} > .arrow::after, .bs-popover-auto[x-placement^="#{$pos}"] > .arrow::after {
-			border-#{$pos}-color: $window-bg-color;
+			border-#{$pos}-color: $window-bg;
 		}
 	}
 
 	// --------------- Progress Bars --------------- */
 
 	.progress {
-		background-color: $form-hover-bg-color;
+		background-color: $form-hover-bg;
 	}
 
 	// --------------- Modals ---------------
@@ -180,11 +180,11 @@ $form-addon-bg-color: #202020;
 	.modal-header,
 	.modal-footer {
 		color: $window-header-color;
-		background-color: $window-bg-color;
+		background-color: $window-bg;
 	}
 
 	.modal-content {
 		color: $window-color;
-		background-color: $window-bg-color;
+		background-color: $window-bg;
 	}
 }
