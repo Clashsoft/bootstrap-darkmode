@@ -94,6 +94,16 @@
   color: #bebebe;
   background-color: #171717;
 }
+[data-theme=dark] .nav-tabs {
+  border-bottom-color: #404040;
+}
+[data-theme=dark] .nav-tabs .nav-link:focus,
+[data-theme=dark] .nav-tabs .nav-link:hover,
+[data-theme=dark] .nav-tabs .nav-item.show .nav-link,
+[data-theme=dark] .nav-tabs .nav-link.active {
+  border-color: #404040;
+  border-bottom-color: transparent;
+}
 [data-theme=dark] .popover {
   background-color: #181818;
   border-color: #404040;
