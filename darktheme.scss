@@ -33,29 +33,10 @@ $form-border: $default-border;
 $form-addon-color: $default-color;
 $form-addon-bg: $default-header-bg;
 
-/* =============== Original Styling =============== */
-/* from https://coliff.github.io/dark-mode-switch/dark-mode.css */
-
 [data-theme="dark"] {
-	background-color: $bg !important;
 	color: $color;
+	background-color: $bg !important;
 
-	.bg-light {
-		background-color: #333 !important;
-	}
-
-	.bg-white {
-		background-color: #000 !important;
-	}
-
-	.bg-black {
-		background-color: #eee !important;
-	}
-}
-
-/* =============== Additional Styling =============== */
-
-[data-theme="dark"] {
 	// --------------- Typography ---------------
 
 	pre {
