@@ -3,23 +3,24 @@
 // --------------- Defaults ---------------
 
 $default-color: #bebebe;
-$default-bg: #181818;
+$default-bg: #222;
+$default-dark-bg: #181818;
 $default-header-bg: #202020;
 $default-border: #404040;
 
 // --------------- Customized ---------------
 
 $color: $default-color;
-$bg: #222;
+$bg: $default-bg;
 
 $window-color: $default-color;
-$window-bg: $default-bg;
+$window-bg: $default-dark-bg;
 $window-header-color: $default-color;
 $window-header-bg: $default-header-bg;
 $window-border: $default-border;
 
 $card-color: $default-color;
-$card-bg: $default-bg;
+$card-bg: $default-dark-bg;
 $card-header-color: $default-color;
 $card-header-bg: $default-header-bg;
 $card-border: $default-border;
