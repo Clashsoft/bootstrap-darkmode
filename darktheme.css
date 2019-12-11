@@ -51,6 +51,9 @@
   background-color: #171717;
   border-color: #404040;
 }
+[data-theme=dark] .form-control-plaintext {
+  color: #bebebe;
+}
 [data-theme=dark] .custom-select {
   color: #bebebe;
   background-color: #171717;

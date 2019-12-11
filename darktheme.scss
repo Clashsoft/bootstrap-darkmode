@@ -112,6 +112,10 @@ $form-addon-bg: $default-header-bg;
 		border-color: $form-border;
 	}
 
+	.form-control-plaintext {
+		color: $form-color;
+	}
+
 	.custom-select {
 		color: $form-color;
 		background-color: $form-bg;
