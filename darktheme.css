@@ -1,6 +1,6 @@
 [data-theme=dark] {
   color: #bebebe;
-  background-color: #222 !important;
+  background-color: #222;
 }
 [data-theme=dark] pre {
   color: #bebebe;
