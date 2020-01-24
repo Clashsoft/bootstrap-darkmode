@@ -8,6 +8,30 @@ $default-dark-bg: #181818;
 $default-header-bg: #202020;
 $default-border: #404040;
 
+$item-color: (
+		"primary": #b8daff,
+		"secondary": #d6d8db,
+		"success": #c3e6cb,
+		"danger": #f5c6cb,
+		"warning": #ffeeba,
+		"info": #bee5eb,
+		"light": #fdfdfe,
+		"dark": #c6c8ca,
+);
+
+$item-bg: (
+		"primary": #004085,
+		"secondary": #383d41,
+		"success": #155724,
+		"danger": #721c24,
+		"warning": #856404,
+		"info": #0c5460,
+		"light": #818182,
+		"dark": #1b1e21,
+);
+
+$color-lighten: 10;
+
 // --------------- Customized ---------------
 
 $color: $default-color;
@@ -23,6 +47,7 @@ $card-color: $default-color;
 $card-bg: $default-dark-bg;
 $card-header-color: $default-color;
 $card-header-bg: $default-header-bg;
+$card-hover-bg: $default-bg;
 $card-border: $default-border;
 
 $form-color: $default-color;
@@ -59,6 +84,41 @@ $form-addon-bg: $default-header-bg;
 
 	.table-hover tbody tr:hover {
 		color: $color;
+	}
+
+	// --------------- List Groups ---------------
+
+	.list-group-item {
+		color: $card-color;
+		background-color: $card-bg;
+		border-color: $card-border;
+
+		&.list-group-item-action:focus,
+		&.list-group-item-action:hover {
+			background-color: $card-hover-bg;
+		}
+	}
+
+	.list-group-item.active {
+		&, &:focus, &:hover {
+			// TODO don't hardcode these (taken from Bootstrap's .list-group-item.active)
+			color: #fff;
+			background-color: #007bff;
+			border-color: #007bff;
+		}
+	}
+
+	@each $name in map_keys($item-color) {
+		.list-group-item-#{$name} {
+			color: map_get($item-color, $name);
+			background-color: map_get($item-bg, $name);
+
+			&.list-group-item-action:focus,
+			&.list-group-item-action:hover {
+				color: map_get($item-color, $name);
+				background-color: lighten(map_get($item-bg, $name), $color-lighten);
+			}
+		}
 	}
 
 	// --------------- Buttons ---------------
@@ -202,6 +262,7 @@ $form-addon-bg: $default-header-bg;
 			& > .arrow::before {
 				border-#{$pos}-color: $window-border;
 			}
+
 			& > .arrow::after {
 				border-#{$pos}-color: $window-bg;
 			}
