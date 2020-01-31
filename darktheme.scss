@@ -9,25 +9,36 @@ $default-header-bg: #202020;
 $default-border: #404040;
 
 $item-color: (
-		"primary": #b8daff,
-		"secondary": #d6d8db,
-		"success": #c3e6cb,
-		"danger": #f5c6cb,
-		"warning": #ffeeba,
-		"info": #bee5eb,
-		"light": #fdfdfe,
-		"dark": #c6c8ca,
+		"primary": #fff,
+		"secondary": #fff,
+		"success": #fff,
+		"danger": #fff,
+		"warning": #212529,
+		"info": #fff,
+		"light": #212529,
+		"dark": #fff,
 );
 
 $item-bg: (
-		"primary": #004085,
-		"secondary": #383d41,
-		"success": #155724,
-		"danger": #721c24,
-		"warning": #856404,
-		"info": #0c5460,
-		"light": #818182,
-		"dark": #1b1e21,
+		"primary": #007bff,
+		"secondary": #6c757d,
+		"success": #28a745,
+		"danger": #dc3545,
+		"warning": #ffc107,
+		"info": #17a2b8,
+		"light": #6c757d,
+		"dark": #343a40,
+);
+
+$item-hover: (
+		"primary": #0069d9,
+		"secondary": #5a6268,
+		"success": #218838,
+		"danger": #c82333,
+		"warning": #e0a800,
+		"info": #138496,
+		"light": #e2e6ea,
+		"dark": #23272b,
 );
 
 $color-lighten: 10;
@@ -101,10 +112,9 @@ $form-addon-bg: $default-header-bg;
 
 	.list-group-item.active {
 		&, &:focus, &:hover {
-			// TODO don't hardcode these (taken from Bootstrap's .list-group-item.active)
-			color: #fff;
-			background-color: #007bff;
-			border-color: #007bff;
+			color: map_get($item-color, "primary");
+			background-color: map_get($item-bg, "primary");
+			border-color: map_get($item-bg, "primary");
 		}
 	}
 
@@ -112,11 +122,12 @@ $form-addon-bg: $default-header-bg;
 		.list-group-item-#{$name} {
 			color: map_get($item-color, $name);
 			background-color: map_get($item-bg, $name);
+			border-color: map_get($item-bg, $name);
 
 			&.list-group-item-action:focus,
 			&.list-group-item-action:hover {
 				color: map_get($item-color, $name);
-				background-color: lighten(map_get($item-bg, $name), $color-lighten);
+				background-color: map_get($item-hover, $name);
 			}
 		}
 	}

@@ -29,68 +29,76 @@
   border-color: #007bff;
 }
 [data-theme=dark] .list-group-item-primary {
-  color: #b8daff;
-  background-color: #004085;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 [data-theme=dark] .list-group-item-primary.list-group-item-action:focus, [data-theme=dark] .list-group-item-primary.list-group-item-action:hover {
-  color: #b8daff;
-  background-color: #0059b8;
+  color: #fff;
+  background-color: #0069d9;
 }
 [data-theme=dark] .list-group-item-secondary {
-  color: #d6d8db;
-  background-color: #383d41;
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 [data-theme=dark] .list-group-item-secondary.list-group-item-action:focus, [data-theme=dark] .list-group-item-secondary.list-group-item-action:hover {
-  color: #d6d8db;
-  background-color: #50575c;
+  color: #fff;
+  background-color: #5a6268;
 }
 [data-theme=dark] .list-group-item-success {
-  color: #c3e6cb;
-  background-color: #155724;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
 }
 [data-theme=dark] .list-group-item-success.list-group-item-action:focus, [data-theme=dark] .list-group-item-success.list-group-item-action:hover {
-  color: #c3e6cb;
-  background-color: #1f8035;
+  color: #fff;
+  background-color: #218838;
 }
 [data-theme=dark] .list-group-item-danger {
-  color: #f5c6cb;
-  background-color: #721c24;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 [data-theme=dark] .list-group-item-danger.list-group-item-action:focus, [data-theme=dark] .list-group-item-danger.list-group-item-action:hover {
-  color: #f5c6cb;
-  background-color: #9b2631;
+  color: #fff;
+  background-color: #c82333;
 }
 [data-theme=dark] .list-group-item-warning {
-  color: #ffeeba;
-  background-color: #856404;
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 [data-theme=dark] .list-group-item-warning.list-group-item-action:focus, [data-theme=dark] .list-group-item-warning.list-group-item-action:hover {
-  color: #ffeeba;
-  background-color: #b78905;
+  color: #212529;
+  background-color: #e0a800;
 }
 [data-theme=dark] .list-group-item-info {
-  color: #bee5eb;
-  background-color: #0c5460;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
 }
 [data-theme=dark] .list-group-item-info.list-group-item-action:focus, [data-theme=dark] .list-group-item-info.list-group-item-action:hover {
-  color: #bee5eb;
-  background-color: #127c8d;
+  color: #fff;
+  background-color: #138496;
 }
 [data-theme=dark] .list-group-item-light {
-  color: #fdfdfe;
-  background-color: #818182;
+  color: #212529;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 [data-theme=dark] .list-group-item-light.list-group-item-action:focus, [data-theme=dark] .list-group-item-light.list-group-item-action:hover {
-  color: #fdfdfe;
-  background-color: #9b9b9b;
+  color: #212529;
+  background-color: #e2e6ea;
 }
 [data-theme=dark] .list-group-item-dark {
-  color: #c6c8ca;
-  background-color: #1b1e21;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
 }
 [data-theme=dark] .list-group-item-dark.list-group-item-action:focus, [data-theme=dark] .list-group-item-dark.list-group-item-action:hover {
-  color: #c6c8ca;
-  background-color: #32383d;
+  color: #fff;
+  background-color: #23272b;
 }
 [data-theme=dark] .dropdown-menu {
   background-color: #171717;
