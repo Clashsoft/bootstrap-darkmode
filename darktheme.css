@@ -145,6 +145,15 @@
   border-color: #404040;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 }
+[data-theme=dark] .custom-file-label {
+  color: #bebebe;
+  background-color: #171717;
+  border-color: #404040;
+}
+[data-theme=dark] .custom-file-label:after {
+  color: #bebebe;
+  background-color: #202020;
+}
 [data-theme=dark] .input-group-text {
   color: #bebebe;
   background-color: #202020;
