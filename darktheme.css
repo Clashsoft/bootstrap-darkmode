@@ -2,6 +2,12 @@
   color: #bebebe;
   background-color: #222;
 }
+[data-theme=dark] .bg-darkmode-dark {
+  background-color: #343a40 !important;
+}
+[data-theme=dark] .bg-darkmode-light {
+  background-color: #f8f9fa !important;
+}
 [data-theme=dark] pre {
   color: #bebebe;
 }
