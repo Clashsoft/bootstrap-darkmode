@@ -39,7 +39,6 @@ $ pnpm install bootstrap-darkmode
     ```
 
 2. Load the theme script as the first thing in `<body>`.
-   It needs to be loaded first so the page doesn't load in light theme and then switch.
 
     ```html
     <body>
@@ -49,7 +48,7 @@ $ pnpm install bootstrap-darkmode
     <!-- ... --->
     ```
 
-3. Load the switch whereever you need it:
+3. Load the switch before you add the element:
 
     ```html
     <script src="darkmode/darkswitch.js"></script>
@@ -57,23 +56,51 @@ $ pnpm install bootstrap-darkmode
     <script src="https://app.clashsoft.de/darkmode/darkswitch.js"></script>
     ```
 
-## Customization
+## Setup
+
+### Theme
+
+As soon as possible after `<body>`, initialize the config and load the theme:
+
+```html
+<script>
+    const themeConfig = new ThemeConfig();
+    // place customizations here
+    themeConfig.loadTheme();
+</script>
+```
+
+Loading the theme early shortens the time until the white default background becomes dark.
+
+### Dark Switch
+
+If you want to use the default dark switch, load the switch script and add the element using this code:
+
+```html
+<script>
+    // this will write the html to the document and return the element.
+    const darkSwitch = writeDarkSwitch(themeConfig);
+</script>
+```
+
+## Configuration
 
 You can listen to theme changes by registering a callback with `themeChangeHandlers`:
 
 ```js
-themeChangeHandlers.add(theme => console.log('using theme: ' + theme));
+config.themeChangeHandlers.push(theme => console.log(`using theme: ${theme}`));
 ```
 
-To change the way the theme is persisted, you can declare the `loadTheme` and `saveTheme` functions:
+To change the way the theme is persisted, you can change the `loadTheme` and `saveTheme` functions:
 
 ```js
-function loadTheme() {
+themeConfig.loadTheme = () => {
     // custom logic
-    return "dark";
-}
+    return 'dark';
+};
 
-function saveTheme(theme) {
+themeConfig.saveTheme = theme => {
     // custom logic
-}
+    console.log(theme);
+};
 ```
