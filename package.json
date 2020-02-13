@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-darkmode",
+  "version": "0.1.0",
+  "description": "Stylesheet and Scripts for implementing dark mode with Bootstrap 4",
+  "main": "theme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clashsoft/darkmode.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap-4",
+    "darkmode",
+    "darktheme"
+  ],
+  "author": "Adrian Kunz",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/clashsoft/darkmode/issues"
+  },
+  "homepage": "https://github.com/clashsoft/darkmode#readme"
+}
