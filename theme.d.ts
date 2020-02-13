@@ -3,6 +3,8 @@ declare class ThemeConfig {
     saveTheme: (string) => void;
     themeChangeHandlers: ((theme: string) => void)[];
 
+    constructor();
+
     initTheme(): void;
     getTheme(): string;
     setTheme(theme: string): void;

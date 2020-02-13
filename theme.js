@@ -1,6 +1,8 @@
 class ThemeConfig {
-	loadTheme = () => localStorage.getItem('theme');
-	saveTheme = theme => localStorage.setItem('theme', theme);
+	constructor() {
+		this.loadTheme = () => localStorage.getItem('theme');
+		this.saveTheme = theme => localStorage.setItem('theme', theme);
+	}
 
 	initTheme() {
 		this.displayTheme(this.getTheme());
