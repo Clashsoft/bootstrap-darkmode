@@ -11,6 +11,18 @@ Mostly the contextual color classes can cause problems.
 
 ## Usage
 
+### With NPM/Yarn/PNPM
+
+Install the [npm package](https://www.npmjs.com/package/bootstrap-darkmode):
+
+```sh
+$ npm install bootstrap-darkmode
+$ yarn install bootstrap-darkmode
+$ pnpm install bootstrap-darkmode
+```
+
+### Via app.clashsoft.de
+
 1. Put the stylesheet link in `<head>`. Do not forget to add bootstrap.
 
     ```html
