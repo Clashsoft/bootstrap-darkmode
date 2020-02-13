@@ -10,3 +10,7 @@
 
 * Encapsulated theme methods in the `ThemeConfig` class.
 * Encapsulated dark switch in a function.
+
+# v0.3.1
+
++ Added `initTheme` to `theme.d.ts`.
