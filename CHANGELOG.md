@@ -18,3 +18,7 @@
 # v0.3.2
 
 + Added constructor to `ThemeConfig`.
+
+# v0.4.0
+
+* Converted the JavaScript code to TypeScript.
