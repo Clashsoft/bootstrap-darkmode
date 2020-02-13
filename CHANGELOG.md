@@ -14,3 +14,7 @@
 # v0.3.1
 
 + Added `initTheme` to `theme.d.ts`.
+
+# v0.3.2
+
++ Added constructor to `ThemeConfig`.
