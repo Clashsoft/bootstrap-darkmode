@@ -4,4 +4,9 @@
 
 # v0.2.0
 
-* Added `theme.d.ts`.
++ Added `theme.d.ts`.
+
+# v0.3.0
+
+* Encapsulated theme methods in the `ThemeConfig` class.
+* Encapsulated dark switch in a function.

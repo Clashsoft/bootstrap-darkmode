@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-darkmode",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Stylesheet and Scripts for implementing dark mode with Bootstrap 4",
   "main": "theme.js",
   "scripts": {
