@@ -18,8 +18,12 @@ export class ThemeConfig {
         this.displayTheme(this.getTheme());
     }
 
+    detectTheme(): string {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
     getTheme(): string {
-        return this.loadTheme() || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        return this.loadTheme() || this.detectTheme();
     }
 
     setTheme(theme: string): void {
