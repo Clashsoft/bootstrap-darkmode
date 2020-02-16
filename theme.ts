@@ -1,19 +1,21 @@
 export class ThemeConfig {
-    loadTheme: () => string | null;
-    saveTheme: (theme: string | null) => void;
     themeChangeHandlers: ((theme: string) => void)[];
 
     constructor() {
         this.themeChangeHandlers = [];
-        this.loadTheme = () => localStorage.getItem('theme');
-        this.saveTheme = theme => {
-            if (theme === null) {
-                localStorage.removeItem('theme');
-            }
-            else {
-                localStorage.setItem('theme', theme)
-            }
-        };
+    }
+
+    loadTheme(): string | null {
+        return localStorage.getItem('theme');
+    }
+
+    saveTheme(theme: string | null): void {
+        if (theme === null) {
+            localStorage.removeItem('theme');
+        }
+        else {
+            localStorage.setItem('theme', theme)
+        }
     }
 
     initTheme(): void {
