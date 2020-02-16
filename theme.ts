@@ -1,9 +1,5 @@
 export class ThemeConfig {
-    themeChangeHandlers: ((theme: string) => void)[];
-
-    constructor() {
-        this.themeChangeHandlers = [];
-    }
+    themeChangeHandlers: ((theme: string) => void)[] = [];
 
     loadTheme(): string | null {
         return localStorage.getItem('theme');
