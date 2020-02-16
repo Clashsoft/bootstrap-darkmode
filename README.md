@@ -21,6 +21,12 @@ $ yarn install bootstrap-darkmode
 $ pnpm install bootstrap-darkmode
 ```
 
+Include the stylesheet, e.g. in `styles.scss`:
+
+```scss
+@import "~bootstrap-darkmode/darktheme";
+```
+
 ### Via app.clashsoft.de
 
 1. Put the stylesheet link in `<head>`. Do not forget to add bootstrap.
@@ -62,12 +68,10 @@ $ pnpm install bootstrap-darkmode
 
 As soon as possible after `<body>`, initialize the config and load the theme:
 
-```html
-<script>
-    const themeConfig = new ThemeConfig();
-    // place customizations here
-    themeConfig.loadTheme();
-</script>
+```js
+const themeConfig = new ThemeConfig();
+// place customizations here
+themeConfig.initTheme();
 ```
 
 Loading the theme early shortens the time until the white default background becomes dark.
@@ -76,11 +80,9 @@ Loading the theme early shortens the time until the white default background bec
 
 If you want to use the default dark switch, load the switch script and add the element using this code:
 
-```html
-<script>
-    // this will write the html to the document and return the element.
-    const darkSwitch = writeDarkSwitch(themeConfig);
-</script>
+```js
+// this will write the html to the document and return the element.
+const darkSwitch = writeDarkSwitch(themeConfig);
 ```
 
 ## Configuration
