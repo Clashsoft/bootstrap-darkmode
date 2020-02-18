@@ -27,7 +27,7 @@ Include the stylesheet, e.g. in `styles.scss`:
 @import "~bootstrap-darkmode/darktheme";
 ```
 
-### Via app.clashsoft.de
+### Via unpkg.com
 
 1. Put the stylesheet link in `<head>`. Do not forget to add bootstrap.
 
@@ -37,9 +37,7 @@ Include the stylesheet, e.g. in `styles.scss`:
         <!-- Bootstrap CSS ... -->
     
         <!-- Dark mode CSS -->
-        <link rel="stylesheet" href="darkmode/darktheme.css"/>
-        <!-- or the full URL: -->
-        <link rel="stylesheet" href="https://app.clashsoft.de/darkmode/darktheme.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-darkmode@0.4.0/dist/darktheme.css"/>
         <!-- ... -->
     </head>
     ```
@@ -48,18 +46,8 @@ Include the stylesheet, e.g. in `styles.scss`:
 
     ```html
     <body>
-    <script src="darkmode/theme.js"></script>
-    <!-- or the full URL: -->
-    <script src="https://app.clashsoft.de/darkmode/theme.js"></script>
+    <script src="https://unpkg.com/bootstrap-darkmode@0.4.0/dist/theme.js"></script>
     <!-- ... --->
-    ```
-
-3. Load the switch before you add the element:
-
-    ```html
-    <script src="darkmode/darkswitch.js"></script>
-    <!-- or the full URL: -->
-    <script src="https://app.clashsoft.de/darkmode/darkswitch.js"></script>
     ```
 
 ## Setup
