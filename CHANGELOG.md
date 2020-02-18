@@ -22,3 +22,11 @@
 # v0.4.0
 
 * Converted the JavaScript code to TypeScript.
+
+# v0.5.0
+
++ Added the `ThemeConfig.detectTheme` method.
+* `ThemeConfig.loadTheme` and `.saveTheme` are now regular methods.
+* The `ThemeConfig.loadTheme` and `.saveTheme` methods can now accept/return `null`.
+* Moved `darktheme.css` to `dist/`.
+* Removed `.gitignore` from the NPM package.
