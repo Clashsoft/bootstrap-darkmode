@@ -30,3 +30,7 @@
 * The `ThemeConfig.loadTheme` and `.saveTheme` methods can now accept/return `null`.
 * Moved `darktheme.css` to `dist/`.
 * Removed `.gitignore` from the NPM package.
+
+# v0.6.0
+
+* `dist/theme.js` is no longer a module.
