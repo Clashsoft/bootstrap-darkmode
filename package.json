@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/clashsoft/darkmode#readme",
   "devDependencies": {
-    "sass": "^1.25.0",
-    "typescript": "^3.7.5"
+    "sass": "^1.26.7",
+    "typescript": "^3.9.3"
   }
 }
