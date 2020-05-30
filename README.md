@@ -55,6 +55,7 @@ Include the stylesheet, e.g. in `styles.scss`:
 1. Clone this repo.
 2. Run `npm build`.
 3. Find `darktheme.css` and `theme.js` in the `dist/` directory.
+4. Follow the steps for unpkg.com, but replace the links with whatever local paths you put the files in.
 
 ## Setup
 
