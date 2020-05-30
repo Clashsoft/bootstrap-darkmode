@@ -49,6 +49,12 @@ Include the stylesheet, e.g. in `styles.scss`:
     <script src="https://unpkg.com/bootstrap-darkmode@0.6.0/dist/theme.js"></script>
     <!-- ... --->
     ```
+   
+### Building Yourself
+
+1. Clone this repo.
+2. Run `npm build`.
+3. Find `darktheme.css` and `theme.js` in the `dist/` directory.
 
 ## Setup
 
