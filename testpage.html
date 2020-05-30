@@ -25,14 +25,18 @@
 </style>
 
 	<!-- BEGIN INSERTION -->
-	<link rel="stylesheet" href="darktheme.css"/>
+	<link rel="stylesheet" href="dist/darktheme.css"/>
 	<!-- END INSERTION -->
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar" data-offset="100">
 
 <!-- BEGIN INSERTION -->
-<script src="theme.js"></script>
+<script src="dist/theme.js"></script>
+<script>
+	const themeConfig = new ThemeConfig();
+	themeConfig.initTheme();
+</script>
 <!-- END INSERTION -->
 
 	<header class="bg-dark text-light pt-5 pb-5">
@@ -149,7 +153,9 @@
 </a>
 
 				<!-- BEGIN INSERTION -->
-				<script src="darkswitch.js"></script>
+				<script>
+					writeDarkSwitch(themeConfig);
+				</script>
 				<!-- END INSERTION -->
 				
 			</div>
