@@ -1,4 +1,4 @@
-export class ThemeConfig {
+class ThemeConfig {
     themeChangeHandlers: ((theme: string) => void)[] = [];
 
     loadTheme(): string | null {
@@ -39,7 +39,7 @@ export class ThemeConfig {
     }
 }
 
-export function writeDarkSwitch(config: ThemeConfig) {
+function writeDarkSwitch(config: ThemeConfig) {
     document.write(`
 <div class="custom-control custom-switch">
 <input type="checkbox" class="custom-control-input" id="darkSwitch">
