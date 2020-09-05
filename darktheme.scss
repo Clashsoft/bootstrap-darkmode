@@ -92,6 +92,10 @@ $form-addon-bg: $default-header-bg;
 		color: $color;
 	}
 
+	hr {
+		border-top-color: $default-border;
+	}
+
 	// --------------- Images ---------------
 
 	img.icon,
