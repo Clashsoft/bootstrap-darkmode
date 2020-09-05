@@ -82,6 +82,10 @@ $form-addon-bg: $default-header-bg;
 		background-color: #f8f9fa !important;
 	}
 
+	.bg-darkmode-black {
+		background-color: $bg !important;
+	}
+
 	// --------------- Typography ---------------
 
 	pre {
