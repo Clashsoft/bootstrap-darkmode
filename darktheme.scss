@@ -70,7 +70,7 @@ $form-border: $default-border;
 $form-addon-color: $default-color;
 $form-addon-bg: $default-header-bg;
 
-[data-theme="dark"] {
+@mixin darkmode {
 	color: $color;
 	background-color: $bg;
 
@@ -330,4 +330,14 @@ $form-addon-bg: $default-header-bg;
 		background-color: $window-bg;
 		border-color: $card-border;
 	}
+}
+
+@media (prefers-color-scheme: dark) {
+	[data-theme=auto] {
+		@include darkmode;
+	}
+}
+
+[data-theme=dark] {
+	@include darkmode;
 }
