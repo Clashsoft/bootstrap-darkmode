@@ -37,7 +37,7 @@ Include the stylesheet, e.g. in `styles.scss`:
         <!-- Bootstrap CSS ... -->
     
         <!-- Dark mode CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-darkmode@0.6.0/dist/darktheme.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-darkmode@0.7.0/dist/darktheme.css"/>
         <!-- ... -->
     </head>
     ```
@@ -46,7 +46,7 @@ Include the stylesheet, e.g. in `styles.scss`:
 
     ```html
     <body>
-    <script src="https://unpkg.com/bootstrap-darkmode@0.6.0/dist/theme.js"></script>
+    <script src="https://unpkg.com/bootstrap-darkmode@0.7.0/dist/theme.js"></script>
     <!-- ... --->
     ```
    

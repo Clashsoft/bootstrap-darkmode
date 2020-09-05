@@ -34,3 +34,11 @@
 # v0.6.0
 
 * `dist/theme.js` is no longer a module.
+
+# v0.7.0
+
++ Added `.bg-darkmode-black` as an opposite for `.bg-white`.
++ Added support for `data-theme="auto"`, which will automatically apply dark mode dependending on user agent preference.
+* Improved table border colors.
+* Improved horizontal rule (`<hr>`) color.
+* Updated information in `package.json`.
