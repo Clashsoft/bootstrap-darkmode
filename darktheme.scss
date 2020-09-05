@@ -103,10 +103,26 @@ $form-addon-bg: $default-header-bg;
 
 	.table {
 		color: $color;
+
+		th, td {
+			border-top-color: $default-border;
+		}
+
+		thead th, tbody + tbody {
+			border-bottom-color: $default-border;
+		}
 	}
 
 	.table-hover tbody tr:hover {
 		color: $color;
+	}
+
+	.table-bordered {
+		border-color: $default-border;
+
+		th, td {
+			border-color: $default-border;
+		}
 	}
 
 	// --------------- List Groups ---------------
