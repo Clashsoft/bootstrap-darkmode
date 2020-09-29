@@ -17,7 +17,7 @@ Install the [npm package](https://www.npmjs.com/package/bootstrap-darkmode):
 
 ```sh
 $ npm install bootstrap-darkmode
-$ yarn install bootstrap-darkmode
+$ yarn add bootstrap-darkmode
 $ pnpm install bootstrap-darkmode
 ```
 
