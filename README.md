@@ -27,6 +27,12 @@ Include the stylesheet, e.g. in `styles.scss`:
 @import "~bootstrap-darkmode/darktheme";
 ```
 
+import the control functions, e.g. in `main.ts`:
+
+```js
+import { ThemeConfig, writeDarkSwitch } from 'bootstrap-darkmode/theme';
+```
+
 ### Via unpkg.com
 
 1. Put the stylesheet link in `<head>`. Do not forget to add bootstrap.
