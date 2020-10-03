@@ -1,4 +1,4 @@
-class ThemeConfig {
+export class ThemeConfig {
     themeChangeHandlers: ((theme: string) => void)[] = [];
 
     loadTheme(): string | null {
@@ -33,28 +33,8 @@ class ThemeConfig {
 
     displayTheme(theme: string): void {
         document.body.setAttribute('data-theme', theme);
-        for (let handler of this.themeChangeHandlers) {
-            handler(theme);
+        for (let i = 0; i < this.themeChangeHandlers.length; i++){
+            this.themeChangeHandlers[i](theme);
         }
     }
-}
-
-function writeDarkSwitch(config: ThemeConfig) {
-    document.write(`
-<div class="custom-control custom-switch">
-<input type="checkbox" class="custom-control-input" id="darkSwitch">
-<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-</div>
-`);
-
-    const darkSwitch = document.getElementById('darkSwitch') as HTMLInputElement;
-
-    darkSwitch.checked = config.getTheme() === 'dark';
-    darkSwitch.onchange = () => {
-        config.setTheme(darkSwitch.checked ? 'dark' : 'light');
-    };
-
-    config.themeChangeHandlers.push(theme => darkSwitch.checked = theme === 'dark');
-
-    return darkSwitch;
 }

@@ -25,16 +25,17 @@
 </style>
 
 	<!-- BEGIN INSERTION -->
-	<link rel="stylesheet" href="dist/darktheme.css"/>
+	<link rel="stylesheet" href="dist/css/darktheme.css"/>
 	<!-- END INSERTION -->
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar" data-offset="100">
 
 <!-- BEGIN INSERTION -->
-<script src="dist/theme.js"></script>
+<script src="dist/bundles/bootstrap-darkmode.umd.js"></script>
 <script>
-	const themeConfig = new ThemeConfig();
+	const BootstrapDarkmode = window['bootstrap-darkmode'];
+	const themeConfig = new BootstrapDarkmode.ThemeConfig();
 	themeConfig.initTheme();
 </script>
 <!-- END INSERTION -->
@@ -154,7 +155,7 @@
 
 				<!-- BEGIN INSERTION -->
 				<script>
-					writeDarkSwitch(themeConfig);
+					BootstrapDarkmode.writeDarkSwitch(themeConfig);
 				</script>
 				<!-- END INSERTION -->
 				
