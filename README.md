@@ -11,6 +11,8 @@ You can view the [test page](testpage.html) with all default bootstrap component
 Note that not all components are fully supported yet.
 Mostly the contextual color classes can cause problems.
 
+If you are using Angular, check out [ng-bootstrap-darkmode](https://github.com/Clashsoft/ng-bootstrap-darkmode).
+
 ## Usage
 
 ### With NPM/Yarn/PNPM
@@ -60,6 +62,10 @@ Include the stylesheet, e.g. in `styles.scss`:
 4. Follow the steps for unpkg.com, but replace the links with whatever local paths you put the files in.
 
 ## Setup
+
+> If you are using [ng-bootstrap-darkmode](https://github.com/Clashsoft/ng-bootstrap-darkmode),
+> you can skip this section entirely.
+> It comes with its own JavaScript implementation that is used very differently.
 
 ### Theme
 
