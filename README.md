@@ -24,7 +24,7 @@ $ pnpm install bootstrap-darkmode
 Include the stylesheet, e.g. in `styles.scss`:
 
 ```scss
-@import "~bootstrap-darkmode/darktheme";
+@import "~bootstrap-darkmode/scss/darktheme";
 ```
 
 ### Via unpkg.com
@@ -37,7 +37,7 @@ Include the stylesheet, e.g. in `styles.scss`:
         <!-- Bootstrap CSS ... -->
     
         <!-- Dark mode CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-darkmode@0.7.0/dist/darktheme.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-darkmode@0.7.0/css/darktheme.css"/>
         <!-- ... -->
     </head>
     ```
@@ -46,10 +46,10 @@ Include the stylesheet, e.g. in `styles.scss`:
 
     ```html
     <body>
-    <script src="https://unpkg.com/bootstrap-darkmode@0.7.0/dist/theme.js"></script>
+    <script src="https://unpkg.com/bootstrap-darkmode@0.7.0/bundles/bootstrap-darkmode.umd.js"></script>
     <!-- ... --->
     ```
-   
+
 ### Building Yourself
 
 1. Clone this repo.
@@ -58,6 +58,22 @@ Include the stylesheet, e.g. in `styles.scss`:
 4. Follow the steps for unpkg.com, but replace the links with whatever local paths you put the files in.
 
 ## Setup
+
+### Import
+
+ES module import:
+
+```js
+import {ThemeConfig, writeDarkSwitch} from 'bootstrap-darkmode';
+```
+
+Browser:
+
+```js
+const bootstrapDarkmode = window['bootstrap-darkmode'];
+const ThemeConfig = bootstrapDarkmode.ThemeConfig;
+const writeDarkSwitch = bootstrapDarkmode.writeDarkSwitch;
+```
 
 ### Theme
 
