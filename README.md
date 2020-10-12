@@ -1,5 +1,7 @@
 # Bootstrap Dark Mode
 
+[![npm version](https://badge.fury.io/js/bootstrap-darkmode.svg)](https://www.npmjs.com/package/bootstrap-darkmode)
+
 This project provides a stylesheet and two scripts that allow you to implement Dark Mode on your website.
 It is initially loaded based on user preference, can be toggled via a switch, and is saved via `localStorage`.
 
@@ -8,6 +10,8 @@ You can view the [test page](testpage.html) with all default bootstrap component
 
 Note that not all components are fully supported yet.
 Mostly the contextual color classes can cause problems.
+
+If you are using Angular, check out [ng-bootstrap-darkmode](https://github.com/Clashsoft/ng-bootstrap-darkmode).
 
 ## Usage
 
@@ -58,6 +62,10 @@ Include the stylesheet, e.g. in `styles.scss`:
 4. Follow the steps for unpkg.com, but replace the links with whatever local paths you put the files in.
 
 ## Setup
+
+> If you are using [ng-bootstrap-darkmode](https://github.com/Clashsoft/ng-bootstrap-darkmode),
+> you can skip this section entirely.
+> It comes with its own JavaScript implementation that is used very differently.
 
 ### Import
 
