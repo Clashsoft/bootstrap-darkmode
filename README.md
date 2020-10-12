@@ -1,5 +1,7 @@
 # Bootstrap Dark Mode
 
+[![npm version](https://badge.fury.io/js/bootstrap-darkmode.svg)](https://www.npmjs.com/package/bootstrap-darkmode)
+
 This project provides a stylesheet and two scripts that allow you to implement Dark Mode on your website.
 It is initially loaded based on user preference, can be toggled via a switch, and is saved via `localStorage`.
 
