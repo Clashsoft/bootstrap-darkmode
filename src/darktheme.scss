@@ -8,6 +8,7 @@
 @import "scss/dropdown";
 @import "scss/jumbotron";
 @import "scss/list-group";
+@import "scss/modal";
 @import "scss/popover";
 @import "scss/tables";
 
@@ -49,6 +50,7 @@
 	@include dark-dropdown;
 	@include dark-jumbotron;
 	@include dark-list-group;
+	@include dark-modal;
 	@include dark-popover;
 	@include dark-table;
 
@@ -150,20 +152,6 @@
 	.close {
 		color: $color;
 		opacity: 1;
-	}
-
-	.modal-header,
-	.modal-footer {
-		color: $window-header-color;
-		background-color: $window-header-bg;
-		border-bottom-color: $window-border;
-		border-top-color: $window-border;
-	}
-
-	.modal-content {
-		color: $window-color;
-		background-color: $window-bg;
-		border-color: $card-border;
 	}
 
 	// --------------- Borders ---------------

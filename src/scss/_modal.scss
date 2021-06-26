@@ -1,0 +1,19 @@
+@mixin dark-modal {
+	.modal-content {
+		color: $dark-modal-content-color;
+		background-color: $dark-modal-content-bg;
+		border-color: $dark-modal-content-border-color;
+	}
+
+	.modal-backdrop {
+		background-color: $dark-modal-backdrop-bg;
+	}
+
+	.modal-header {
+		border-bottom-color: $dark-modal-header-border-color;
+	}
+
+	.modal-footer {
+		border-top-color: $dark-modal-footer-border-color;
+	}
+}

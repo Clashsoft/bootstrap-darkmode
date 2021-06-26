@@ -7,6 +7,7 @@ $default-header-bg: #202020;
 $default-border: #404040;
 
 $dark-body-color: $gray-100 !default;
+$dark-border-color: $gray-700 !default;
 $dark-headings-color: null !default;
 
 // --------------- Customized ---------------
@@ -64,6 +65,13 @@ $dark-list-group-action-active-bg: $gray-800 !default;
 
 $dark-list-group-color-level: -10 !default;
 $dark-list-group-bg-level: 8 !default;
+
+$dark-modal-content-color: null !default;
+$dark-modal-content-bg: $black !default;
+$dark-modal-content-border-color: rgba($white, .2) !default;
+$dark-modal-backdrop-bg: $black !default;
+$dark-modal-header-border-color: $dark-border-color !default;
+$dark-modal-footer-border-color: $dark-modal-header-border-color !default;
 
 $dark-popover-bg: $black !default;
 $dark-popover-border-color: rgba($white, .2) !default;
