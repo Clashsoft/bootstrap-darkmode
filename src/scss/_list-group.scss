@@ -1,0 +1,35 @@
+@mixin dark-list-group {
+	.list-group-item-action {
+		color: $dark-list-group-action-color;
+		@include hover-focus() {
+			color: $dark-list-group-action-hover-color;
+			background-color: $dark-list-group-hover-bg;
+		}
+		&:active {
+			color: $dark-list-group-action-active-color;
+			background-color: $dark-list-group-action-active-bg;
+		}
+	}
+
+	.list-group-item {
+		color: $dark-list-group-color;
+		background-color: $dark-list-group-bg;
+		border-color: $dark-list-group-border-color;
+
+		&.disabled,
+		&:disabled {
+			color: $dark-list-group-disabled-color;
+			background-color: $dark-list-group-disabled-bg;
+		}
+
+		&.active {
+			color: $dark-list-group-active-color;
+			background-color: $dark-list-group-active-bg;
+			border-color: $dark-list-group-active-border-color;
+		}
+	}
+
+	@each $color, $value in $theme-colors {
+		@include list-group-item-variant($color, theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-color-level));
+	}
+}
