@@ -1,11 +1,5 @@
 // --------------- Defaults ---------------
 
-$default-color: #bebebe;
-$default-bg: #222;
-$default-dark-bg: #181818;
-$default-header-bg: #202020;
-$default-border: #404040;
-
 $dark-body-bg: $black !default;
 $dark-body-color: $gray-100 !default;
 $dark-border-color: $gray-700 !default;
@@ -15,22 +9,6 @@ $dark-component-active-color: $white !default;
 $dark-component-active-bg: theme-color("primary") !default;
 
 // --------------- Customized ---------------
-
-$color: $default-color;
-$bg: $default-bg;
-
-$window-color: $default-color;
-$window-bg: $default-bg;
-$window-header-color: $default-color;
-$window-header-bg: $default-header-bg;
-$window-border: $default-border;
-
-$card-color: $default-color;
-$card-bg: $default-dark-bg;
-$card-header-color: $default-color;
-$card-header-bg: $default-header-bg;
-$card-hover-bg: $default-bg;
-$card-border: $default-border;
 
 $dark-breadcrumb-bg: $gray-800 !default;
 $dark-breadcrumb-divider-color: $gray-400 !default;
@@ -85,7 +63,7 @@ $dark-list-group-disabled-color: $gray-400 !default;
 $dark-list-group-disabled-bg: $dark-list-group-bg !default;
 $dark-list-group-action-color: $gray-300 !default;
 $dark-list-group-action-hover-color: $dark-list-group-action-color !default;
-$dark-list-group-action-active-color: $default-color !default;
+$dark-list-group-action-active-color: $dark-body-color !default;
 $dark-list-group-action-active-bg: $gray-800 !default;
 
 $dark-list-group-color-level: -10 !default;
@@ -125,15 +103,6 @@ $dark-progress-bar-bg: theme-color('primary') !default;
 $table-dark-bg-level: 9 !default;
 $table-dark-border-level: 6 !default;
 
-$form-color: $default-color;
-$form-placeholder-color: #666;
-$form-bg: #171717;
-$form-hover-bg: #242424;
-$form-border: $default-border;
-
 $dark-alert-color-level: -10 !default;
 $dark-alert-bg-level: 8 !default;
 $dark-alert-border-level: 6 !default;
-
-$form-addon-color: $default-color;
-$form-addon-bg: $default-header-bg;

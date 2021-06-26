@@ -20,29 +20,29 @@
 @import "scss/tables";
 
 @mixin darkmode {
-	color: $color;
-	background-color: $bg;
+	color: $dark-body-color;
+	background-color: $dark-body-bg;
 
 	.bg-darkmode-dark {
-		background-color: #343a40 !important
+		background-color: theme-color('dark') !important
 	}
 
 	.bg-darkmode-light {
-		background-color: #f8f9fa !important;
+		background-color: theme-color('light') !important;
 	}
 
 	.bg-darkmode-black {
-		background-color: $bg !important;
+		background-color: $black !important;
 	}
 
 	// --------------- Typography ---------------
 
 	pre {
-		color: $color;
+		color: $dark-body-color;
 	}
 
 	hr {
-		border-top-color: $default-border;
+		border-top-color: $dark-border-color;
 	}
 
 	// --------------- Images ---------------
