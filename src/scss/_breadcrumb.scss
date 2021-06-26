@@ -1,0 +1,15 @@
+@mixin dark-breadcrumb {
+	.breadcrumb {
+		background-color: $dark-breadcrumb-bg;
+	}
+
+	.breadcrumb-item {
+		+ .breadcrumb-item::before {
+			color: $dark-breadcrumb-divider-color;
+		}
+
+		&.active {
+			color: $dark-breadcrumb-active-color;
+		}
+	}
+}

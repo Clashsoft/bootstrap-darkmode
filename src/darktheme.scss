@@ -5,6 +5,7 @@
 @import "scss/variables";
 @import "scss/alert";
 @import "scss/borders";
+@import "scss/breadcrumb";
 @import "scss/card";
 @import "scss/dropdown";
 @import "scss/jumbotron";
@@ -50,6 +51,7 @@
 
 	@include dark-alert;
 	@include dark-borders;
+	@include dark-breadcrumb;
 	@include dark-card;
 	@include dark-dropdown;
 	@include dark-jumbotron;
@@ -111,13 +113,6 @@
 
 	.page-item:not(.active) .page-link:hover {
 		background-color: $form-hover-bg;
-	}
-
-	// --------------- Navs ---------------
-
-	.breadcrumb {
-		background-color: $form-bg;
-		border-color: $form-border;
 	}
 
 	// --------------- Modals ---------------

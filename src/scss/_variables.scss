@@ -32,6 +32,10 @@ $card-header-bg: $default-header-bg;
 $card-hover-bg: $default-bg;
 $card-border: $default-border;
 
+$dark-breadcrumb-bg: $gray-800 !default;
+$dark-breadcrumb-divider-color: $gray-400 !default;
+$dark-breadcrumb-active-color: $gray-400 !default;
+
 $dark-card-color: null !default;
 $dark-card-bg: $black !default;
 $dark-card-border-color: rgba($white, .125) !default;
