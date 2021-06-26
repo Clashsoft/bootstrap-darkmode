@@ -4,6 +4,7 @@
 
 @import "scss/variables";
 @import "scss/alert";
+@import "scss/borders";
 @import "scss/card";
 @import "scss/dropdown";
 @import "scss/jumbotron";
@@ -47,6 +48,7 @@
 	}
 
 	@include dark-alert;
+	@include dark-borders;
 	@include dark-card;
 	@include dark-dropdown;
 	@include dark-jumbotron;
@@ -148,14 +150,6 @@
 		color: $color;
 		opacity: 1;
 	}
-
-	// --------------- Borders ---------------
-
-	.border { border-color: $default-border; }
-	.border-top { border-top-color: $default-border; }
-	.border-right { border-right-color: $default-border; }
-	.border-bottom { border-bottom-color: $default-border; }
-	.border-left { border-left-color: $default-border; }
 }
 
 @media (prefers-color-scheme: dark) {

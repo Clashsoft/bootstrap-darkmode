@@ -1,0 +1,17 @@
+@mixin dark-borders {
+	.border {
+		border-color: $dark-border-color !important;
+	}
+	.border-top {
+		border-top-color: $dark-border-color !important;
+	}
+	.border-right {
+		border-right-color: $dark-border-color !important;
+	}
+	.border-bottom {
+		border-bottom-color: $dark-border-color !important;
+	}
+	.border-left {
+		border-left-color: $dark-border-color !important;
+	}
+}
