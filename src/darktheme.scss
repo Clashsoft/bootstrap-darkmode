@@ -3,6 +3,7 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 @import "scss/variables";
+@import "scss/alert";
 @import "scss/list-group";
 
 @mixin darkmode {
@@ -200,11 +201,7 @@
 
 	// --------------- Alerts ---------------
 
-	@each $color, $value in $theme-colors {
-		.alert-#{$color} {
-			@include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
-		}
-	}
+	@include dark-alert;
 
 	// --------------- Popovers ---------------
 
