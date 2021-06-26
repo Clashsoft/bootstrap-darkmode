@@ -1,0 +1,22 @@
+@mixin dark-card {
+	.card {
+		background-color: $dark-card-bg;
+		border-color: $dark-card-border-color;
+	}
+
+	.card-body {
+		color: $dark-card-color;
+	}
+
+	.card-header {
+		color: $dark-card-cap-color;
+		background-color: $dark-card-cap-bg;
+		border-bottom-color: $dark-card-border-color;
+	}
+
+	.card-footer {
+		color: $dark-card-cap-color;
+		background-color: $dark-card-cap-bg;
+		border-top-color: $dark-card-border-color;
+	}
+}

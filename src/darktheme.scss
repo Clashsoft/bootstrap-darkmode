@@ -4,6 +4,7 @@
 
 @import "scss/variables";
 @import "scss/alert";
+@import "scss/card";
 @import "scss/dropdown";
 @import "scss/jumbotron";
 @import "scss/list-group";
@@ -60,19 +61,7 @@
 
 	// --------------- Cards ---------------
 
-	.card {
-		color: $card-color;
-		background-color: $card-bg;
-		border-color: $card-border;
-	}
-
-	.card-header,
-	.card-footer {
-		color: $card-header-color;
-		background-color: $card-header-bg;
-		border-top-color: $card-border;
-		border-bottom-color: $card-border;
-	}
+	@include dark-card;
 
 	// --------------- Forms ---------------
 

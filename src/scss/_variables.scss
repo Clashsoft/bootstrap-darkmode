@@ -24,6 +24,12 @@ $card-header-bg: $default-header-bg;
 $card-hover-bg: $default-bg;
 $card-border: $default-border;
 
+$dark-card-color: null !default;
+$dark-card-bg: $black !default;
+$dark-card-border-color: rgba($white, .125) !default;
+$dark-card-cap-color: null !default;
+$dark-card-cap-bg: rgba($white, .03) !default;
+
 $dark-dropdown-color:                    $body-color !default;
 $dark-dropdown-bg:                       $black !default;
 $dark-dropdown-border-color:             rgba($white, .15) !default;
