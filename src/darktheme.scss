@@ -7,6 +7,7 @@
 @import "scss/borders";
 @import "scss/breadcrumb";
 @import "scss/card";
+@import "scss/close";
 @import "scss/dropdown";
 @import "scss/jumbotron";
 @import "scss/list-group";
@@ -53,6 +54,7 @@
 	@include dark-borders;
 	@include dark-breadcrumb;
 	@include dark-card;
+	@include dark-close;
 	@include dark-dropdown;
 	@include dark-jumbotron;
 	@include dark-list-group;
@@ -113,13 +115,6 @@
 
 	.page-item:not(.active) .page-link:hover {
 		background-color: $form-hover-bg;
-	}
-
-	// --------------- Modals ---------------
-
-	.close {
-		color: $color;
-		opacity: 1;
 	}
 }
 

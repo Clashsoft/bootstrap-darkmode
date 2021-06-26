@@ -1,0 +1,6 @@
+@mixin dark-close {
+	.close {
+		color: $dark-close-color;
+		text-shadow: $dark-close-text-shadow;
+	}
+}
