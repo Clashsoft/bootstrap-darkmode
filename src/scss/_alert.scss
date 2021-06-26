@@ -1,7 +1,7 @@
 @mixin dark-alert {
 	@each $color, $value in $theme-colors {
 		.alert-#{$color} {
-			@include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
+			@include alert-variant(theme-color-level($color, $dark-alert-bg-level), theme-color-level($color, $dark-alert-border-level), theme-color-level($color, $dark-alert-color-level));
 		}
 	}
 }

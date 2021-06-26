@@ -30,6 +30,6 @@
 	}
 
 	@each $color, $value in $theme-colors {
-		@include list-group-item-variant($color, theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-color-level));
+		@include list-group-item-variant($color, theme-color-level($color, $dark-list-group-bg-level), theme-color-level($color, $dark-list-group-color-level));
 	}
 }

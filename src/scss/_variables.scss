@@ -38,15 +38,18 @@ $dark-list-group-action-hover-color: $dark-list-group-action-color !default;
 $dark-list-group-action-active-color: $default-color !default;
 $dark-list-group-action-active-bg: $gray-800 !default;
 
+$dark-list-group-color-level: -10 !default;
+$dark-list-group-bg-level: 8 !default;
+
 $form-color: $default-color;
 $form-placeholder-color: #666;
 $form-bg: #171717;
 $form-hover-bg: #242424;
 $form-border: $default-border;
 
-$alert-color-level: -10;
-$alert-bg-level: 8;
-$alert-border-level: 6;
+$dark-alert-color-level: -10 !default;
+$dark-alert-bg-level: 8 !default;
+$dark-alert-border-level: 6 !default;
 
 $form-addon-color: $default-color;
 $form-addon-bg: $default-header-bg;
