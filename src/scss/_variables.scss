@@ -108,8 +108,9 @@ $dark-pagination-disabled-border-color: $gray-700 !default;
 
 $dark-popover-bg: $black !default;
 $dark-popover-border-color: rgba($white, .2) !default;
-$dark-popover-header-bg: darken($dark-popover-bg, 3%) !default;
+$dark-popover-header-bg: lighten($dark-popover-bg, 3%) !default;
 $dark-popover-header-color: $dark-headings-color !default;
+$dark-popover-header-border-color: lighten($dark-popover-header-bg, 5%) !default;
 $dark-popover-body-color: $dark-body-color !default;
 $dark-popover-arrow-color: $dark-popover-bg !default;
 $dark-popover-arrow-outer-color: fade-in($dark-popover-border-color, .05) !default;

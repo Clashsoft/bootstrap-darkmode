@@ -19,7 +19,7 @@
 	.popover-header {
 		color: $dark-popover-header-color;
 		background-color: $dark-popover-header-bg;
-		border-bottom-color: darken($dark-popover-header-bg, 5%);
+		border-bottom-color: $dark-popover-header-border-color;
 	}
 
 	.popover-body {
