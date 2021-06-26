@@ -1,0 +1,10 @@
+@mixin dark-progress {
+	.progress {
+		background-color: $dark-progress-bg;
+	}
+
+	.progress-bar {
+		color: $dark-progress-bar-color;
+		background-color: $dark-progress-bar-bg;
+	}
+}

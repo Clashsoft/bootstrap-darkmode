@@ -81,6 +81,10 @@ $dark-popover-body-color: $dark-body-color !default;
 $dark-popover-arrow-color: $dark-popover-bg !default;
 $dark-popover-arrow-outer-color: fade-in($dark-popover-border-color, .05) !default;
 
+$dark-progress-bg: $gray-800 !default;
+$dark-progress-bar-color: $black !default;
+$dark-progress-bar-bg: theme-color('primary') !default;
+
 // Tables constants use "table-dark-*" instead of "dark-table-*"
 // because many "table-dark-*" variables are already included in Bootstrap.
 $table-dark-bg-level: 9 !default;

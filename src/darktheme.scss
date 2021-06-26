@@ -10,6 +10,7 @@
 @import "scss/list-group";
 @import "scss/modal";
 @import "scss/popover";
+@import "scss/progress";
 @import "scss/tables";
 
 @mixin darkmode {
@@ -52,6 +53,7 @@
 	@include dark-list-group;
 	@include dark-modal;
 	@include dark-popover;
+	@include dark-progress;
 	@include dark-table;
 
 	// --------------- Forms ---------------
@@ -138,13 +140,6 @@
 			background-color: $card-bg;
 			border-bottom-color: $card-bg;
 		}
-	}
-
-	// --------------- Progress Bars --------------- */
-
-	.progress {
-		background-color: $form-bg;
-		border-color: $form-border;
 	}
 
 	// --------------- Modals ---------------
