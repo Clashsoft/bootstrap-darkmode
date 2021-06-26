@@ -1,0 +1,37 @@
+@mixin dark-dropdown {
+	.dropdown-menu {
+		color: $dark-dropdown-color;
+		background-color: $dark-dropdown-bg;
+		border-color: $dark-dropdown-border-color;
+	}
+
+	.dropdown-divider {
+		border-top-color: $dark-dropdown-divider-bg;
+	}
+
+	.dropdown-item {
+		color: $dark-dropdown-link-color;
+
+		@include hover-focus() {
+			color: $dark-dropdown-link-hover-color;
+			@include gradient-bg($dark-dropdown-link-hover-bg);
+		}
+
+		&.active, &:active {
+			color: $dark-dropdown-link-active-color;
+			@include gradient-bg($dark-dropdown-link-active-bg);
+		}
+
+		&.disabled, &:disabled {
+			color: $dark-dropdown-link-disabled-color;
+		}
+	}
+
+	.dropdown-header {
+		color: $dark-dropdown-header-color;
+	}
+
+	.dropdown-item-text {
+		color: $dark-dropdown-link-color;
+	}
+}

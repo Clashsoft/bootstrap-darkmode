@@ -24,6 +24,18 @@ $card-header-bg: $default-header-bg;
 $card-hover-bg: $default-bg;
 $card-border: $default-border;
 
+$dark-dropdown-color:                    $body-color !default;
+$dark-dropdown-bg:                       $black !default;
+$dark-dropdown-border-color:             rgba($white, .15) !default;
+$dark-dropdown-divider-bg:               $gray-800 !default;
+$dark-dropdown-link-color:               $gray-100 !default;
+$dark-dropdown-link-hover-color:         darken($gray-100, 5%) !default;
+$dark-dropdown-link-hover-bg:            $gray-800 !default;
+$dark-dropdown-link-active-color:        $component-active-color !default;
+$dark-dropdown-link-active-bg:           $component-active-bg !default;
+$dark-dropdown-link-disabled-color:      $gray-500 !default;
+$dark-dropdown-header-color:             $gray-400 !default;
+
 $dark-jumbotron-color: null !default;
 $dark-jumbotron-bg: $gray-800 !default;
 

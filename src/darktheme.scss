@@ -4,6 +4,7 @@
 
 @import "scss/variables";
 @import "scss/alert";
+@import "scss/dropdown";
 @import "scss/jumbotron";
 @import "scss/list-group";
 @import "scss/tables";
@@ -51,23 +52,7 @@
 
 	// --------------- Buttons ---------------
 
-	.dropdown-menu {
-		background-color: $form-bg;
-		border-color: $form-border;
-	}
-
-	.dropdown-item:not(:disabled):not(.disabled) {
-		color: $form-color;
-	}
-
-	.dropdown-item:focus,
-	.dropdown-item:hover {
-		background-color: $form-hover-bg;
-	}
-
-	.dropdown-divider {
-		border-top-color: $form-border;
-	}
+	@include dark-dropdown;
 
 	// --------------- Jumbotron ---------------
 
