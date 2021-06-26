@@ -71,6 +71,10 @@ $form-bg: #171717;
 $form-hover-bg: #242424;
 $form-border: $default-border;
 
+$alert-color-level: -10;
+$alert-bg-level: 8;
+$alert-border-level: 6;
+
 $form-addon-color: $default-color;
 $form-addon-bg: $default-header-bg;
 
@@ -295,6 +299,14 @@ $form-addon-bg: $default-header-bg;
 		.nav-link.active {
 			background-color: $card-bg;
 			border-bottom-color: $card-bg;
+		}
+	}
+
+	// --------------- Alerts ---------------
+
+	@each $color, $value in $theme-colors {
+		.alert-#{$color} {
+			@include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
 		}
 	}
 
