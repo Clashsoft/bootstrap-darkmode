@@ -15,6 +15,7 @@
 @import "scss/list-group";
 @import "scss/modal";
 @import "scss/nav";
+@import "scss/pagination";
 @import "scss/popover";
 @import "scss/progress";
 @import "scss/tables";
@@ -64,6 +65,7 @@
 	@include dark-list-group;
 	@include dark-modal;
 	@include dark-nav;
+	@include dark-pagination;
 	@include dark-popover;
 	@include dark-progress;
 	@include dark-table;

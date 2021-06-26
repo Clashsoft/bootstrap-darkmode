@@ -1,0 +1,27 @@
+@mixin dark-pagination {
+	.page-link {
+		color: $dark-pagination-color;
+		background-color: $dark-pagination-bg;
+		border-color: $dark-pagination-border-color;
+
+		&:hover {
+			color: $dark-pagination-hover-color;
+			background-color: $dark-pagination-hover-bg;
+			border-color: $dark-pagination-hover-border-color;
+		}
+	}
+
+	.page-item {
+		&.active .page-link {
+			color: $dark-pagination-active-color;
+			background-color: $dark-pagination-active-bg;
+			border-color: $dark-pagination-active-border-color;
+		}
+
+		&.disabled .page-link {
+			color: $dark-pagination-disabled-color;
+			background-color: $dark-pagination-disabled-bg;
+			border-color: $dark-pagination-disabled-border-color;
+		}
+	}
+}
