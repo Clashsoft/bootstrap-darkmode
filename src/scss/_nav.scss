@@ -1,0 +1,32 @@
+@mixin dark-nav {
+	.nav-link.disabled {
+		color: $dark-nav-link-disabled-color;
+	}
+
+	.nav-tabs {
+		border-bottom-color: $dark-nav-tabs-border-color;
+
+		.nav-link {
+			@include hover-focus() {
+				border-color: $dark-nav-tabs-link-hover-border-color;
+			}
+
+			&.disabled {
+				color: $dark-nav-link-disabled-color;
+			}
+		}
+
+		.nav-link.active, .nav-item.show .nav-link {
+			color: $dark-nav-tabs-link-active-color;
+			background-color: $dark-nav-tabs-link-active-bg;
+			border-color: $dark-nav-tabs-link-active-border-color;
+		}
+	}
+
+	.nav-pills {
+		.nav-link.active, .show > .nav-link {
+			color: $dark-nav-pills-link-active-color;
+			background-color: $dark-nav-pills-link-active-bg;
+		}
+	}
+}
