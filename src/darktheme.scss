@@ -9,6 +9,8 @@
 @import "scss/card";
 @import "scss/close";
 @import "scss/dropdown";
+@import "scss/forms";
+@import "scss/input-groups";
 @import "scss/jumbotron";
 @import "scss/list-group";
 @import "scss/modal";
@@ -56,6 +58,8 @@
 	@include dark-card;
 	@include dark-close;
 	@include dark-dropdown;
+	@include dark-forms;
+	@include dark-input-groups;
 	@include dark-jumbotron;
 	@include dark-list-group;
 	@include dark-modal;
@@ -63,59 +67,6 @@
 	@include dark-popover;
 	@include dark-progress;
 	@include dark-table;
-
-	// --------------- Forms ---------------
-
-	.form-control {
-		color: $form-color;
-		background-color: $form-bg;
-		border-color: $form-border;
-	}
-
-	.form-control-plaintext {
-		color: $form-color;
-	}
-
-	.custom-select {
-		color: $form-color;
-		background-color: $form-bg;
-		border-color: $form-border;
-		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
-	}
-
-	.custom-file-label {
-		color: $form-color;
-		background-color: $form-bg;
-		border-color: $form-border;
-
-		&:after {
-			color: $form-addon-color;
-			background-color: $form-addon-bg;
-		}
-	}
-
-	.input-group-text {
-		color: $form-addon-color;
-		background-color: $form-addon-bg;
-		border-color: $form-border;
-	}
-
-	.page-item .page-link {
-		border-color: $form-border;
-	}
-
-	.page-item.disabled .page-link {
-		background-color: $form-bg;
-		color: $form-color;
-	}
-
-	.page-item:not(.active) .page-link {
-		background-color: $form-bg;
-	}
-
-	.page-item:not(.active) .page-link:hover {
-		background-color: $form-hover-bg;
-	}
 }
 
 @media (prefers-color-scheme: dark) {

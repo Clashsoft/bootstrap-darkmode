@@ -1,0 +1,30 @@
+@mixin dark-forms {
+	.form-control {
+		color: $dark-input-color;
+		background-color: $dark-input-bg;
+		border-color: $dark-input-border-color;
+
+		&:focus {
+			color: $dark-input-focus-color;
+			background-color: $dark-input-focus-bg;
+			border-color: $dark-input-focus-border-color;
+		}
+
+		&::placeholder {
+			color: $dark-input-placeholder-color;
+		}
+
+		&:disabled, &[readonly] {
+			background-color: $dark-input-disabled-bg;
+		}
+	}
+
+	select.form-control:focus::-ms-value {
+		color: $dark-input-color;
+		background-color: $dark-input-bg;
+	}
+
+	.form-control-plaintext {
+		color: $dark-input-plaintext-color;
+	}
+}

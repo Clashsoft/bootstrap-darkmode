@@ -1,0 +1,7 @@
+@mixin dark-input-groups {
+	.input-group-text {
+		color: $dark-input-group-addon-color;
+		background-color: $dark-input-group-addon-bg;
+		border-color: $dark-input-group-addon-border-color;
+	}
+}
