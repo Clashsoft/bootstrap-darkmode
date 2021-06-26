@@ -29,6 +29,7 @@
     "@angular/compiler": "^10.1.4",
     "@angular/compiler-cli": "^10.1.4",
     "@angular/core": "^10.1.4",
+    "bootstrap": "^4.6.0",
     "cpx": "^1.5.0",
     "ng-packagr": "^10.1.2",
     "sass": "^1.26.7",
