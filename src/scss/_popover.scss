@@ -1,0 +1,28 @@
+@mixin dark-popover {
+	.popover {
+		background-color: $dark-popover-bg;
+		border-color: $dark-popover-border-color;
+	}
+
+	@each $direction in (top, right, bottom, left) {
+		.bs-popover-#{$direction} > .arrow {
+			&::before {
+				border-#{$direction}-color: $dark-popover-arrow-outer-color;
+			}
+
+			&::after {
+				border-#{$direction}-color: $dark-popover-arrow-color;
+			}
+		}
+	}
+
+	.popover-header {
+		color: $dark-popover-header-color;
+		background-color: $dark-popover-header-bg;
+		border-bottom-color: darken($dark-popover-header-bg, 5%);
+	}
+
+	.popover-body {
+		color: $dark-popover-body-color;
+	}
+}
