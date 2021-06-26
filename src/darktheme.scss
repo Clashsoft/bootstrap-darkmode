@@ -2,60 +2,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// =============== Variables ===============
-
-// --------------- Defaults ---------------
-
-$default-color: #bebebe;
-$default-bg: #222;
-$default-dark-bg: #181818;
-$default-header-bg: #202020;
-$default-border: #404040;
-
-// --------------- Customized ---------------
-
-$color: $default-color;
-$bg: $default-bg;
-
-$window-color: $default-color;
-$window-bg: $default-bg;
-$window-header-color: $default-color;
-$window-header-bg: $default-header-bg;
-$window-border: $default-border;
-
-$card-color: $default-color;
-$card-bg: $default-dark-bg;
-$card-header-color: $default-color;
-$card-header-bg: $default-header-bg;
-$card-hover-bg: $default-bg;
-$card-border: $default-border;
-
-$dark-list-group-color: null !default;
-$dark-list-group-bg: $black !default;
-$dark-list-group-border-color: rgba($black, .125) !default;
-$dark-list-group-hover-bg: $gray-900 !default;
-$dark-list-group-active-color: $component-active-color !default;
-$dark-list-group-active-bg: $component-active-bg !default;
-$dark-list-group-active-border-color: $dark-list-group-active-bg !default;
-$dark-list-group-disabled-color: $gray-400 !default;
-$dark-list-group-disabled-bg: $dark-list-group-bg !default;
-$dark-list-group-action-color: $gray-300 !default;
-$dark-list-group-action-hover-color: $dark-list-group-action-color !default;
-$dark-list-group-action-active-color: $default-color !default;
-$dark-list-group-action-active-bg: $gray-800 !default;
-
-$form-color: $default-color;
-$form-placeholder-color: #666;
-$form-bg: #171717;
-$form-hover-bg: #242424;
-$form-border: $default-border;
-
-$alert-color-level: -10;
-$alert-bg-level: 8;
-$alert-border-level: 6;
-
-$form-addon-color: $default-color;
-$form-addon-bg: $default-header-bg;
+@import "scss/variables";
 
 @mixin darkmode {
 	color: $color;
