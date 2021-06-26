@@ -4,6 +4,7 @@
 
 @import "scss/variables";
 @import "scss/alert";
+@import "scss/jumbotron";
 @import "scss/list-group";
 @import "scss/tables";
 
@@ -70,11 +71,7 @@
 
 	// --------------- Jumbotron ---------------
 
-	.jumbotron {
-		color: $card-color;
-		background-color: $card-bg;
-		border-color: $card-border;
-	}
+	@include dark-jumbotron;
 
 	// --------------- Cards ---------------
 

@@ -1,0 +1,6 @@
+@mixin dark-jumbotron {
+	.jumbotron {
+		color: $dark-jumbotron-color;
+		background-color: $dark-jumbotron-bg;
+	}
+}
