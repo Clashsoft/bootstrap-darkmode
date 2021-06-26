@@ -12,41 +12,6 @@ $default-dark-bg: #181818;
 $default-header-bg: #202020;
 $default-border: #404040;
 
-$item-color: (
-		"primary": #fff,
-		"secondary": #fff,
-		"success": #fff,
-		"danger": #fff,
-		"warning": #212529,
-		"info": #fff,
-		"light": #212529,
-		"dark": #fff,
-);
-
-$item-bg: (
-		"primary": #007bff,
-		"secondary": #6c757d,
-		"success": #28a745,
-		"danger": #dc3545,
-		"warning": #ffc107,
-		"info": #17a2b8,
-		"light": #6c757d,
-		"dark": #343a40,
-);
-
-$item-hover: (
-		"primary": #0069d9,
-		"secondary": #5a6268,
-		"success": #218838,
-		"danger": #c82333,
-		"warning": #e0a800,
-		"info": #138496,
-		"light": #e2e6ea,
-		"dark": #23272b,
-);
-
-$color-lighten: 10;
-
 // --------------- Customized ---------------
 
 $color: $default-color;
@@ -64,6 +29,20 @@ $card-header-color: $default-color;
 $card-header-bg: $default-header-bg;
 $card-hover-bg: $default-bg;
 $card-border: $default-border;
+
+$dark-list-group-color: null !default;
+$dark-list-group-bg: $black !default;
+$dark-list-group-border-color: rgba($black, .125) !default;
+$dark-list-group-hover-bg: $gray-900 !default;
+$dark-list-group-active-color: $component-active-color !default;
+$dark-list-group-active-bg: $component-active-bg !default;
+$dark-list-group-active-border-color: $dark-list-group-active-bg !default;
+$dark-list-group-disabled-color: $gray-400 !default;
+$dark-list-group-disabled-bg: $dark-list-group-bg !default;
+$dark-list-group-action-color: $gray-300 !default;
+$dark-list-group-action-hover-color: $dark-list-group-action-color !default;
+$dark-list-group-action-active-color: $default-color !default;
+$dark-list-group-action-active-bg: $gray-800 !default;
 
 $form-color: $default-color;
 $form-placeholder-color: #666;
@@ -139,37 +118,38 @@ $form-addon-bg: $default-header-bg;
 
 	// --------------- List Groups ---------------
 
+	.list-group-item-action {
+		color: $dark-list-group-action-color;
+		@include hover-focus() {
+			color: $dark-list-group-action-hover-color;
+			background-color: $dark-list-group-hover-bg;
+		}
+		&:active {
+			color: $dark-list-group-action-active-color;
+			background-color: $dark-list-group-action-active-bg;
+		}
+	}
+
 	.list-group-item {
-		color: $card-color;
-		background-color: $card-bg;
-		border-color: $card-border;
+		color: $dark-list-group-color;
+		background-color: $dark-list-group-bg;
+		border-color: $dark-list-group-border-color;
 
-		&.list-group-item-action:focus,
-		&.list-group-item-action:hover {
-			background-color: $card-hover-bg;
+		&.disabled,
+		&:disabled {
+			color: $dark-list-group-disabled-color;
+			background-color: $dark-list-group-disabled-bg;
+		}
+
+		&.active {
+			color: $dark-list-group-active-color;
+			background-color: $dark-list-group-active-bg;
+			border-color: $dark-list-group-active-border-color;
 		}
 	}
 
-	.list-group-item.active {
-		&, &:focus, &:hover {
-			color: map_get($item-color, "primary");
-			background-color: map_get($item-bg, "primary");
-			border-color: map_get($item-bg, "primary");
-		}
-	}
-
-	@each $name in map_keys($item-color) {
-		.list-group-item-#{$name} {
-			color: map_get($item-color, $name);
-			background-color: map_get($item-bg, $name);
-			border-color: map_get($item-bg, $name);
-
-			&.list-group-item-action:focus,
-			&.list-group-item-action:hover {
-				color: map_get($item-color, $name);
-				background-color: map_get($item-hover, $name);
-			}
-		}
+	@each $color, $value in $theme-colors {
+		@include list-group-item-variant($color, theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-color-level));
 	}
 
 	// --------------- Buttons ---------------
