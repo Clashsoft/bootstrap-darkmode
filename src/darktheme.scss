@@ -25,11 +25,11 @@
 	background-color: $dark-body-bg;
 
 	.bg-darkmode-dark {
-		background-color: theme-color('dark') !important
+		background-color: $dark !important
 	}
 
 	.bg-darkmode-light {
-		background-color: theme-color('light') !important;
+		background-color: $light !important;
 	}
 
 	.bg-darkmode-black {
