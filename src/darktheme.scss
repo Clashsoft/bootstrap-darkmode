@@ -43,25 +43,12 @@
 		filter: invert(1);
 	}
 
-	// --------------- Tables ---------------
-
-	@include dark-table;
-
-	// --------------- List Groups ---------------
-
-	@include dark-list-group;
-
-	// --------------- Buttons ---------------
-
-	@include dark-dropdown;
-
-	// --------------- Jumbotron ---------------
-
-	@include dark-jumbotron;
-
-	// --------------- Cards ---------------
-
+	@include dark-alert;
 	@include dark-card;
+	@include dark-dropdown;
+	@include dark-jumbotron;
+	@include dark-list-group;
+	@include dark-table;
 
 	// --------------- Forms ---------------
 
@@ -148,10 +135,6 @@
 			border-bottom-color: $card-bg;
 		}
 	}
-
-	// --------------- Alerts ---------------
-
-	@include dark-alert;
 
 	// --------------- Popovers ---------------
 
