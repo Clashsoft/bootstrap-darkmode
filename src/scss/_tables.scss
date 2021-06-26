@@ -1,0 +1,47 @@
+@mixin dark-table {
+	.table {
+		color: $table-dark-color;
+		background-color: $table-dark-bg;
+
+		th, td {
+			border-top-color: $table-dark-border-color;
+		}
+
+		thead th {
+			border-bottom-color: $table-dark-border-color;
+		}
+
+		tbody + tbody {
+			border-top-color: $table-dark-border-color;
+		}
+	}
+
+	.table-bordered {
+		border-color: $table-dark-border-color;
+
+		th, td {
+			border-color: $table-dark-border-color;
+		}
+	}
+
+	.table-striped {
+		tbody tr:nth-of-type(#{$table-striped-order}) {
+			background-color: $table-dark-accent-bg;
+		}
+	}
+
+	.table-hover {
+		tbody tr {
+			@include hover() {
+				color: $table-dark-hover-color;
+				background-color: $table-dark-hover-bg;
+			}
+		}
+	}
+
+	@each $color, $value in $theme-colors {
+		@include table-row-variant($color, theme-color-level($color, $table-dark-bg-level), theme-color-level($color, $table-dark-border-level));
+	}
+
+	@include table-row-variant(active, $table-active-bg);
+}

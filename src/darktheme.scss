@@ -5,6 +5,7 @@
 @import "scss/variables";
 @import "scss/alert";
 @import "scss/list-group";
+@import "scss/tables";
 
 @mixin darkmode {
 	color: $color;
@@ -41,29 +42,7 @@
 
 	// --------------- Tables ---------------
 
-	.table {
-		color: $color;
-
-		th, td {
-			border-top-color: $default-border;
-		}
-
-		thead th, tbody + tbody {
-			border-bottom-color: $default-border;
-		}
-	}
-
-	.table-hover tbody tr:hover {
-		color: $color;
-	}
-
-	.table-bordered {
-		border-color: $default-border;
-
-		th, td {
-			border-color: $default-border;
-		}
-	}
+	@include dark-table;
 
 	// --------------- List Groups ---------------
 
