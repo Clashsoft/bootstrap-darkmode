@@ -6,6 +6,7 @@
 @import "scss/alert";
 @import "scss/borders";
 @import "scss/breadcrumb";
+@import "scss/buttons";
 @import "scss/card";
 @import "scss/close";
 @import "scss/dropdown";
@@ -18,6 +19,7 @@
 @import "scss/pagination";
 @import "scss/popover";
 @import "scss/progress";
+@import "scss/reboot";
 @import "scss/tables";
 
 @mixin darkmode {
@@ -56,6 +58,7 @@
 	@include dark-alert;
 	@include dark-borders;
 	@include dark-breadcrumb;
+	@include dark-buttons;
 	@include dark-card;
 	@include dark-close;
 	@include dark-dropdown;
@@ -68,6 +71,7 @@
 	@include dark-pagination;
 	@include dark-popover;
 	@include dark-progress;
+	@include dark-reboot;
 	@include dark-table;
 }
 

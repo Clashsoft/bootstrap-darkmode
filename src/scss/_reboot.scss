@@ -1,0 +1,8 @@
+@mixin dark-reboot {
+	a {
+		color: $dark-link-color;
+		@include hover() {
+			color: $dark-link-hover-color;
+		}
+	}
+}

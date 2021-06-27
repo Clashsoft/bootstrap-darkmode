@@ -1,0 +1,33 @@
+@mixin dark-buttons {
+	.btn {
+		color: $dark-body-color;
+
+		@include hover() {
+			color: $dark-body-color;
+		}
+	}
+
+	.btn-link {
+		color: $dark-link-color;
+
+		@include hover() {
+			color: $dark-link-hover-color;
+		}
+
+		&:disabled, &.disabled {
+			color: $dark-btn-link-disabled-color;
+		}
+	}
+
+	@each $color, $value in $theme-colors {
+		.btn-#{$color} {
+			@include button-variant($value, $value, lighten($value, 7.5%), lighten($value, 10%), lighten($value, 10%), lighten($value, 12.5%));
+		}
+	}
+
+	@each $color, $value in $theme-colors {
+		.btn-outline-#{$color} {
+			@include button-outline-variant($value);
+		}
+	}
+}
