@@ -21,6 +21,7 @@
 @import "scss/progress";
 @import "scss/reboot";
 @import "scss/tables";
+@import "scss/text";
 
 @mixin darkmode {
 	color: $dark-body-color;
@@ -73,6 +74,7 @@
 	@include dark-progress;
 	@include dark-reboot;
 	@include dark-table;
+	@include dark-text;
 }
 
 @media (prefers-color-scheme: dark) {

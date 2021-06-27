@@ -1,0 +1,11 @@
+@mixin dark-text {
+	@if $emphasized-link-hover-darken-percentage != 0 {
+		@each $color, $value in $theme-colors {
+			a.text-#{$color} {
+				@include hover-focus() {
+					color: lighten($value, $emphasized-link-hover-darken-percentage) !important;
+				}
+			}
+		}
+	}
+}
