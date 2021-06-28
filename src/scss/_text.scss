@@ -1,4 +1,8 @@
 @mixin dark-text {
+	.text-body {
+		color: $dark-body-color;
+	}
+
 	@if $emphasized-link-hover-darken-percentage != 0 {
 		@each $color, $value in $theme-colors {
 			a.text-#{$color} {
