@@ -1,6 +1,6 @@
 // --------------- Defaults ---------------
 
-$dark-body-bg: $black !default;
+$dark-body-bg: $gray-900 !default;
 $dark-body-color: $gray-100 !default;
 $dark-border-color: $gray-700 !default;
 $dark-headings-color: null !default;
@@ -27,13 +27,13 @@ $dark-close-color: $white !default;
 $dark-close-text-shadow: 0 1px 0 $black !default;
 
 $dark-card-color: null !default;
-$dark-card-bg: $black !default;
+$dark-card-bg: $dark-body-bg !default;
 $dark-card-border-color: rgba($white, .125) !default;
 $dark-card-cap-color: null !default;
 $dark-card-cap-bg: rgba($white, .03) !default;
 
 $dark-dropdown-color: $body-color !default;
-$dark-dropdown-bg: $black !default;
+$dark-dropdown-bg: $dark-body-bg !default;
 $dark-dropdown-border-color: rgba($white, .15) !default;
 $dark-dropdown-divider-bg: $gray-800 !default;
 $dark-dropdown-link-color: $gray-100 !default;
@@ -44,7 +44,7 @@ $dark-dropdown-link-active-bg: $component-active-bg !default;
 $dark-dropdown-link-disabled-color: $gray-500 !default;
 $dark-dropdown-header-color: $gray-400 !default;
 
-$dark-input-bg: $black !default;
+$dark-input-bg: $dark-body-bg !default;
 $dark-input-disabled-bg: $gray-800 !default;
 $dark-input-color: $gray-300 !default;
 $dark-input-border-color: $gray-600 !default;
@@ -62,9 +62,9 @@ $dark-jumbotron-color: null !default;
 $dark-jumbotron-bg: $gray-800 !default;
 
 $dark-list-group-color: null !default;
-$dark-list-group-bg: $black !default;
+$dark-list-group-bg: $dark-body-bg !default;
 $dark-list-group-border-color: rgba($white, .125) !default;
-$dark-list-group-hover-bg: $gray-900 !default;
+$dark-list-group-hover-bg: $gray-800 !default;
 $dark-list-group-active-color: $component-active-color !default;
 $dark-list-group-active-bg: $component-active-bg !default;
 $dark-list-group-active-border-color: $dark-list-group-active-bg !default;
@@ -79,7 +79,7 @@ $dark-list-group-color-level: -10 !default;
 $dark-list-group-bg-level: 8 !default;
 
 $dark-modal-content-color: null !default;
-$dark-modal-content-bg: $black !default;
+$dark-modal-content-bg: $dark-body-bg !default;
 $dark-modal-content-border-color: rgba($white, .2) !default;
 $dark-modal-backdrop-bg: $black !default;
 $dark-modal-header-border-color: $dark-border-color !default;
@@ -96,7 +96,7 @@ $dark-nav-pills-link-active-bg: $dark-component-active-bg !default;
 $dark-nav-divider-color: $gray-800 !default;
 
 $dark-pagination-color: $dark-link-color !default;
-$dark-pagination-bg: $black !default;
+$dark-pagination-bg: $dark-body-bg !default;
 $dark-pagination-border-color: $gray-700 !default;
 $dark-pagination-hover-color: $dark-link-hover-color !default;
 $dark-pagination-hover-bg: $gray-800 !default;
@@ -105,10 +105,10 @@ $dark-pagination-active-color: $dark-component-active-color !default;
 $dark-pagination-active-bg: $dark-component-active-bg !default;
 $dark-pagination-active-border-color: $dark-pagination-active-bg !default;
 $dark-pagination-disabled-color: $gray-400 !default;
-$dark-pagination-disabled-bg: $black !default;
+$dark-pagination-disabled-bg: $gray-800 !default;
 $dark-pagination-disabled-border-color: $gray-700 !default;
 
-$dark-popover-bg: $black !default;
+$dark-popover-bg: $dark-body-bg !default;
 $dark-popover-border-color: rgba($white, .2) !default;
 $dark-popover-header-bg: lighten($dark-popover-bg, 3%) !default;
 $dark-popover-header-color: $dark-headings-color !default;
@@ -118,7 +118,7 @@ $dark-popover-arrow-color: $dark-popover-bg !default;
 $dark-popover-arrow-outer-color: fade-in($dark-popover-border-color, .05) !default;
 
 $dark-progress-bg: $gray-800 !default;
-$dark-progress-bar-color: $black !default;
+$dark-progress-bar-color: $dark-body-bg !default;
 $dark-progress-bar-bg: $primary !default;
 
 // Tables constants use "table-dark-*" instead of "dark-table-*"
