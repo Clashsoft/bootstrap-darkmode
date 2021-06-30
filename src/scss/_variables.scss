@@ -118,7 +118,7 @@ $dark-popover-arrow-color: $dark-popover-bg !default;
 $dark-popover-arrow-outer-color: fade-in($dark-popover-border-color, .05) !default;
 
 $dark-progress-bg: $gray-800 !default;
-$dark-progress-bar-color: $dark-body-bg !default;
+$dark-progress-bar-color: null !default;
 $dark-progress-bar-bg: $primary !default;
 
 // Tables constants use "table-dark-*" instead of "dark-table-*"
