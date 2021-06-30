@@ -6,7 +6,7 @@
   "main": "dist/theme.js",
   "types": "dist/theme.d.ts",
   "scripts": {
-    "build": "ng-packagr -p package.json && sass -I node_modules --source-map src/scss/darktheme.scss:dist/css/darktheme.css --style compressed && cpx src/scss/** dist/scss/",
+    "build": "ng-packagr -p package.json && sass -I node_modules --source-map src/scss/darktheme.scss:dist/css/darktheme.css --style compressed && cpx 'src/scss/**' dist/scss/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,14 +26,14 @@
   },
   "homepage": "https://github.com/clashsoft/bootstrap-darkmode#readme",
   "devDependencies": {
-    "@angular/compiler": "^10.1.4",
-    "@angular/compiler-cli": "^10.1.4",
-    "@angular/core": "^10.1.4",
+    "@angular/compiler": "^12.1.0",
+    "@angular/compiler-cli": "^12.1.0",
+    "@angular/core": "^12.1.0",
     "bootstrap": "^4.6.0",
     "cpx": "^1.5.0",
-    "ng-packagr": "^10.1.2",
-    "sass": "^1.26.7",
-    "typescript": "^3.9.3"
+    "ng-packagr": "^12.1.0",
+    "sass": "^1.35.1",
+    "typescript": "^4.3.4"
   },
   "ngPackage": {
     "lib": {
