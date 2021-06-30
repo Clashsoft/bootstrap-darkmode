@@ -1,15 +1,12 @@
-# Bootstrap Dark Mode
+# Bootstrap Darkmode
 
 [![npm version](https://badge.fury.io/js/bootstrap-darkmode.svg)](https://www.npmjs.com/package/bootstrap-darkmode)
 
-This project provides a stylesheet and two scripts that allow you to implement Dark Mode on your website.
+This project provides a stylesheet and two scripts that allow you to implement a dark theme on your website.
 It is initially loaded based on user preference, can be toggled via a switch, and is saved via `localStorage`.
 
 You can view the [test page](testpage.html) with all default bootstrap components in light and dark
 (thanks to [juzraai](https://juzraai.github.io/)!).
-
-Note that not all components are fully supported yet.
-Mostly the contextual color classes can cause problems.
 
 If you are using Angular, check out [ng-bootstrap-darkmode](https://github.com/Clashsoft/ng-bootstrap-darkmode).
 
@@ -105,6 +102,22 @@ const darkSwitch = writeDarkSwitch(themeConfig);
 ```
 
 ## Configuration
+
+Bootstrap Darkmode can be configured regarding both colors and the way the JavaScript helper behaves.
+
+### SCSS
+
+Many colors can be changed via SCSS variables, similar to how Bootstrap allows changing the theme.
+You can find all variables in [`_variables.scss`](src/scss/_variables.scss).
+To change them, just put a new value *before* importing `darktheme.scss`.
+
+```scss
+$dark-body-bg: #111;
+
+@import "~bootstrap-darkmode/scss/darktheme";
+```
+
+### JavaScript
 
 You can listen to theme changes by registering a callback with `themeChangeHandlers`:
 
