@@ -1,3 +1,22 @@
+@mixin dark-list-group-item-variant($state, $background, $color) {
+	.list-group-item-#{$state} {
+		color: $color;
+		background-color: $background;
+
+		&.list-group-item-action {
+			@include hover-focus() {
+				color: $color;
+				background-color: lighten($background, 5%);
+			}
+
+			&.active {
+				background-color: $color;
+				border-color: $color;
+			}
+		}
+	}
+}
+
 @mixin dark-list-group {
 	.list-group-item-action {
 		color: $dark-list-group-action-color;
@@ -30,6 +49,6 @@
 	}
 
 	@each $color, $value in $theme-colors {
-		@include list-group-item-variant($color, theme-color-level($color, $dark-list-group-bg-level), theme-color-level($color, $dark-list-group-color-level));
+		@include dark-list-group-item-variant($color, theme-color-level($color, $dark-list-group-bg-level), theme-color-level($color, $dark-list-group-color-level));
 	}
 }
