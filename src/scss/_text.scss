@@ -1,6 +1,10 @@
 @mixin dark-text {
 	.text-body {
-		color: $dark-body-color;
+		color: $dark-body-color !important;
+	}
+
+	.text-dark-body {
+		color: $body-color !important;
 	}
 
 	@if $emphasized-link-hover-darken-percentage != 0 {
