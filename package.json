@@ -6,7 +6,7 @@
   "main": "dist/theme.js",
   "types": "dist/theme.d.ts",
   "scripts": {
-    "build": "ng-packagr -p package.json && sass --source-map src/darktheme.scss:dist/css/darktheme.css --style compressed && cpx src/darktheme.scss dist/scss/",
+    "build": "ng-packagr -p package.json && sass -I node_modules --source-map src/scss/darktheme.scss:dist/css/darktheme.css --style compressed && cpx src/scss/** dist/scss/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
