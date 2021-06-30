@@ -4,6 +4,7 @@
 
 @import "scss/variables";
 @import "scss/alert";
+@import "scss/badge";
 @import "scss/borders";
 @import "scss/breadcrumb";
 @import "scss/buttons";
@@ -57,6 +58,7 @@
 	}
 
 	@include dark-alert;
+	@include dark-badge;
 	@include dark-borders;
 	@include dark-breadcrumb;
 	@include dark-buttons;
