@@ -42,3 +42,20 @@
 * Improved table border colors.
 * Improved horizontal rule (`<hr>`) color.
 * Updated information in `package.json`.
+
+# v0.8.0
+
+## New Features
+
++ Added support for colored list groups. #5
++ Added support for alerts. #10
++ Added support for colored borders. #18
++ Added support for colored tables.
++ Added some utility classes for forcing dark text.
+
+## Improvements
+
+* Overhauled theme colors.
+* Links are now lightened on hover.
+* Improved customization with SCSS variables.
+* Split the large stylesheet into multiple partials.
