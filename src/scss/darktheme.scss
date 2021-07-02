@@ -10,6 +10,7 @@
 @import "./buttons";
 @import "./card";
 @import "./close";
+@import "./custom-forms";
 @import "./dropdown";
 @import "./forms";
 @import "./input-groups";
@@ -64,6 +65,7 @@
 	@include dark-buttons;
 	@include dark-card;
 	@include dark-close;
+	@include dark-custom-forms;
 	@include dark-dropdown;
 	@include dark-forms;
 	@include dark-input-groups;

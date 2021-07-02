@@ -1,0 +1,187 @@
+@mixin dark-custom-forms {
+	.custom-control-input {
+		&:checked ~ .custom-control-label::before {
+			color: $dark-custom-control-indicator-checked-color;
+			border-color: $dark-custom-control-indicator-checked-border-color;
+			@include gradient-bg($dark-custom-control-indicator-checked-bg);
+		}
+
+		&:focus:not(:checked) ~ .custom-control-label::before {
+			border-color: $dark-custom-control-indicator-focus-border-color;
+		}
+
+		&:not(:disabled):active ~ .custom-control-label::before {
+			color: $dark-custom-control-indicator-active-color;
+			background-color: $dark-custom-control-indicator-active-bg;
+			border-color: $dark-custom-control-indicator-active-border-color;
+		}
+
+		&[disabled], &:disabled {
+			~ .custom-control-label {
+				color: $dark-custom-control-label-disabled-color;
+
+				&::before {
+					background-color: $dark-custom-control-indicator-disabled-bg;
+				}
+			}
+		}
+	}
+
+	.custom-control-label {
+		color: $dark-custom-control-label-color;
+
+		&::before {
+			background-color: $dark-custom-control-indicator-bg;
+			border-color: $dark-custom-control-indicator-border-color;
+		}
+	}
+
+	.custom-checkbox {
+		.custom-control-input:indeterminate ~ .custom-control-label {
+			&::before {
+				border-color: $dark-custom-checkbox-indicator-indeterminate-border-color;
+				@include gradient-bg($dark-custom-checkbox-indicator-indeterminate-bg);
+			}
+		}
+
+		.custom-control-input:disabled {
+			&:checked ~ .custom-control-label::before {
+				@include gradient-bg($dark-custom-control-indicator-checked-disabled-bg);
+			}
+
+			&:indeterminate ~ .custom-control-label::before {
+				@include gradient-bg($dark-custom-control-indicator-checked-disabled-bg);
+			}
+		}
+	}
+
+	.custom-radio {
+		.custom-control-input:disabled {
+			&:checked ~ .custom-control-label::before {
+				@include gradient-bg($dark-custom-control-indicator-checked-disabled-bg);
+			}
+		}
+	}
+
+	.custom-switch {
+		.custom-control-label {
+			&::after {
+				background-color: $dark-custom-control-indicator-border-color;
+			}
+		}
+
+		.custom-control-input:checked ~ .custom-control-label {
+			&::after {
+				background-color: $dark-custom-control-indicator-bg;
+			}
+		}
+
+		.custom-control-input:disabled {
+			&:checked ~ .custom-control-label::before {
+				@include gradient-bg($dark-custom-control-indicator-checked-disabled-bg);
+			}
+		}
+	}
+
+	.custom-select {
+		color: $dark-custom-select-color;
+		background-color: $dark-custom-select-bg;
+		border-color: $dark-custom-select-border-color;
+
+		&:focus {
+			border-color: $dark-custom-select-focus-border-color;
+
+			&::-ms-value {
+				color: $dark-input-color;
+				background-color: $dark-input-bg;
+			}
+		}
+
+		&:disabled {
+			color: $dark-custom-select-disabled-color;
+			background-color: $dark-custom-select-disabled-bg;
+		}
+
+		&:-moz-focusring {
+			text-shadow: 0 0 0 $dark-custom-select-color;
+		}
+	}
+
+	.custom-file-input {
+		&:focus ~ .custom-file-label {
+			border-color: $dark-custom-file-focus-border-color;
+		}
+
+		&[disabled] ~ .custom-file-label,
+		&:disabled ~ .custom-file-label {
+			background-color: $dark-custom-file-disabled-bg;
+		}
+	}
+
+	.custom-file-label {
+		color: $dark-custom-file-color;
+		background-color: $dark-custom-file-bg;
+		border-color: $dark-custom-file-border-color;
+
+		&::after {
+			color: $dark-custom-file-button-color;
+			@include gradient-bg($dark-custom-file-button-bg);
+		}
+	}
+
+	.custom-range {
+		&::-webkit-slider-thumb {
+			@include gradient-bg($dark-custom-range-thumb-bg);
+
+			&:active {
+				@include gradient-bg($dark-custom-range-thumb-active-bg);
+			}
+		}
+
+		&::-webkit-slider-runnable-track {
+			background-color: $dark-custom-range-track-bg;
+		}
+
+		&::-moz-range-thumb {
+			@include gradient-bg($dark-custom-range-thumb-bg);
+
+			&:active {
+				@include gradient-bg($dark-custom-range-thumb-active-bg);
+			}
+		}
+
+		&::-moz-range-track {
+			background-color: $dark-custom-range-track-bg;
+		}
+
+		&::-ms-thumb {
+			@include gradient-bg($dark-custom-range-thumb-bg);
+
+			&:active {
+				@include gradient-bg($dark-custom-range-thumb-active-bg);
+			}
+		}
+
+		&::-ms-fill-lower {
+			background-color: $dark-custom-range-track-bg;
+		}
+
+		&::-ms-fill-upper {
+			background-color: $dark-custom-range-track-bg;
+		}
+
+		&:disabled {
+			&::-webkit-slider-thumb {
+				background-color: $dark-custom-range-thumb-disabled-bg;
+			}
+
+			&::-moz-range-thumb {
+				background-color: $dark-custom-range-thumb-disabled-bg;
+			}
+
+			&::-ms-thumb {
+				background-color: $dark-custom-range-thumb-disabled-bg;
+			}
+		}
+	}
+}
