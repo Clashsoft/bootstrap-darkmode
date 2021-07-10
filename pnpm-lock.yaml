@@ -1,40 +1,40 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@angular/compiler': ^12.1.0
-  '@angular/compiler-cli': ^12.1.0
-  '@angular/core': ^12.1.0
+  '@angular/compiler': ^12.1.1
+  '@angular/compiler-cli': ^12.1.1
+  '@angular/core': ^12.1.1
   bootstrap: ^4.6.0
   cpx: ^1.5.0
-  ng-packagr: ^12.1.0
-  sass: ^1.35.1
-  typescript: ^4.3.4
+  ng-packagr: ^12.1.1
+  sass: ^1.35.2
+  typescript: ^4.3.5
 
 devDependencies:
-  '@angular/compiler': 12.1.0
-  '@angular/compiler-cli': 12.1.0_cefd3d9f043a98f07f6663986bed8a7f
-  '@angular/core': 12.1.0
+  '@angular/compiler': 12.1.1
+  '@angular/compiler-cli': 12.1.1_9f77f0dd3273b7700965b9c017043b74
+  '@angular/core': 12.1.1
   bootstrap: 4.6.0
   cpx: 1.5.0
-  ng-packagr: 12.1.0_120098b798342f8222ef37ee3550625f
-  sass: 1.35.1
-  typescript: 4.3.4
+  ng-packagr: 12.1.1_f1e55606ea521b5d52424f45c955aa4e
+  sass: 1.35.2
+  typescript: 4.3.5
 
 packages:
 
-  /@angular/compiler-cli/12.1.0_cefd3d9f043a98f07f6663986bed8a7f:
-    resolution: {integrity: sha512-6MV6h5hlZfjVNrB8il2sCF7wa0qWKutfK2Za8DFHVCqNND1j75iXrrHNxbu30jZC0HXOSrQQuUThifT/YUU3MQ==}
+  /@angular/compiler-cli/12.1.1_9f77f0dd3273b7700965b9c017043b74:
+    resolution: {integrity: sha512-3PEi7dol8sU0TVEjnBubJXgwDALBk85XlIhmZ9lZa7okUM8Su6dQ9uFi+PXCosn/SlbpUnOizs8wBRqScCX5ug==}
     engines: {node: ^12.14.1 || >=14.0.0}
     hasBin: true
     peerDependencies:
-      '@angular/compiler': 12.1.0
+      '@angular/compiler': 12.1.1
       typescript: '>=4.2.3 <4.4'
     dependencies:
-      '@angular/compiler': 12.1.0
+      '@angular/compiler': 12.1.1
       '@babel/core': 7.14.6
       '@babel/types': 7.14.5
       canonical-path: 1.0.0
-      chokidar: 3.4.2
+      chokidar: 3.5.2
       convert-source-map: 1.7.0
       dependency-graph: 0.11.0
       magic-string: 0.25.7
@@ -44,21 +44,21 @@ packages:
       source-map: 0.6.1
       sourcemap-codec: 1.4.8
       tslib: 2.3.0
-      typescript: 4.3.4
+      typescript: 4.3.5
       yargs: 17.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@angular/compiler/12.1.0:
-    resolution: {integrity: sha512-Nk9l8fWv0XrEZGpN8EftAzTC6Q2oTnDqnYQ9Ykc3rkRQs4r8MDG9cUd4z5gbEToFgX7KVQ3+wLAYVX+uB6A5hg==}
+  /@angular/compiler/12.1.1:
+    resolution: {integrity: sha512-QV56c+A18vdY8AB/SoWq0UkHhJxYDWY+VUY75RM2dxcsXoNeO5FTCjBRkA7yMiX6Q6cahH2ivC7tmqVU2mYHuA==}
     engines: {node: ^12.14.1 || >=14.0.0}
     dependencies:
       tslib: 2.3.0
     dev: true
 
-  /@angular/core/12.1.0:
-    resolution: {integrity: sha512-awrCla6j4U0CU86q8nwR49GiULo3XhMcgooPgRBMjN1aHTDXKacSC9hk2nXkipC9VjuhybUVswuW4/et6d4RZQ==}
+  /@angular/core/12.1.1:
+    resolution: {integrity: sha512-7Q4na8zCXi4ITBG8kgbS+vnnVK0GDU2WXU80/il096+8YPFKfj6MyDWZH79KA3jrIg9/yhLwSQx8x8wnj8dqBA==}
     engines: {node: ^12.14.1 || >=14.0.0}
     peerDependencies:
       rxjs: ^6.5.3
@@ -429,14 +429,6 @@ packages:
       normalize-path: 2.1.1
     dev: true
 
-  /anymatch/3.1.1:
-    resolution: {integrity: sha512-mM8522psRCqzV+6LhomX5wgp25YVibjh8Wj23I5RPkPppSVSjyKD2A2mBJmWGa+KN7f2D6LNh9jkBCeyLktzjg==}
-    engines: {node: '>= 8'}
-    dependencies:
-      normalize-path: 3.0.0
-      picomatch: 2.2.2
-    dev: true
-
   /anymatch/3.1.2:
     resolution: {integrity: sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==}
     engines: {node: '>= 8'}
@@ -684,10 +676,6 @@ packages:
       lodash.uniq: 4.5.0
     dev: true
 
-  /caniuse-lite/1.0.30001141:
-    resolution: {integrity: sha512-EHfInJHoQTmlMdVZrEc5gmwPc0zyN/hVufmGHPbVNQwlk7tJfCmQ2ysRZMY2MeleBivALUTyyxXnQjK18XrVpA==}
-    dev: true
-
   /caniuse-lite/1.0.30001241:
     resolution: {integrity: sha512-1uoSZ1Pq1VpH0WerIMqwptXHNNGfdl7d1cJUFs80CwQ/lVzdhTvsFZCeNFslze7AjsQnb4C85tzclPa1VShbeQ==}
     dev: true
@@ -727,21 +715,6 @@ packages:
       readdirp: 2.2.1
     optionalDependencies:
       fsevents: 1.2.13
-    dev: true
-
-  /chokidar/3.4.2:
-    resolution: {integrity: sha512-IZHaDeBeI+sZJRX7lGcXsdzgvZqKv6sECqsbErJA4mHWfpRrD8B97kSFN4cQz6nGBGiuFia1MKR4d6c1o8Cv7A==}
-    engines: {node: '>= 8.10.0'}
-    dependencies:
-      anymatch: 3.1.1
-      braces: 3.0.2
-      glob-parent: 5.1.1
-      is-binary-path: 2.1.0
-      is-glob: 4.0.1
-      normalize-path: 3.0.0
-      readdirp: 3.4.0
-    optionalDependencies:
-      fsevents: 2.1.3
     dev: true
 
   /chokidar/3.5.2:
@@ -1405,14 +1378,6 @@ packages:
     dev: true
     optional: true
 
-  /fsevents/2.1.3:
-    resolution: {integrity: sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    deprecated: '"Please update to latest v2.3 or v2.2"'
-    dev: true
-    optional: true
-
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -1451,13 +1416,6 @@ packages:
     resolution: {integrity: sha1-gTg9ctsFT8zPUzbaqQLxgvbtuyg=}
     dependencies:
       is-glob: 2.0.1
-    dev: true
-
-  /glob-parent/5.1.1:
-    resolution: {integrity: sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==}
-    engines: {node: '>= 6'}
-    dependencies:
-      is-glob: 4.0.1
     dev: true
 
   /glob-parent/5.1.2:
@@ -2167,8 +2125,8 @@ packages:
     dev: true
     optional: true
 
-  /ng-packagr/12.1.0_120098b798342f8222ef37ee3550625f:
-    resolution: {integrity: sha512-1GrYYfOYHUXNsfuKrjALy6yywcMvOoBcF8genphqvEqJcT5B78mAjGFRxbtuhbxXMXDJUviMLiSfOOcs0Rj2yg==}
+  /ng-packagr/12.1.1_f1e55606ea521b5d52424f45c955aa4e:
+    resolution: {integrity: sha512-V/3u4CgbiPSx4F4QDDK6BD+yxxU6VYiCECvDqLX+LJ749HldkYUMMUab6fwCQP4Z9PR5xFAsdi07uWny+Ptqtg==}
     engines: {node: ^12.14.1 || >=14.0.0}
     hasBin: true
     peerDependencies:
@@ -2176,7 +2134,7 @@ packages:
       tslib: ^2.1.0
       typescript: ~4.2.3 || ~4.3.2
     dependencies:
-      '@angular/compiler-cli': 12.1.0_cefd3d9f043a98f07f6663986bed8a7f
+      '@angular/compiler-cli': 12.1.1_9f77f0dd3273b7700965b9c017043b74
       '@rollup/plugin-commonjs': 19.0.0_rollup@2.52.4
       '@rollup/plugin-json': 4.1.0_rollup@2.52.4
       '@rollup/plugin-node-resolve': 13.0.0_rollup@2.52.4
@@ -2201,9 +2159,9 @@ packages:
       rollup: 2.52.4
       rollup-plugin-sourcemaps: 0.6.3_rollup@2.52.4
       rxjs: 6.6.3
-      sass: 1.35.1
+      sass: 1.35.2
       stylus: 0.54.8
-      typescript: 4.3.4
+      typescript: 4.3.5
     transitivePeerDependencies:
       - '@types/node'
     dev: true
@@ -2418,7 +2376,7 @@ packages:
     resolution: {integrity: sha512-clkFxk/9pcdb4Vkn0hAHq3YnxBQ2p0CGD1dy24jN+reBck+EWxMbxSUqN4Yj7t0w8csl87K6p0gxBe1utkJsYA==}
     dependencies:
       postcss: 7.0.35
-      postcss-selector-parser: 6.0.4
+      postcss-selector-parser: 6.0.6
     dev: true
 
   /postcss-calc/8.0.0_postcss@8.3.5:
@@ -2427,7 +2385,7 @@ packages:
       postcss: ^8.2.2
     dependencies:
       postcss: 8.3.5
-      postcss-selector-parser: 6.0.4
+      postcss-selector-parser: 6.0.6
       postcss-value-parser: 4.1.0
     dev: true
 
@@ -2856,7 +2814,7 @@ packages:
     dependencies:
       autoprefixer: 9.8.6
       browserslist: 4.16.6
-      caniuse-lite: 1.0.30001141
+      caniuse-lite: 1.0.30001241
       css-blank-pseudo: 0.1.4
       css-has-pseudo: 0.10.0
       css-prefers-color-scheme: 3.1.1
@@ -2950,16 +2908,6 @@ packages:
       cssesc: 2.0.0
       indexes-of: 1.0.1
       uniq: 1.0.1
-    dev: true
-
-  /postcss-selector-parser/6.0.4:
-    resolution: {integrity: sha512-gjMeXBempyInaBqpp8gODmwZ52WaYsVOsfr4L4lDQ7n3ncD6mEyySiDtgzCT+NYC0mmeOLvtsF8iaEf0YT6dBw==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      indexes-of: 1.0.1
-      uniq: 1.0.1
-      util-deprecate: 1.0.2
     dev: true
 
   /postcss-selector-parser/6.0.6:
@@ -3097,13 +3045,6 @@ packages:
       graceful-fs: 4.2.4
       micromatch: 3.1.10
       readable-stream: 2.3.7
-    dev: true
-
-  /readdirp/3.4.0:
-    resolution: {integrity: sha512-0xe001vZBnJEK+uKcj8qOhyAKPzIT+gStxWr3LCB0DwcXR5NZJ3IaC+yGnHCYzB/S7ov3m3EEbZI2zeNvX+hGQ==}
-    engines: {node: '>=8.10.0'}
-    dependencies:
-      picomatch: 2.2.2
     dev: true
 
   /readdirp/3.6.0:
@@ -3259,12 +3200,12 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass/1.35.1:
-    resolution: {integrity: sha512-oCisuQJstxMcacOPmxLNiLlj4cUyN2+8xJnG7VanRoh2GOLr9RqkvI4AxA4a6LHVg/rsu+PmxXeGhrdSF9jCiQ==}
+  /sass/1.35.2:
+    resolution: {integrity: sha512-jhO5KAR+AMxCEwIH3v+4zbB2WB0z67V1X0jbapfVwQQdjHZUGUyukpnoM6+iCMfsIUC016w9OPKQ5jrNOS9uXw==}
     engines: {node: '>=8.9.0'}
     hasBin: true
     dependencies:
-      chokidar: 3.4.2
+      chokidar: 3.5.2
     dev: true
 
   /sax/1.2.4:
@@ -3558,8 +3499,8 @@ packages:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
     dev: true
 
-  /typescript/4.3.4:
-    resolution: {integrity: sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==}
+  /typescript/4.3.5:
+    resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
