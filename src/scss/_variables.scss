@@ -1,6 +1,6 @@
 // --------------- Defaults ---------------
 
-$dark-body-bg: $gray-900 !default;
+$dark-body-bg: #101214 !default;
 $dark-body-color: $gray-100 !default;
 $dark-border-color: $gray-700 !default;
 $dark-headings-color: null !default;
@@ -99,7 +99,7 @@ $dark-jumbotron-bg: $gray-800 !default;
 $dark-list-group-color: null !default;
 $dark-list-group-bg: $dark-body-bg !default;
 $dark-list-group-border-color: rgba($white, .125) !default;
-$dark-list-group-hover-bg: $gray-800 !default;
+$dark-list-group-hover-bg: $gray-900 !default;
 $dark-list-group-active-color: $component-active-color !default;
 $dark-list-group-active-bg: $component-active-bg !default;
 $dark-list-group-active-border-color: $dark-list-group-active-bg !default;
@@ -140,7 +140,7 @@ $dark-pagination-active-color: $dark-component-active-color !default;
 $dark-pagination-active-bg: $dark-component-active-bg !default;
 $dark-pagination-active-border-color: $dark-pagination-active-bg !default;
 $dark-pagination-disabled-color: $gray-400 !default;
-$dark-pagination-disabled-bg: $gray-800 !default;
+$dark-pagination-disabled-bg: $gray-900 !default;
 $dark-pagination-disabled-border-color: $gray-700 !default;
 
 $dark-popover-bg: $dark-body-bg !default;
