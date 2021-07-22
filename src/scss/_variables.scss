@@ -1,6 +1,8 @@
 // --------------- Defaults ---------------
 
-$dark-body-bg: #101214 !default;
+$gray-950: #101214 !default;
+
+$dark-body-bg: $gray-950 !default;
 $dark-body-color: $gray-100 !default;
 $dark-border-color: $gray-700 !default;
 $dark-headings-color: null !default;
