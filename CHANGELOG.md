@@ -59,3 +59,9 @@
 * Links are now lightened on hover.
 * Improved customization with SCSS variables.
 * Split the large stylesheet into multiple partials.
+
+# v0.8.1
+
+## Improvements
+
+* Darkened the main background color slightly.
