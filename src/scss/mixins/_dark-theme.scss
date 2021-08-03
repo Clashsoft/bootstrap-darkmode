@@ -1,0 +1,78 @@
+@import "./variables";
+@import "./alert";
+@import "./badge";
+@import "./borders";
+@import "./breadcrumb";
+@import "./buttons";
+@import "./card";
+@import "./close";
+@import "./custom-forms";
+@import "./dropdown";
+@import "./forms";
+@import "./input-groups";
+@import "./jumbotron";
+@import "./list-group";
+@import "./modal";
+@import "./nav";
+@import "./pagination";
+@import "./popover";
+@import "./progress";
+@import "./reboot";
+@import "./tables";
+@import "./text";
+
+@mixin dark-theme {
+	color: $dark-body-color;
+	background-color: $dark-body-bg;
+
+	.bg-darkmode-dark {
+		background-color: $dark !important
+	}
+
+	.bg-darkmode-light {
+		background-color: $light !important;
+	}
+
+	.bg-darkmode-black {
+		background-color: $black !important;
+	}
+
+	// --------------- Typography ---------------
+
+	pre {
+		color: $dark-body-color;
+	}
+
+	hr {
+		border-top-color: $dark-border-color;
+	}
+
+	// --------------- Images ---------------
+
+	img.icon,
+	svg.icon {
+		filter: invert(1);
+	}
+
+	@include dark-alert;
+	@include dark-badge;
+	@include dark-borders;
+	@include dark-breadcrumb;
+	@include dark-buttons;
+	@include dark-card;
+	@include dark-close;
+	@include dark-custom-forms;
+	@include dark-dropdown;
+	@include dark-forms;
+	@include dark-input-groups;
+	@include dark-jumbotron;
+	@include dark-list-group;
+	@include dark-modal;
+	@include dark-nav;
+	@include dark-pagination;
+	@include dark-popover;
+	@include dark-progress;
+	@include dark-reboot;
+	@include dark-table;
+	@include dark-text;
+}
