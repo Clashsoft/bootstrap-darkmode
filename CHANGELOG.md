@@ -65,3 +65,13 @@
 ## Improvements
 
 * Darkened the main background color slightly.
+
+# v0.9.0
+
+## New Features
+
++ Added the `dark-theme` mixin.
+
+## Improvements
+
+* Moved SCSS partials into a new `mixins` directory.
