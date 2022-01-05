@@ -1,17 +1,22 @@
 @mixin dark-nav {
-	.nav-link.disabled {
-		color: $dark-nav-link-disabled-color;
+	.nav-link {
+		&:hover, &:focus {
+			color: $dark-nav-link-hover-color;
+		}
+
+		&.disabled {
+			color: $dark-nav-link-disabled-color;
+		}
 	}
 
 	.nav-tabs {
 		border-bottom-color: $dark-nav-tabs-border-color;
 
 		.nav-link {
-			/* TODO
-			@include hover-focus() {
+			&:hover, &:focus {
+				color: $dark-nav-link-hover-color;
 				border-color: $dark-nav-tabs-link-hover-border-color;
 			}
-			*/
 
 			&.disabled {
 				color: $dark-nav-link-disabled-color;
