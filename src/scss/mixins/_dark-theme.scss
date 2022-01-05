@@ -24,6 +24,10 @@
 	color: $dark-body-color;
 	background-color: $dark-body-bg;
 
+	.bg-body {
+		background-color: $dark-body-bg !important;
+	}
+
 	.bg-darkmode-dark {
 		background-color: $dark !important
 	}
