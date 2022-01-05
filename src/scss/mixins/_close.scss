@@ -1,6 +1,11 @@
 @mixin dark-close {
-	.close {
+	.btn-close {
+		filter: $btn-close-white-filter;
 		color: $dark-close-color;
-		text-shadow: $dark-close-text-shadow;
+
+		// Override <a>'s hover style
+		&:hover {
+			color: $dark-close-color;
+		}
 	}
 }
