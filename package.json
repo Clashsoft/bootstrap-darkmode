@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "bootstrap-darkmode",
-  "version": "5.0.0-alpha.2",
+  "version": "5.0.0-alpha.3",
   "description": "Stylesheet and Scripts for implementing dark mode with Bootstrap 4",
   "main": "dist/theme.js",
   "types": "dist/theme.d.ts",
