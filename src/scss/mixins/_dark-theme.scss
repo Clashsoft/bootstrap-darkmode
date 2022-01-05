@@ -9,7 +9,6 @@
 @import "./dropdown";
 @import "./forms";
 @import "./input-groups";
-@import "./jumbotron";
 @import "./list-group";
 @import "./modal";
 @import "./nav";
@@ -67,7 +66,6 @@
 	@include dark-dropdown;
 	@include dark-forms;
 	@include dark-input-groups;
-	@include dark-jumbotron;
 	@include dark-list-group;
 	@include dark-modal;
 	@include dark-nav;
