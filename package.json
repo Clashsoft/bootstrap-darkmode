@@ -7,6 +7,7 @@
   "types": "dist/theme.d.ts",
   "sideEffects": ["**/*.css", "**/*.scss"],
   "scripts": {
+    "watch": "sass --watch -I node_modules src/scss/darktheme.scss:dist/css/darktheme.css",
     "build": "ng-packagr -p package.json && sass -I node_modules --source-map src/scss/darktheme.scss:dist/css/darktheme.css --style compressed && cpx 'src/scss/**' dist/scss/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,7 +34,7 @@
     "@angular/compiler": "^12.1.1",
     "@angular/compiler-cli": "^12.1.1",
     "@angular/core": "^12.1.1",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.1.3",
     "cpx": "^1.5.0",
     "ng-packagr": "^12.1.1",
     "sass": "^1.35.2",
