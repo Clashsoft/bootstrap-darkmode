@@ -1,6 +1,5 @@
 @import "./variables";
 @import "./alert";
-@import "./badge";
 @import "./borders";
 @import "./breadcrumb";
 @import "./buttons";
@@ -55,7 +54,6 @@
 	}
 
 	@include dark-alert;
-	@include dark-badge;
 	@include dark-borders;
 	@include dark-breadcrumb;
 	@include dark-buttons;

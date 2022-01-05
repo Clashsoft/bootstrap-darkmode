@@ -20,10 +20,12 @@
 @mixin dark-list-group {
 	.list-group-item-action {
 		color: $dark-list-group-action-color;
+		/* TODO
 		@include hover-focus() {
 			color: $dark-list-group-action-hover-color;
 			background-color: $dark-list-group-hover-bg;
 		}
+		 */
 		&:active {
 			color: $dark-list-group-action-active-color;
 			background-color: $dark-list-group-action-active-bg;
@@ -48,7 +50,9 @@
 		}
 	}
 
+	/* TODO
 	@each $color, $value in $theme-colors {
 		@include dark-list-group-item-variant($color, theme-color-level($color, $dark-list-group-bg-level), theme-color-level($color, $dark-list-group-color-level));
 	}
+	 */
 }

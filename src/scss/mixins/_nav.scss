@@ -7,9 +7,11 @@
 		border-bottom-color: $dark-nav-tabs-border-color;
 
 		.nav-link {
+			/* TODO
 			@include hover-focus() {
 				border-color: $dark-nav-tabs-link-hover-border-color;
 			}
+			*/
 
 			&.disabled {
 				color: $dark-nav-link-disabled-color;

@@ -14,6 +14,7 @@
 	.table-hover {
 		$hover-background: lighten($background, 5%);
 
+		/* TODO
 		.table-#{$state} {
 			@include hover() {
 				&, > td, > th {
@@ -21,10 +22,12 @@
 				}
 			}
 		}
+		 */
 	}
 }
 
 @mixin dark-table {
+	/* TODO
 	.table {
 		color: $table-dark-color;
 		background-color: $table-dark-bg;
@@ -70,4 +73,5 @@
 	}
 
 	@include dark-table-row-variant(active, $table-active-bg);
+	*/
 }

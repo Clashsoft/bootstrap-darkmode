@@ -2,17 +2,21 @@
 	.btn {
 		color: $dark-body-color;
 
+		/* TODO
 		@include hover() {
 			color: $dark-body-color;
 		}
+		*/
 	}
 
 	.btn-link {
 		color: $dark-link-color;
 
+		/* TODO
 		@include hover() {
 			color: $dark-link-hover-color;
 		}
+		*/
 
 		&:disabled, &.disabled {
 			color: $dark-btn-link-disabled-color;
