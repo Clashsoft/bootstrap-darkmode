@@ -4,9 +4,9 @@
 		background-color: $background;
 
 		&.list-group-item-action {
-			@include hover-focus() {
+			&:hover, &:focus {
 				color: $color;
-				background-color: lighten($background, 5%);
+				background-color: tint-color($background, 10%);
 			}
 
 			&.active {
@@ -20,12 +20,10 @@
 @mixin dark-list-group {
 	.list-group-item-action {
 		color: $dark-list-group-action-color;
-		/* TODO
-		@include hover-focus() {
+		&:hover, &:focus {
 			color: $dark-list-group-action-hover-color;
 			background-color: $dark-list-group-hover-bg;
 		}
-		 */
 		&:active {
 			color: $dark-list-group-action-active-color;
 			background-color: $dark-list-group-action-active-bg;
@@ -50,9 +48,13 @@
 		}
 	}
 
-	/* TODO
-	@each $color, $value in $theme-colors {
-		@include dark-list-group-item-variant($color, theme-color-level($color, $dark-list-group-bg-level), theme-color-level($color, $dark-list-group-color-level));
+	@each $state, $value in $theme-colors {
+		$list-group-variant-bg: shift-color($value, -$list-group-item-bg-scale);
+		$list-group-variant-color: shift-color($value, -$list-group-item-color-scale);
+		@if (contrast-ratio($list-group-variant-bg, $list-group-variant-color) < $min-contrast-ratio) {
+			$list-group-variant-color: mix($value, color-contrast($list-group-variant-bg), abs($list-group-item-color-scale));
+		}
+
+		@include dark-list-group-item-variant($state, $list-group-variant-bg, $list-group-variant-color);
 	}
-	 */
 }

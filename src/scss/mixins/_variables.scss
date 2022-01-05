@@ -94,7 +94,7 @@ $dark-custom-file-button-bg: $dark-input-group-addon-bg !default;
 $dark-jumbotron-color: null !default;
 $dark-jumbotron-bg: $gray-800 !default;
 
-$dark-list-group-color: null !default;
+$dark-list-group-color: $dark-body-color !default;
 $dark-list-group-bg: $dark-body-bg !default;
 $dark-list-group-border-color: rgba($white, .125) !default;
 $dark-list-group-hover-bg: $gray-900 !default;
