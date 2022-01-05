@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/clashsoft/bootstrap-darkmode#readme",
   "peerDependencies": {
-    "bootstrap": ">=4.6"
+    "bootstrap": ">=5"
   },
   "devDependencies": {
     "@angular/compiler": "^12.1.1",
