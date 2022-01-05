@@ -4,8 +4,8 @@
 		border-color: $dark-popover-border-color;
 	}
 
-	@each $direction in (top, right, bottom, left) {
-		.bs-popover-#{$direction} > .arrow {
+	@each $side, $direction in (top: top, bottom: bottom, start: left, end: right) {
+		.bs-popover-#{$side} > .popover-arrow {
 			&::before {
 				border-#{$direction}-color: $dark-popover-arrow-outer-color;
 			}
