@@ -33,7 +33,7 @@ $dark-card-cap-bg: rgba($white, .03) !default;
 $dark-dropdown-color: $body-color !default;
 $dark-dropdown-bg: $dark-body-bg !default;
 $dark-dropdown-border-color: rgba($white, .15) !default;
-$dark-dropdown-divider-bg: $gray-800 !default;
+$dark-dropdown-divider-bg: $dark-dropdown-border-color !default;
 $dark-dropdown-link-color: $gray-100 !default;
 $dark-dropdown-link-hover-color: darken($gray-100, 5%) !default;
 $dark-dropdown-link-hover-bg: $gray-800 !default;

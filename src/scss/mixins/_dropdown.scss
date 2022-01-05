@@ -12,12 +12,10 @@
 	.dropdown-item {
 		color: $dark-dropdown-link-color;
 
-		/* TODO
-		@include hover-focus() {
+		&:hover, &:focus {
 			color: $dark-dropdown-link-hover-color;
 			@include gradient-bg($dark-dropdown-link-hover-bg);
 		}
-		 */
 
 		&.active, &:active {
 			color: $dark-dropdown-link-active-color;
