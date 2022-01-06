@@ -10,6 +10,8 @@ $dark-headings-color: null !default;
 $dark-link-color: $primary !default;
 $dark-link-hover-color: lighten($link-color, 15%) !default;
 
+$dark-text-muted-color: $gray-400 !default;
+
 $dark-component-active-color: $white !default;
 $dark-component-active-bg: $primary !default;
 
@@ -44,6 +46,7 @@ $dark-dropdown-header-color: $gray-400 !default;
 
 $dark-input-bg: $dark-body-bg !default;
 $dark-input-disabled-bg: $gray-800 !default;
+$dark-input-disabled-border-color: null !default;
 $dark-input-color: $gray-300 !default;
 $dark-input-border-color: $gray-600 !default;
 $dark-input-focus-bg: $dark-input-bg !default;
@@ -55,6 +58,10 @@ $dark-input-plaintext-color: $dark-body-color !default;
 $dark-input-group-addon-color: $dark-input-color !default;
 $dark-input-group-addon-bg: $gray-800 !default;
 $dark-input-group-addon-border-color: $dark-input-border-color !default;
+
+$dark-form-file-button-color: $dark-input-color !default;
+$dark-form-file-button-bg: $dark-input-group-addon-bg !default;
+$dark-form-file-button-hover-bg: tint-color($dark-form-file-button-bg, 5%) !default;
 
 $dark-custom-control-indicator-bg: $dark-input-bg !default;
 $dark-custom-control-indicator-border-color: $gray-500 !default;
@@ -90,6 +97,9 @@ $dark-custom-file-bg: $dark-input-bg !default;
 $dark-custom-file-border-color: $dark-input-border-color !default;
 $dark-custom-file-button-color: $dark-custom-file-color !default;
 $dark-custom-file-button-bg: $dark-input-group-addon-bg !default;
+
+$dark-form-label-color: null !default;
+$dark-form-text-color: $dark-text-muted-color !default;
 
 $dark-jumbotron-color: null !default;
 $dark-jumbotron-bg: $gray-800 !default;
