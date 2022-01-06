@@ -7,6 +7,10 @@
 		color: $body-color !important;
 	}
 
+	.text-muted {
+		color: $dark-text-muted-color !important;
+	}
+
 	@each $color, $value in $theme-colors {
 		.link-#{$color} {
 			color: $value;
