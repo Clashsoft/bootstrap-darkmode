@@ -95,6 +95,17 @@ $dark-form-range-thumb-disabled-bg: $gray-500 !default;
 $dark-form-label-color: null !default;
 $dark-form-text-color: $dark-text-muted-color !default;
 
+$dark-accordion-color: $dark-body-color !default;
+$dark-accordion-bg: $dark-body-bg !default;
+$dark-accordion-border-color: rgba($white, .125) !default;
+$dark-accordion-button-color: $dark-accordion-color !default;
+$dark-accordion-button-bg: $dark-accordion-bg !default;
+$dark-accordion-button-active-bg: shade-color($dark-component-active-bg, 90%) !default;
+$dark-accordion-button-active-color: tint-color($primary, 10%) !default;
+$dark-accordion-button-focus-border-color: $dark-input-focus-border-color !default;
+$dark-accordion-icon-color: $dark-accordion-button-color !default;
+$dark-accordion-icon-active-color: $dark-accordion-button-active-color !default;
+
 $dark-jumbotron-color: null !default;
 $dark-jumbotron-bg: $gray-800 !default;
 

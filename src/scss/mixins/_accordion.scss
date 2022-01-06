@@ -1,0 +1,20 @@
+@mixin dark-accordion {
+	.accordion-button {
+		color: $dark-accordion-button-color;
+		background-color: $dark-accordion-button-bg;
+
+		&:not(.collapsed) {
+			color: $dark-accordion-button-active-color;
+			background-color: $dark-accordion-button-active-bg;
+		}
+
+		&:focus {
+			border-color: $dark-accordion-button-focus-border-color;
+		}
+	}
+
+	.accordion-item {
+		background-color: $dark-accordion-bg;
+		border-color: $dark-accordion-border-color;
+	}
+}
