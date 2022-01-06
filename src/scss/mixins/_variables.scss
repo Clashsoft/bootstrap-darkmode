@@ -64,6 +64,18 @@ $dark-form-file-button-color: $dark-input-color !default;
 $dark-form-file-button-bg: $dark-input-group-addon-bg !default;
 $dark-form-file-button-hover-bg: tint-color($dark-form-file-button-bg, 5%) !default;
 
+$dark-form-check-label-color: null !default;
+$dark-form-check-input-active-filter: brightness(-90%) !default;
+$dark-form-check-input-bg: $dark-input-bg !default;
+$dark-form-check-input-border-color: rgba($white, .25) !default;
+$dark-form-check-input-focus-border-color: $dark-input-focus-border-color !default;
+$dark-form-check-input-checked-color: $dark-component-active-color !default;
+$dark-form-check-input-checked-bg-color: $dark-component-active-bg !default;
+$dark-form-check-input-checked-border-color: $dark-form-check-input-checked-bg-color !default;
+$dark-form-check-input-indeterminate-color: $dark-component-active-color !default;
+$dark-form-check-input-indeterminate-bg-color: $dark-component-active-bg !default;
+$dark-form-check-input-indeterminate-border-color: $dark-form-check-input-indeterminate-bg-color !default;
+
 $dark-form-select-color: $dark-input-color !default;
 $dark-form-select-bg: $dark-input-bg !default;
 $dark-form-select-disabled-color: null !default;
@@ -79,23 +91,6 @@ $dark-form-range-thumb-bg: $dark-component-active-bg !default;
 $dark-form-range-thumb-border-color: null !default;
 $dark-form-range-thumb-active-bg: shade-color($dark-component-active-bg, 70%) !default;
 $dark-form-range-thumb-disabled-bg: $gray-500 !default;
-
-$dark-custom-control-indicator-bg: $dark-input-bg !default;
-$dark-custom-control-indicator-border-color: $gray-500 !default;
-$dark-custom-control-label-color: null !default;
-$dark-custom-control-indicator-disabled-bg: $dark-input-disabled-bg !default;
-$dark-custom-control-label-disabled-color: $gray-400 !default;
-$dark-custom-control-indicator-checked-color: $dark-component-active-color !default;
-$dark-custom-control-indicator-checked-bg: $dark-component-active-bg !default;
-$dark-custom-control-indicator-checked-disabled-bg: rgba($primary, .5) !default;
-$dark-custom-control-indicator-checked-border-color: $dark-custom-control-indicator-checked-bg !default;
-$dark-custom-control-indicator-focus-border-color: $dark-input-focus-border-color !default;
-$dark-custom-control-indicator-active-color: $dark-component-active-color !default;
-$dark-custom-control-indicator-active-bg: lighten($dark-component-active-bg, 35%) !default;
-$dark-custom-control-indicator-active-border-color: $dark-custom-control-indicator-active-bg !default;
-$dark-custom-checkbox-indicator-indeterminate-bg: $dark-component-active-bg !default;
-$dark-custom-checkbox-indicator-indeterminate-color: $dark-custom-control-indicator-checked-color !default;
-$dark-custom-checkbox-indicator-indeterminate-border-color: $dark-custom-checkbox-indicator-indeterminate-bg !default;
 
 $dark-form-label-color: null !default;
 $dark-form-text-color: $dark-text-muted-color !default;

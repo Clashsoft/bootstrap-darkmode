@@ -73,7 +73,32 @@
 		}
 	}
 
-	// @import "forms/form-check";
+	.form-check-input {
+		background-color: $dark-form-check-input-bg;
+		border-color: $dark-form-check-input-border-color;
+
+		&:active {
+			filter: $dark-form-check-input-active-filter;
+		}
+
+		&:focus {
+			border-color: $dark-form-check-input-focus-border-color;
+		}
+
+		&:checked {
+			background-color: $dark-form-check-input-checked-bg-color;
+			border-color: $dark-form-check-input-checked-border-color;
+		}
+
+		&[type="checkbox"]:indeterminate {
+			background-color: $dark-form-check-input-indeterminate-bg-color;
+			border-color: $dark-form-check-input-indeterminate-border-color;
+		}
+	}
+
+	.form-check-label {
+		color: $dark-form-check-label-color;
+	}
 
 	.form-range {
 		&::-webkit-slider-thumb {
