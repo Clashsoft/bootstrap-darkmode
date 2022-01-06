@@ -53,7 +53,26 @@
 		color: $dark-form-text-color;
 	}
 
-	// @import "forms/form-select";
+	.form-select {
+		color: $dark-form-select-color;
+		background-color: $dark-form-select-bg;
+		border-color: $dark-form-select-border-color;
+
+		&:focus {
+			border-color: $dark-form-select-focus-border-color;
+		}
+
+		&:disabled {
+			color: $dark-form-select-disabled-color;
+			background-color: $dark-form-select-disabled-bg;
+			border-color: $dark-form-select-disabled-border-color;
+		}
+
+		&:-moz-focusring {
+			text-shadow: 0 0 0 $dark-form-select-color;
+		}
+	}
+
 	// @import "forms/form-check";
 	// @import "forms/form-range";
 }
