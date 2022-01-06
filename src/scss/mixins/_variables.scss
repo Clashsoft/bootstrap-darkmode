@@ -74,6 +74,12 @@ $dark-form-select-border-color: $dark-input-border-color !default;
 $dark-form-select-focus-border-color: $dark-input-focus-border-color !default;
 $dark-form-select-focus-box-shadow: 0 0 0 $form-select-focus-width $input-btn-focus-color !default;
 
+$dark-form-range-track-bg: $gray-700 !default;
+$dark-form-range-thumb-bg: $dark-component-active-bg !default;
+$dark-form-range-thumb-border-color: null !default;
+$dark-form-range-thumb-active-bg: shade-color($dark-component-active-bg, 70%) !default;
+$dark-form-range-thumb-disabled-bg: $gray-500 !default;
+
 $dark-custom-control-indicator-bg: $dark-input-bg !default;
 $dark-custom-control-indicator-border-color: $gray-500 !default;
 $dark-custom-control-label-color: null !default;
@@ -90,10 +96,6 @@ $dark-custom-control-indicator-active-border-color: $dark-custom-control-indicat
 $dark-custom-checkbox-indicator-indeterminate-bg: $dark-component-active-bg !default;
 $dark-custom-checkbox-indicator-indeterminate-color: $dark-custom-control-indicator-checked-color !default;
 $dark-custom-checkbox-indicator-indeterminate-border-color: $dark-custom-checkbox-indicator-indeterminate-bg !default;
-$dark-custom-range-track-bg: $gray-700 !default;
-$dark-custom-range-thumb-bg: $dark-component-active-bg !default;
-$dark-custom-range-thumb-active-bg: lighten($dark-component-active-bg, 35%) !default;
-$dark-custom-range-thumb-disabled-bg: $gray-500 !default;
 
 $dark-form-label-color: null !default;
 $dark-form-text-color: $dark-text-muted-color !default;

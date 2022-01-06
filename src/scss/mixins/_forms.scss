@@ -74,5 +74,42 @@
 	}
 
 	// @import "forms/form-check";
-	// @import "forms/form-range";
+
+	.form-range {
+		&::-webkit-slider-thumb {
+			@include gradient-bg($dark-form-range-thumb-bg);
+			border-color: $dark-form-range-thumb-border-color;
+
+			&:active {
+				@include gradient-bg($dark-form-range-thumb-active-bg);
+			}
+		}
+
+		&::-webkit-slider-runnable-track {
+			background-color: $dark-form-range-track-bg;
+		}
+
+		&::-moz-range-thumb {
+			@include gradient-bg($dark-form-range-thumb-bg);
+			border-color: $dark-form-range-thumb-border-color;
+
+			&:active {
+				@include gradient-bg($dark-form-range-thumb-active-bg);
+			}
+		}
+
+		&::-moz-range-track {
+			background-color: $dark-form-range-track-bg;
+		}
+
+		&:disabled {
+			&::-webkit-slider-thumb {
+				background-color: $dark-form-range-thumb-disabled-bg;
+			}
+
+			&::-moz-range-thumb {
+				background-color: $dark-form-range-thumb-disabled-bg;
+			}
+		}
+	}
 }
