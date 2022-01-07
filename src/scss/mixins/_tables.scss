@@ -1,77 +1,43 @@
-@mixin dark-table-row-variant($state, $background, $border: null) {
+@mixin dark-table-variant($state, $background) {
 	.table-#{$state} {
-		&, > th, > td {
-			background-color: $background;
-		}
+		$color: color-contrast(opaque($body-bg, $background));
+		$hover-bg: mix($color, $background, percentage($dark-table-hover-bg-factor));
+		$striped-bg: mix($color, $background, percentage($dark-table-striped-bg-factor));
+		$active-bg: mix($color, $background, percentage($dark-table-active-bg-factor));
 
-		@if $border != null {
-			th, td, thead th, tbody + tbody {
-				border-color: $border;
-			}
-		}
-	}
+		--#{$variable-prefix}table-bg: #{$background};
+		--#{$variable-prefix}table-striped-bg: #{$striped-bg};
+		--#{$variable-prefix}table-striped-color: #{color-contrast($striped-bg)};
+		--#{$variable-prefix}table-active-bg: #{$active-bg};
+		--#{$variable-prefix}table-active-color: #{color-contrast($active-bg)};
+		--#{$variable-prefix}table-hover-bg: #{$hover-bg};
+		--#{$variable-prefix}table-hover-color: #{color-contrast($hover-bg)};
 
-	.table-hover {
-		$hover-background: lighten($background, 5%);
-
-		/* TODO
-		.table-#{$state} {
-			@include hover() {
-				&, > td, > th {
-					background-color: $hover-background;
-				}
-			}
-		}
-		 */
+		color: $color;
+		border-color: mix($color, $background, percentage($dark-table-border-factor));
 	}
 }
 
 @mixin dark-table {
-	/* TODO
 	.table {
-		color: $table-dark-color;
-		background-color: $table-dark-bg;
+		--#{$variable-prefix}table-bg: #{$dark-table-bg};
+		--#{$variable-prefix}table-accent-bg: #{$dark-table-accent-bg};
+		--#{$variable-prefix}table-striped-color: #{$dark-table-striped-color};
+		--#{$variable-prefix}table-striped-bg: #{$dark-table-striped-bg};
+		--#{$variable-prefix}table-active-color: #{$dark-table-active-color};
+		--#{$variable-prefix}table-active-bg: #{$dark-table-active-bg};
+		--#{$variable-prefix}table-hover-color: #{$dark-table-hover-color};
+		--#{$variable-prefix}table-hover-bg: #{$dark-table-hover-bg};
 
-		th, td {
-			border-top-color: $table-dark-border-color;
-		}
+		color: $dark-table-color;
+		border-color: $dark-table-border-color;
 
-		thead th {
-			border-bottom-color: $table-dark-border-color;
-		}
-
-		tbody + tbody {
-			border-top-color: $table-dark-border-color;
-		}
-	}
-
-	.table-bordered {
-		border-color: $table-dark-border-color;
-
-		th, td {
-			border-color: $table-dark-border-color;
+		> :not(:first-child) {
+			border-top-color: $dark-table-group-separator-color;
 		}
 	}
 
-	.table-striped {
-		tbody tr:nth-of-type(#{$table-striped-order}) {
-			background-color: $table-dark-accent-bg;
-		}
+	@each $color, $value in $dark-table-variants {
+		@include dark-table-variant($color, $value);
 	}
-
-	.table-hover {
-		tbody tr {
-			@include hover() {
-				color: $table-dark-hover-color;
-				background-color: $table-dark-hover-bg;
-			}
-		}
-	}
-
-	@each $color, $value in $theme-colors {
-		@include dark-table-row-variant($color, theme-color-level($color, $table-dark-bg-level), theme-color-level($color, $table-dark-border-level));
-	}
-
-	@include dark-table-row-variant(active, $table-active-bg);
-	*/
 }

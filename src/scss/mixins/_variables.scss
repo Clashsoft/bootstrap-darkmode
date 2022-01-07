@@ -170,7 +170,30 @@ $dark-progress-bg: $gray-800 !default;
 $dark-progress-bar-color: null !default;
 $dark-progress-bar-bg: $primary !default;
 
-// Tables constants use "table-dark-*" instead of "dark-table-*"
-// because many "table-dark-*" variables are already included in Bootstrap.
-$table-dark-bg-level: 9 !default;
-$table-dark-border-level: 6 !default;
+$dark-table-color: $dark-body-color !default;
+$dark-table-bg: transparent !default;
+$dark-table-accent-bg: transparent !default;
+$dark-table-striped-color: $dark-table-color !default;
+$dark-table-striped-bg-factor: .05 !default;
+$dark-table-striped-bg: rgba($white, $dark-table-striped-bg-factor) !default;
+$dark-table-active-color: $dark-table-color !default;
+$dark-table-active-bg-factor: .1 !default;
+$dark-table-active-bg: rgba($white, $dark-table-active-bg-factor) !default;
+$dark-table-hover-color: $dark-table-color !default;
+$dark-table-hover-bg-factor: .075 !default;
+$dark-table-hover-bg: rgba($white, $dark-table-hover-bg-factor) !default;
+$dark-table-border-factor: .1 !default;
+$dark-table-border-color: $dark-border-color !default;
+$dark-table-group-separator-color: currentColor !default;
+$dark-table-caption-color: $dark-text-muted-color !default;
+$dark-table-bg-scale: 80% !default;
+$dark-table-variants: (
+		"primary": shift-color($primary, $dark-table-bg-scale),
+		"secondary": shift-color($secondary, $dark-table-bg-scale),
+		"success": shift-color($success, $dark-table-bg-scale),
+		"info": shift-color($info, $dark-table-bg-scale),
+		"warning": shift-color($warning, $dark-table-bg-scale),
+		"danger": shift-color($danger, $dark-table-bg-scale),
+		"light": $light,
+		"dark": $dark,
+) !default;
