@@ -2,6 +2,12 @@
 
 [![npm version](https://badge.fury.io/js/bootstrap-darkmode.svg)](https://www.npmjs.com/package/bootstrap-darkmode)
 
+> [!Warning]
+> Bootstrap v5.3 natively provides a [dark color mode](https://getbootstrap.com/docs/5.3/customize/color-modes/).
+> As such, this package will no longer be actively developed.
+> Major bugs, security issues and Pull Requests will still be reviewed however.
+> Contributions are welcome.
+
 This project provides a stylesheet and two scripts that allow you to implement a dark theme on your website.
 It is initially loaded based on user preference, can be toggled via a switch, and is saved via `localStorage`.
 
