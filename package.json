@@ -33,7 +33,7 @@
     "@angular/compiler": "^12.1.1",
     "@angular/compiler-cli": "^12.1.1",
     "@angular/core": "^12.1.1",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.0.0",
     "cpx": "^1.5.0",
     "ng-packagr": "^12.1.1",
     "sass": "^1.35.2",
