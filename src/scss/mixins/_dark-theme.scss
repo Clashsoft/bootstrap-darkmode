@@ -1,7 +1,6 @@
 @import "./variables";
 @import "./accordion";
 @import "./alert";
-@import "./borders";
 @import "./breadcrumb";
 @import "./buttons";
 @import "./card";
@@ -12,16 +11,22 @@
 @import "./list-group";
 @import "./modal";
 @import "./nav";
+@import "./offcanvas";
 @import "./pagination";
 @import "./popover";
 @import "./progress";
-@import "./reboot";
 @import "./tables";
 @import "./text";
 
 @mixin dark-theme {
-	color: $dark-body-color;
-	background-color: $dark-body-bg;
+	--#{$prefix}body-color-rgb: #{to-rgb($dark-body-color)};
+	--#{$prefix}body-bg-rgb: #{to-rgb($dark-body-bg)};
+	--#{$prefix}body-color: #{$dark-body-color};
+	--#{$prefix}body-bg: #{$dark-body-bg};
+	--#{$prefix}border-color: #{$dark-border-color};
+	--#{$prefix}link-color: #{$dark-link-color};
+	--#{$prefix}link-hover-color: #{$dark-link-hover-color};
+	// TODO --#{$prefix}highlight-bg: #{$dark-highlight-bg};
 
 	.bg-body {
 		background-color: $dark-body-bg !important;
@@ -58,7 +63,6 @@
 
 	@include dark-alert;
 	@include dark-accordion;
-	@include dark-borders;
 	@include dark-breadcrumb;
 	@include dark-buttons;
 	@include dark-card;
@@ -69,10 +73,10 @@
 	@include dark-list-group;
 	@include dark-modal;
 	@include dark-nav;
+	@include dark-offcanvas;
 	@include dark-pagination;
 	@include dark-popover;
 	@include dark-progress;
-	@include dark-reboot;
 	@include dark-table;
 	@include dark-text;
 }

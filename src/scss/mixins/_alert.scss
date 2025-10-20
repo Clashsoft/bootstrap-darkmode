@@ -7,13 +7,7 @@
 			$alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
 		}
 		.alert-#{$state} {
-			color: $alert-color;
-			@include gradient-bg($alert-background);
-			border-color: $alert-border;
-
-			.alert-link {
-				color: tint-color($alert-color, 20%);
-			}
+			@include alert-variant($alert-background, $alert-border, $alert-color);
 		}
 	}
 }

@@ -1,20 +1,12 @@
 @mixin dark-accordion {
-	.accordion-button {
-		color: $dark-accordion-button-color;
-		background-color: $dark-accordion-button-bg;
-
-		&:not(.collapsed) {
-			color: $dark-accordion-button-active-color;
-			background-color: $dark-accordion-button-active-bg;
-		}
-
-		&:focus {
-			border-color: $dark-accordion-button-focus-border-color;
-		}
-	}
-
-	.accordion-item {
-		background-color: $dark-accordion-bg;
-		border-color: $dark-accordion-border-color;
+	.accordion {
+		--#{$prefix}accordion-color: #{$dark-accordion-color};
+		--#{$prefix}accordion-bg: #{$dark-accordion-bg};
+		--#{$prefix}accordion-border-color: #{$dark-accordion-border-color};
+		--#{$prefix}accordion-btn-color: #{$dark-accordion-button-color};
+		--#{$prefix}accordion-btn-bg: #{$dark-accordion-button-bg};
+		--#{$prefix}accordion-btn-focus-border-color: #{$dark-accordion-button-focus-border-color};
+		--#{$prefix}accordion-active-color: #{$dark-accordion-button-active-color};
+		--#{$prefix}accordion-active-bg: #{$dark-accordion-button-active-bg};
 	}
 }

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)https://getbootstrap.com/docs/5.1/examples/cheatsheet/ -->
+<!-- saved from url=(0054)https://getbootstrap.com/docs/5.2/examples/cheatsheet/ -->
 <html lang="en"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Cheatsheet · Bootstrap v5.1</title>
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Cheatsheet · Bootstrap v5.2</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/">
 
     
 
-    <!-- Bootstrap core CSS -->
-<link href="./cheatsheet_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+<link href="./cheatsheet_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
+<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
 
 
     <style>
@@ -39,6 +40,43 @@
           font-size: 3.5rem;
         }
       }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
     </style>
 
     
@@ -54,7 +92,7 @@
       <img src="./cheatsheet_files/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
       Cheatsheet
     </h1>
-    <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet-rtl/" class="ms-auto link-light" hreflang="ar">RTL cheatsheet</a>
+    <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet-rtl/" class="ms-auto link-light" hreflang="ar">RTL cheatsheet</a>
   </div>
 </header>
 <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
@@ -62,48 +100,48 @@
   <nav class="small" id="toc">
     <ul class="list-unstyled">
       <li class="my-2">
-        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contents</button>
+        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contents</button>
         <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#typography">Typography</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#images">Images</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#tables">Tables</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#figures">Figures</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#typography">Typography</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#images">Images</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#tables">Tables</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#figures">Figures</a></li>
         </ul>
       </li>
       <li class="my-2">
-        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
+        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
         <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#overview">Overview</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#disabled-forms">Disabled forms</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#sizing">Sizing</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#input-group">Input group</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#floating-labels">Floating labels</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#validation">Validation</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#overview">Overview</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#disabled-forms">Disabled forms</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#sizing">Sizing</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#input-group">Input group</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#floating-labels">Floating labels</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#validation">Validation</a></li>
         </ul>
       </li>
       <li class="my-2">
-        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
+        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
         <ul class="list-unstyled ps-3 collapse" id="components-collapse">
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#accordion">Accordion</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#alerts">Alerts</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#badge">Badge</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#breadcrumb">Breadcrumb</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#buttons">Buttons</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#button-group">Button group</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#card">Card</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#carousel">Carousel</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#dropdowns">Dropdowns</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#list-group">List group</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#modal">Modal</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#navs">Navs</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#navbar">Navbar</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#pagination">Pagination</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#popovers">Popovers</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#progress">Progress</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#scrollspy">Scrollspy</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#spinners">Spinners</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#toasts">Toasts</a></li>
-          <li><a class="d-inline-flex align-items-center rounded" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#tooltips">Tooltips</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#accordion">Accordion</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#alerts">Alerts</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#badge">Badge</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#breadcrumb">Breadcrumb</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#buttons">Buttons</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#button-group">Button group</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#card">Card</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#carousel">Carousel</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#dropdowns">Dropdowns</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#list-group">List group</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#modal">Modal</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#navs">Navs</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#navbar">Navbar</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#pagination">Pagination</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#popovers">Popovers</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#progress">Progress</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#scrollspy">Scrollspy</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#spinners">Spinners</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#toasts">Toasts</a></li>
+          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#tooltips">Tooltips</a></li>
         </ul>
       </li>
     </ul>
@@ -116,35 +154,38 @@
     <article class="my-3" id="typography">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Typography</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/content/typography/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/content/typography/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <p class="display-1">Display 1</p>
         <p class="display-2">Display 2</p>
         <p class="display-3">Display 3</p>
         <p class="display-4">Display 4</p>
         <p class="display-5">Display 5</p>
         <p class="display-6">Display 6</p>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <p class="h1">Heading 1</p>
         <p class="h2">Heading 2</p>
         <p class="h3">Heading 3</p>
         <p class="h4">Heading 4</p>
         <p class="h5">Heading 5</p>
         <p class="h6">Heading 6</p>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <p class="lead">
           This is a lead paragraph. It stands out from regular paragraphs.
         </p>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <p>You can use the mark tag to <mark>highlight</mark> text.</p>
         <p><del>This line of text is meant to be treated as deleted text.</del></p>
         <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -153,16 +194,23 @@
         <p><small>This line of text is meant to be treated as fine print.</small></p>
         <p><strong>This line rendered as bold text.</strong></p>
         <p><em>This line rendered as italicized text.</em></p>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        <hr>
+        </div></div>
+
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <blockquote class="blockquote">
           <p>A well-known quote, contained in a blockquote element.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <ul class="list-unstyled">
           <li>This is a list.</li>
           <li>It appears completely unstyled.</li>
@@ -177,43 +225,47 @@
           </li>
           <li>This may still come in handy in some situations.</li>
         </ul>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <ul class="list-inline">
           <li class="list-inline-item">This is a list item.</li>
           <li class="list-inline-item">And another one.</li>
           <li class="list-inline-item">But they're displayed inline.</li>
         </ul>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="images">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Images</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/content/images/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/content/images/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text></svg>
 
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <svg class="bd-placeholder-img img-thumbnail" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text></svg>
 
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="tables">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Tables</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/content/tables/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/content/tables/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <table class="table table-striped">
           <thead>
           <tr>
@@ -243,9 +295,10 @@
           </tr>
           </tbody>
         </table>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <table class="table table-dark table-borderless">
           <thead>
           <tr>
@@ -275,9 +328,10 @@
           </tr>
           </tbody>
         </table>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <table class="table table-hover">
           <thead>
           <tr>
@@ -335,9 +389,10 @@
           </tr>
           </tbody>
         </table>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <table class="table table-sm table-bordered">
           <thead>
           <tr>
@@ -367,23 +422,25 @@
           </tr>
           </tbody>
         </table>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="figures">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Figures</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/content/figures/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/content/figures/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <figure class="figure">
           <svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text></svg>
 
           <figcaption class="figure-caption">A caption for the above image.</figcaption>
         </figure>
-        </div>
+        </div></div>
+
       </div>
     </article>
   </section>
@@ -394,11 +451,11 @@
     <article class="my-3" id="overview">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Overview</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/forms/overview/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/forms/overview/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <form>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -408,6 +465,15 @@
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleSelect" class="form-label">Select menu</label>
+            <select class="form-select" id="exampleSelect">
+              <option selected="">Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -438,17 +504,18 @@
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="disabled-forms">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Disabled forms</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/forms/overview/#disabled-forms">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/forms/overview/#disabled-forms">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <form>
           <fieldset disabled="" aria-label="Disabled fieldset example">
             <div class="mb-3">
@@ -495,22 +562,23 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </fieldset>
         </form>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="sizing">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Sizing</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/forms/form-control/#sizing">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/forms/form-control/#sizing">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="mb-3">
           <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
         </div>
         <div class="mb-3">
-          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <select class="form-select form-select-lg" aria-label=".form-select-lg example">
             <option selected="">Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -520,9 +588,10 @@
         <div class="mb-3">
           <input type="file" class="form-control form-control-lg" aria-label="Large file input example">
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="mb-3">
           <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
         </div>
@@ -537,17 +606,18 @@
         <div class="mb-3">
           <input type="file" class="form-control form-control-sm" aria-label="Small file input example">
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="input-group">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Input group</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/forms/input-group/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/forms/input-group/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">@</span>
           <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -570,17 +640,18 @@
           <span class="input-group-text">With textarea</span>
           <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="floating-labels">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Floating labels</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/forms/floating-labels/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/forms/floating-labels/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <form>
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -591,17 +662,18 @@
             <label for="floatingPassword">Password</label>
           </div>
         </form>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="validation">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Validation</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/forms/validation/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/forms/validation/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <form class="row g-3">
           <div class="col-md-4">
             <label for="validationServer01" class="form-label">First name</label>
@@ -666,7 +738,8 @@
             <button class="btn btn-primary" type="submit">Submit form</button>
           </div>
         </form>
-        </div>
+        </div></div>
+
       </div>
     </article>
   </section>
@@ -677,11 +750,11 @@
     <article class="my-3" id="accordion">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Accordion</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/accordion/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/accordion/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingOne">
@@ -720,119 +793,125 @@
             </div>
           </div>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="alerts">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Alerts</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/alerts/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/alerts/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         
         <div class="alert alert-primary alert-dismissible fade show" role="alert">
-          A simple primary alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple primary alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-          A simple secondary alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple secondary alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-          A simple success alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple success alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-          A simple danger alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple danger alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          A simple warning alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple warning alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-info alert-dismissible fade show" role="alert">
-          A simple info alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple info alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-light alert-dismissible fade show" role="alert">
-          A simple light alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple light alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-dark alert-dismissible fade show" role="alert">
-          A simple dark alert with <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
+          A simple dark alert with <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="alert-link">an example link</a>. Give it a click if you like.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="alert alert-success" role="alert">
           <h4 class="alert-heading">Well done!</h4>
           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
           <hr>
           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="badge">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Badge</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/badge/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/badge/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <p class="h1">Example heading <span class="badge bg-primary">New</span></p>
         <p class="h2">Example heading <span class="badge bg-secondary">New</span></p>
         <p class="h3">Example heading <span class="badge bg-success">New</span></p>
         <p class="h4">Example heading <span class="badge bg-danger">New</span></p>
-        <p class="h5">Example heading <span class="badge bg-warning text-dark">New</span></p>
-        <p class="h6">Example heading <span class="badge bg-info text-dark">New</span></p>
-        <p class="h6">Example heading <span class="badge bg-light text-dark">New</span></p>
+        <p class="h5">Example heading <span class="badge text-bg-warning">New</span></p>
+        <p class="h6">Example heading <span class="badge text-bg-info">New</span></p>
+        <p class="h6">Example heading <span class="badge text-bg-light">New</span></p>
         <p class="h6">Example heading <span class="badge bg-dark">New</span></p>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         
         <span class="badge rounded-pill bg-primary">Primary</span>
         <span class="badge rounded-pill bg-secondary">Secondary</span>
         <span class="badge rounded-pill bg-success">Success</span>
         <span class="badge rounded-pill bg-danger">Danger</span>
-        <span class="badge rounded-pill bg-warning text-dark">Warning</span>
-        <span class="badge rounded-pill bg-info text-dark">Info</span>
-        <span class="badge rounded-pill bg-light text-dark">Light</span>
+        <span class="badge rounded-pill text-bg-warning">Warning</span>
+        <span class="badge rounded-pill text-bg-info">Info</span>
+        <span class="badge rounded-pill text-bg-light">Light</span>
         <span class="badge rounded-pill bg-dark">Dark</span>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="breadcrumb">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Breadcrumb</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/breadcrumb/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/breadcrumb/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Home</a></li>
-            <li class="breadcrumb-item"><a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Library</a></li>
+            <li class="breadcrumb-item"><a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Home</a></li>
+            <li class="breadcrumb-item"><a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Library</a></li>
             <li class="breadcrumb-item active" aria-current="page">Data</li>
           </ol>
         </nav>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="buttons">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Buttons</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/buttons/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/buttons/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-secondary">Secondary</button>
@@ -844,9 +923,10 @@
         <button type="button" class="btn btn-dark">Dark</button>
 
         <button type="button" class="btn btn-link">Link</button>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         
         <button type="button" class="btn btn-outline-primary">Primary</button>
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -856,23 +936,25 @@
         <button type="button" class="btn btn-outline-info">Info</button>
         <button type="button" class="btn btn-outline-light">Light</button>
         <button type="button" class="btn btn-outline-dark">Dark</button>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <button type="button" class="btn btn-primary btn-sm">Small button</button>
         <button type="button" class="btn btn-primary">Standard button</button>
         <button type="button" class="btn btn-primary btn-lg">Large button</button>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="button-group">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Button group</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/button-group/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/button-group/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group me-2" role="group" aria-label="First group">
             <button type="button" class="btn btn-secondary">1</button>
@@ -889,17 +971,18 @@
             <button type="button" class="btn btn-secondary">8</button>
           </div>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="card">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Card</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/card/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/card/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="row  row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
@@ -908,7 +991,7 @@
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="btn btn-primary">Go somewhere</a>
+                <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -920,7 +1003,7 @@
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="btn btn-primary">Go somewhere</a>
+                <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="btn btn-primary">Go somewhere</a>
               </div>
               <div class="card-footer text-muted">
                 2 days ago
@@ -939,8 +1022,8 @@
                 <li class="list-group-item">A third item</li>
               </ul>
               <div class="card-body">
-                <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="card-link">Card link</a>
-                <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="card-link">Another link</a>
+                <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="card-link">Card link</a>
+                <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="card-link">Another link</a>
               </div>
             </div>
           </div>
@@ -962,22 +1045,23 @@
             </div>
           </div>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="carousel">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Carousel</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/carousel/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/carousel/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item">
@@ -988,7 +1072,7 @@
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
 
               <div class="carousel-caption d-none d-md-block">
@@ -996,7 +1080,7 @@
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item active">
               <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
 
               <div class="carousel-caption d-none d-md-block">
@@ -1014,70 +1098,72 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="dropdowns">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Dropdowns</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/dropdowns/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/dropdowns/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
           <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
+            <ul class="dropdown-menu">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
           <div class="dropdown">
-            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButtonLG" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLG">
+            <ul class="dropdown-menu">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="btn-group">
           <button type="button" class="btn btn-primary">Primary</button>
           <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
@@ -1086,9 +1172,9 @@
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
@@ -1097,9 +1183,9 @@
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
@@ -1108,9 +1194,9 @@
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
@@ -1119,9 +1205,9 @@
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
         <div class="btn-group">
@@ -1130,83 +1216,86 @@
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
           <div class="dropend">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropendMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropend button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropendMenuButton">
+            <ul class="dropdown-menu">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
           <div class="dropup">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropup button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropupMenuButton">
+            <ul class="dropdown-menu">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
           <div class="dropstart">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropstartMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropstart button
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropstartMenuButton">
+            <ul class="dropdown-menu">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="btn-group">
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownRightMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               End-aligned menu
             </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRightMenuButton">
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><h6 class="dropdown-header">Dropdown header</h6></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Separated link</a></li>
+              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Separated link</a></li>
             </ul>
           </div>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="list-group">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>List group</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/list-group/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/list-group/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <ul class="list-group">
           <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
           <li class="list-group-item">A second item</li>
@@ -1214,9 +1303,10 @@
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li>
         </ul>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">An item</li>
           <li class="list-group-item">A second item</li>
@@ -1224,32 +1314,34 @@
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li>
         </ul>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="list-group">
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action">A simple default list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action">A simple default list group item</a>
           
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
-          <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+          <a href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="modal">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Modal</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/modal/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/modal/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="d-flex justify-content-between flex-wrap">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">
             Launch demo modal
@@ -1264,75 +1356,79 @@
             Full screen
           </button>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="navs">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Navs</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/navs-tabs/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <nav class="nav">
-          <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Active</a>
-          <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Link</a>
-          <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Link</a>
+          <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Active</a>
+          <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Link</a>
+          <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Link</a>
           <a class="nav-link disabled">Disabled</a>
         </nav>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <nav>
           <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1">Profile</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" tabindex="-1">Contact</button>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <p><strong>This is some placeholder content the Home tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            <p>This is some placeholder content the <strong>Home tab's</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
           </div>
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <p><strong>This is some placeholder content the Profile tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            <p>This is some placeholder content the <strong>Profile tab's</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
           </div>
           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <p><strong>This is some placeholder content the Contact tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            <p>This is some placeholder content the <strong>Contact tab's</strong> associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
           </div>
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Active</a>
+            <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Active</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Link</a>
+            <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Link</a>
+            <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Link</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="navbar">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Navbar</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/navbar/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/navbar/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">
+            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">
               <img src="./cheatsheet_files/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy" style="filter: invert(1) grayscale(100%) brightness(200%);">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -1341,27 +1437,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Link</a>
+                  <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled">Disabled</a>
                 </li>
               </ul>
-              <form class="d-flex">
+              <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark" type="submit">Search</button>
               </form>
@@ -1371,7 +1467,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
           <div class="container-fluid">
-            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">
+            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">
               <img src="./cheatsheet_files/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
@@ -1380,183 +1476,191 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent2">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Link</a>
+                  <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Action</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Another action</a></li>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Action</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Another action</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Something else here</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled">Disabled</a>
                 </li>
               </ul>
-              <form class="d-flex">
+              <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
             </div>
           </div>
         </nav>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="pagination">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Pagination</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/pagination/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/pagination/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <nav aria-label="Pagination example">
           <ul class="pagination pagination-sm">
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">1</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">1</a></li>
             <li class="page-item active" aria-current="page">
-              <a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">2</a>
+              <a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">2</a>
             </li>
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">3</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">3</a></li>
           </ul>
         </nav>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <nav aria-label="Standard pagination example">
           <ul class="pagination">
             <li class="page-item">
-              <a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" aria-label="Previous">
+              <a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" aria-label="Previous">
                 <span aria-hidden="true">«</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">1</a></li>
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">2</a></li>
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">3</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">1</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">2</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" aria-label="Next">
+              <a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" aria-label="Next">
                 <span aria-hidden="true">»</span>
               </a>
             </li>
           </ul>
         </nav>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <nav aria-label="Another pagination example">
           <ul class="pagination pagination-lg flex-wrap">
             <li class="page-item disabled">
               <a class="page-link">Previous</a>
             </li>
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">1</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">1</a></li>
             <li class="page-item active" aria-current="page">
-              <a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">2</a>
+              <a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">2</a>
             </li>
-            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">3</a></li>
+            <li class="page-item"><a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Next</a>
+              <a class="page-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Next</a>
             </li>
           </ul>
         </nav>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="popovers">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Popovers</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/popovers/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/popovers/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
-        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="" data-bs-content="And here&#39;s some amazing content. It&#39;s very engaging. Right?" data-bs-original-title="Popover title">Click to toggle popover</button>
-        </div>
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-content="And here&#39;s some amazing content. It&#39;s very engaging. Right?">Click to toggle popover</button>
+        </div></div>
 
-        <div class="bd-example">
-        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="" title="">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on top
         </button>
-        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="" title="">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on end
         </button>
-        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="" title="">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on bottom
         </button>
-        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="" title="">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on start
         </button>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="progress">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Progress</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/progress/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/progress/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="progress mb-3">
-          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+          <div class="progress-bar" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+          <div class="progress-bar bg-success w-25" role="progressbar" aria-label="Success example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar bg-info text-dark w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          <div class="progress-bar text-bg-info w-50" role="progressbar" aria-label="Info example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar bg-warning text-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          <div class="progress-bar text-bg-warning w-75" role="progressbar" aria-label="Warning example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
         </div>
         <div class="progress">
-          <div class="progress-bar bg-danger w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+          <div class="progress-bar bg-danger w-100" role="progressbar" aria-label="Danger example with label" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar" role="progressbar" aria-label="Segment one - default example" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Segment two - animated striped success example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="scrollspy">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Scrollspy</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/scrollspy/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/scrollspy/">Documentation</a>
       </div>
 
       <div>
         <div class="bd-example">
-          <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#">Navbar</a>
+          <nav id="navbar-example2" class="navbar bg-light px-3">
+            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#">Navbar</a>
             <ul class="nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link active" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#scrollspyHeading1">First</a>
+                <a class="nav-link active" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#scrollspyHeading1">First</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#scrollspyHeading2">Second</a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#scrollspyHeading2">Second</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#" role="button" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#" role="button" aria-expanded="false">Dropdown</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#scrollspyHeading3">Third</a></li>
-                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#scrollspyHeading4">Fourth</a></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#scrollspyHeading3">Third</a></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#scrollspyHeading4">Fourth</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/#scrollspyHeading5">Fifth</a></li>
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/#scrollspyHeading5">Fifth</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example position-relative mt-2 overflow-auto" tabindex="0">
             <h4 id="scrollspyHeading1">First heading</h4>
             <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
             <h4 id="scrollspyHeading2">Second heading</h4>
@@ -1574,11 +1678,11 @@
     <article class="my-3" id="spinners">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Spinners</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/spinners/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/spinners/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         
         <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -1604,9 +1708,10 @@
         <div class="spinner-border text-dark" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
-        </div>
+        </div></div>
 
-        <div class="bd-example">
+
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
         
         <div class="spinner-grow text-primary" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -1632,17 +1737,18 @@
         <div class="spinner-grow text-dark" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="my-3" id="toasts">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Toasts</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/toasts/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/toasts/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example bg-dark p-5 align-items-center">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example bg-dark p-5 align-items-center">
         <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
             <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
@@ -1655,23 +1761,25 @@
             Hello, world! This is a toast message.
           </div>
         </div>
-        </div>
+        </div></div>
+
       </div>
     </article>
     <article class="mt-3 mb-5 pb-5" id="tooltips">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Tooltips</h3>
-        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.1/components/tooltips/">Documentation</a>
+        <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.2/components/tooltips/">Documentation</a>
       </div>
 
       <div>
-        <div class="bd-example tooltip-demo">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example tooltip-demo">
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on end">Tooltip on end</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on start">Tooltip on start</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;">Tooltip with HTML</button>
-        </div>
+        </div></div>
+
       </div>
     </article>
   </section>
@@ -1748,7 +1856,7 @@
 </div>
 
 
-    <script src="./cheatsheet_files/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./cheatsheet_files/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
       <script src="./cheatsheet_files/cheatsheet.js"></script>
   

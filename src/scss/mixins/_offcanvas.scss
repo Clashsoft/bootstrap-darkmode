@@ -1,0 +1,22 @@
+@mixin dark-offcanvas {
+  .offcanvas {
+    color: $dark-offcanvas-color;
+    background-color: $dark-offcanvas-bg-color;
+  }
+
+  .offcanvas-start {
+    border-right-color: $dark-offcanvas-border-color;
+  }
+
+  .offcanvas-end {
+    border-left-color: $dark-offcanvas-border-color;
+  }
+
+  .offcanvas-top {
+    border-bottom-color: $dark-offcanvas-border-color;
+  }
+
+  .offcanvas-bottom {
+    border-top-color: $dark-offcanvas-border-color;
+  }
+}
