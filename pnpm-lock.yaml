@@ -9,14 +9,14 @@ importers:
   .:
     devDependencies:
       '@angular/compiler':
-        specifier: ^12.1.1
-        version: 12.1.1
+        specifier: ^19.2.18
+        version: 19.2.18
       '@angular/compiler-cli':
         specifier: ^12.1.1
-        version: 12.1.1(@angular/compiler@12.1.1)(typescript@4.3.5)
+        version: 12.1.1(@angular/compiler@19.2.18)(typescript@4.3.5)
       '@angular/core':
-        specifier: ^12.1.1
-        version: 12.1.1(rxjs@6.6.7)(zone.js@0.11.8)
+        specifier: ^21.1.0
+        version: 21.1.0(@angular/compiler@19.2.18)(rxjs@6.6.7)
       bootstrap:
         specifier: ^5.0.0
         version: 5.0.0(@popperjs/core@2.11.8)
@@ -25,7 +25,7 @@ importers:
         version: 1.5.0
       ng-packagr:
         specifier: ^12.1.1
-        version: 12.1.1(@angular/compiler-cli@12.1.1(@angular/compiler@12.1.1)(typescript@4.3.5))(@types/node@14.11.2)(tslib@2.6.2)(typescript@4.3.5)
+        version: 12.1.1(@angular/compiler-cli@12.1.1(@angular/compiler@19.2.18)(typescript@4.3.5))(@types/node@14.11.2)(tslib@2.8.1)(typescript@4.3.5)
       sass:
         specifier: ^1.35.2
         version: 1.35.2
@@ -43,16 +43,22 @@ packages:
       '@angular/compiler': 12.1.1
       typescript: '>=4.2.3 <4.4'
 
-  '@angular/compiler@12.1.1':
-    resolution: {integrity: sha512-QV56c+A18vdY8AB/SoWq0UkHhJxYDWY+VUY75RM2dxcsXoNeO5FTCjBRkA7yMiX6Q6cahH2ivC7tmqVU2mYHuA==}
-    engines: {node: ^12.14.1 || >=14.0.0}
+  '@angular/compiler@19.2.18':
+    resolution: {integrity: sha512-3MscvODxRVxc3Cs0ZlHI5Pk5rEvE80otfvxZTMksOZuPlv1B+S8MjWfc3X3jk9SbyUEzODBEH55iCaBHD48V3g==}
+    engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
 
-  '@angular/core@12.1.1':
-    resolution: {integrity: sha512-7Q4na8zCXi4ITBG8kgbS+vnnVK0GDU2WXU80/il096+8YPFKfj6MyDWZH79KA3jrIg9/yhLwSQx8x8wnj8dqBA==}
-    engines: {node: ^12.14.1 || >=14.0.0}
+  '@angular/core@21.1.0':
+    resolution: {integrity: sha512-QTl9s8GYNN0pt1k3GE6UVlfe6zWtfdykhfchinKq2YJywQ6LBM4UcZgoc56YkgscmyrRFYrr4JYUJjlzTF57+A==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
     peerDependencies:
-      rxjs: ^6.5.3
-      zone.js: ~0.11.4
+      '@angular/compiler': 21.1.0
+      rxjs: ^6.5.3 || ^7.4.0
+      zone.js: ~0.15.0 || ~0.16.0
+    peerDependenciesMeta:
+      '@angular/compiler':
+        optional: true
+      zone.js:
+        optional: true
 
   '@babel/code-frame@7.23.5':
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
@@ -1989,17 +1995,14 @@ packages:
     resolution: {integrity: sha512-FWtleNAtZ/Ki2qtqej2CXTOayOH9bHDQF+Q48VpWyDXjbYxA4Yz8iDB31zXOBUlOHHKidDbqGVrTUvQMPmBGBw==}
     engines: {node: '>=0.10.0'}
 
-  tslib@1.13.0:
-    resolution: {integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==}
-
   tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
   tslib@2.3.0:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
 
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
   typescript@4.3.5:
     resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
@@ -2075,14 +2078,11 @@ packages:
     resolution: {integrity: sha512-xBBulfCc8Y6gLFcrPvtqKz9hz8SO0l1Ni8GgDekvBX2ro0HRQImDGnikfc33cgzcYUSncapnNcZDjVFIH3f6KQ==}
     engines: {node: '>=12'}
 
-  zone.js@0.11.8:
-    resolution: {integrity: sha512-82bctBg2hKcEJ21humWIkXRlLBBmrc3nN7DFh5LGGhcyycO2S7FN8NmdvlcKaGFDNVL4/9kFLmwmInTavdJERA==}
-
 snapshots:
 
-  '@angular/compiler-cli@12.1.1(@angular/compiler@12.1.1)(typescript@4.3.5)':
+  '@angular/compiler-cli@12.1.1(@angular/compiler@19.2.18)(typescript@4.3.5)':
     dependencies:
-      '@angular/compiler': 12.1.1
+      '@angular/compiler': 19.2.18
       '@babel/core': 7.14.6
       '@babel/types': 7.14.5
       canonical-path: 1.0.0
@@ -2101,15 +2101,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@angular/compiler@12.1.1':
+  '@angular/compiler@19.2.18':
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.8.1
 
-  '@angular/core@12.1.1(rxjs@6.6.7)(zone.js@0.11.8)':
+  '@angular/core@21.1.0(@angular/compiler@19.2.18)(rxjs@6.6.7)':
     dependencies:
       rxjs: 6.6.7
-      tslib: 2.3.0
-      zone.js: 0.11.8
+      tslib: 2.8.1
+    optionalDependencies:
+      '@angular/compiler': 19.2.18
 
   '@babel/code-frame@7.23.5':
     dependencies:
@@ -3092,7 +3093,7 @@ snapshots:
 
   injection-js@2.4.0:
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.8.1
 
   is-absolute-url@3.0.3: {}
 
@@ -3247,7 +3248,7 @@ snapshots:
     dependencies:
       copy-anything: 2.0.3
       parse-node-version: 1.0.1
-      tslib: 1.13.0
+      tslib: 1.14.1
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -3421,9 +3422,9 @@ snapshots:
       - supports-color
     optional: true
 
-  ng-packagr@12.1.1(@angular/compiler-cli@12.1.1(@angular/compiler@12.1.1)(typescript@4.3.5))(@types/node@14.11.2)(tslib@2.6.2)(typescript@4.3.5):
+  ng-packagr@12.1.1(@angular/compiler-cli@12.1.1(@angular/compiler@19.2.18)(typescript@4.3.5))(@types/node@14.11.2)(tslib@2.8.1)(typescript@4.3.5):
     dependencies:
-      '@angular/compiler-cli': 12.1.1(@angular/compiler@12.1.1)(typescript@4.3.5)
+      '@angular/compiler-cli': 12.1.1(@angular/compiler@19.2.18)(typescript@4.3.5)
       '@rollup/plugin-commonjs': 19.0.0(rollup@2.79.2)
       '@rollup/plugin-json': 4.1.0(rollup@2.79.2)
       '@rollup/plugin-node-resolve': 13.0.0(rollup@2.79.2)
@@ -3450,7 +3451,7 @@ snapshots:
       rxjs: 6.6.3
       sass: 1.35.2
       stylus: 0.54.8
-      tslib: 2.6.2
+      tslib: 2.8.1
       typescript: 4.3.5
     transitivePeerDependencies:
       - '@types/node'
@@ -4060,7 +4061,7 @@ snapshots:
 
   rxjs@6.6.3:
     dependencies:
-      tslib: 1.13.0
+      tslib: 1.14.1
 
   rxjs@6.6.7:
     dependencies:
@@ -4251,13 +4252,11 @@ snapshots:
       regex-not: 1.0.2
       safe-regex: 1.1.0
 
-  tslib@1.13.0: {}
-
   tslib@1.14.1: {}
 
   tslib@2.3.0: {}
 
-  tslib@2.6.2: {}
+  tslib@2.8.1: {}
 
   typescript@4.3.5: {}
 
@@ -4330,7 +4329,3 @@ snapshots:
       string-width: 4.2.0
       y18n: 5.0.8
       yargs-parser: 20.2.9
-
-  zone.js@0.11.8:
-    dependencies:
-      tslib: 2.6.2
